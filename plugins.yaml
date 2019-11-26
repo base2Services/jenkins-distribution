@@ -1,0 +1,34 @@
+plugins:
+  - artifactId: aws-secrets-manager-credentials-provider
+    source:
+      version: 0.3.3
+  - artifactId: configuration-as-code-secret-ssm
+    source:
+        version: 1.0.1
+  - artifactId: configuration-as-code-support
+    source:
+        version: 1.19
+  - artifactId: pipeline-aws
+    source:
+        version: 1.42
+  - artifactId: pipeline-utility-steps
+    source:
+        version: 2.6.1
+  - artifactId: job-dsl
+    source:
+      version: 1.77
+  - artifactId: jobConfigHistory
+    source:
+      version: 2.26
+  - artifactId: artifact-manager-s3
+    source:
+      version: 1.12
+  - artifactId: greenballs
+    source:
+      version: 1.15
+  - artifactId: role-strategy
+    source: 
+      version: 3.0
+  - artifactId: ciinabox-build-notifier
+    source:
+      url: https://github.com/base2Services/ciinabox-build-notifier-plugin/releases/download/0.2.0/ciinabox-build-notifier.hpi

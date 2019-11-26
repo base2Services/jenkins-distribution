@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+
+  jenkins:
+    image: local/jenkins-distribution
+    build: ./
+    ports:
+      - 8080:8080
+      - 50000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./jenkins.yaml:/cfg/jenkins.yaml
+    environment:
+      CASC_JENKINS_CONFIG: /cfg/jenkins.yaml
+      JAVA_OPTS: >-
+          -Dcb.BeekeeperProp.noFullUpgrade=true
+          -Dcb.BeekeeperProp.disableIncrementalWizard=true
+          -Dcom.cloudbees.jenkins.cjp.installmanager.CJPPluginManager.allRequired=true
+          -Dhudson.TcpSlaveAgentListener.hostName=jenkins
+          -Dhudson.TcpSlaveAgentListener.port=50000
+          -Djenkins.install.runSetupWizard=false
