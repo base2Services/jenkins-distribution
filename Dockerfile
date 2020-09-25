@@ -1,7 +1,7 @@
 FROM cloudbees/cloudbees-jenkins-distribution:2.249.1.2
 
 ENV PLUGIN_MANAGER_VERSION=2.1.0
-RUN wget -P $REF "https://github.com/jenkinsci/plugin-installation-manager-tool/releases/download/plugin-management-parent-pom-$PLUGIN_MANAGER_VERSION/jenkins-plugin-manager-$PLUGIN_MANAGER_VERSION.jar"
+RUN wget -P $REF "https://github.com/jenkinsci/plugin-installation-manager-tool/releases/download/$PLUGIN_MANAGER_VERSION/jenkins-plugin-manager-$PLUGIN_MANAGER_VERSION.jar"
 
 ENV JENKINS_UPDATE_CENTER=https://jenkins-updates.cloudbees.com/update-center/cloudbees-jenkins-distribution/update-center.json
 ENV JENKINS_EXPERIMENTAL_UPDATE_CENTER=https://jenkins-updates.cloudbees.com/update-center/experimental/update-center.json
