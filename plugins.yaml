@@ -28,7 +28,7 @@ plugins:
       version: 1.15
   - artifactId: role-strategy
     source: 
-      version: 3.0
+      version: 2.16
   - artifactId: ciinabox-build-notifier
     source:
       url: https://github.com/base2Services/ciinabox-build-notifier-plugin/releases/download/0.2.0/ciinabox-build-notifier.hpi
