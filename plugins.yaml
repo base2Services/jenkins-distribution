@@ -49,4 +49,4 @@ plugins:
       url: https://repo.jenkins-ci.org/incrementals/org/jenkins-ci/plugins/pipeline-github/2.8-rc128.c19c053c8618/pipeline-github-2.8-rc128.c19c053c8618.hpi
   - artifactId: ciinabox-gitops-plugin
     source:
-      url: https://github.com/base2Services/ciinabox-gitops-plugin/releases/download/0.2.0/ciinabox-gitops-plugin.hpi
+      url: https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/refs/tags/0.2.2/ciinabox-gitops-plugin.hpi
