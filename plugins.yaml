@@ -1,7 +1,7 @@
 plugins:
   - artifactId: aws-secrets-manager-credentials-provider
     source:
-      version: 0.4.1
+      version: 0.5.1
   - artifactId: configuration-as-code-secret-ssm
     source:
         version: 1.0.1
@@ -10,7 +10,7 @@ plugins:
         version: 1.19
   - artifactId: pipeline-aws
     source:
-        version: 1.42
+        version: 1.43
   - artifactId: pipeline-utility-steps
     source:
         version: 2.6.1
@@ -25,7 +25,7 @@ plugins:
       version: 1.12
   - artifactId: greenballs
     source:
-      version: 1.15
+      version: 1.15.1
   - artifactId: role-strategy
     source: 
       version: 2.16
@@ -43,7 +43,7 @@ plugins:
       version: 1.10
   - artifactId: audit-trail
     source:
-      version: 3.7
+      version: 3.8
   - artifactId: pipeline-github
     source:
       url: https://repo.jenkins-ci.org/incrementals/org/jenkins-ci/plugins/pipeline-github/2.8-rc128.c19c053c8618/pipeline-github-2.8-rc128.c19c053c8618.hpi
