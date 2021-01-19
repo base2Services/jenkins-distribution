@@ -114,7 +114,6 @@
       maxAttachmentSize: -1
       maxAttachmentSizeMb: 0
       precedenceBulk: false
-      useSsl: false
       watchingEnabled: false
     location:
       adminAddress: "ciinabox@base2services.com"
