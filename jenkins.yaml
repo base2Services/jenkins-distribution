@@ -101,7 +101,7 @@
       enabled: false
     experimentalPlugins:
       enabled: false
-    extendedEmailPublisher:
+    email-ext:
       adminRequiredForTemplateTesting: false
       allowUnregisteredEnabled: false
       charset: "UTF-8"
