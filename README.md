@@ -1,1 +1,1 @@
-# Base2 Jenkins Distrubtion
+# Base2 Jenkins Distribution
