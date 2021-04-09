@@ -27,4 +27,11 @@ jobs:
     - name: Scan image
       uses: anchore/scan-action@v2
       with:
+        debug: false
         image: "local/jenkins-distribution:latest"
+        fail-build: true
+        severity-cutoff: high
+        acs-report-enable: true
+    
+    - name: Inspect action SARIF report
+      run: cat ${{ steps.scan.outputs.sarif }}
