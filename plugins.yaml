@@ -19,7 +19,7 @@ plugins:
       version: 1.77
   - artifactId: jobConfigHistory
     source:
-      version: 2.26
+      version: 2.27
   - artifactId: artifact-manager-s3
     source:
       version: 1.12
@@ -28,7 +28,7 @@ plugins:
       version: 1.15.1
   - artifactId: role-strategy
     source: 
-      version: 2.16
+      version: 3.1.1
   - artifactId: ciinabox-build-notifier
     source:
       url: https://github.com/base2Services/ciinabox-build-notifier-plugin/releases/download/0.2.0/ciinabox-build-notifier.hpi
