@@ -27,7 +27,9 @@ jobs:
     - name: Scan image
       uses: anchore/scan-action@v2
       with:
+        debug: false
         image: "local/jenkins-distribution:latest"
+        severity-cutoff: critical
         acs-report-enable: true
     
     - name: Upload Anchore Scan Report
