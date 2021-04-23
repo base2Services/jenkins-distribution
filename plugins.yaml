@@ -46,7 +46,7 @@ plugins:
       version: 3.8
   - artifactId: pipeline-github
     source:
-      url: https://repo.jenkins-ci.org/incrementals/org/jenkins-ci/plugins/pipeline-github/2.8-rc128.c19c053c8618/pipeline-github-2.8-rc128.c19c053c8618.hpi
+      url: https://repo.jenkins-ci.org/incrementals/org/jenkins-ci/plugins/pipeline-github/2.8-134.4da108752a5e/pipeline-github-2.8-134.4da108752a5e.hpi
   - artifactId: ciinabox-gitops-plugin
     source:
       url: https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/refs/tags/0.2.2/ciinabox-gitops-plugin.hpi
