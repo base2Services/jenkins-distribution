@@ -53,3 +53,9 @@ plugins:
   - artifactId: slack
     source:
       version: 2.46
+  - artifactId: scm-filter-branch-pr
+    source:
+      version: 0.5.1
+  - artifactId: multibranch-build-strategy-extension
+    source:
+      version: 1.0.10
