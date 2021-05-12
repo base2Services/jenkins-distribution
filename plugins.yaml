@@ -49,7 +49,7 @@ plugins:
       url: https://repo.jenkins-ci.org/incrementals/org/jenkins-ci/plugins/pipeline-github/2.8-134.4da108752a5e/pipeline-github-2.8-134.4da108752a5e.hpi
   - artifactId: ciinabox-gitops-plugin
     source:
-      url: https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.3.1/ciinabox-gitops-plugin.hpi
+      url: https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.3.2/ciinabox-gitops-plugin.hpi
   - artifactId: slack
     source:
       version: 2.46
