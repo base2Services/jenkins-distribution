@@ -8,6 +8,15 @@ ENV JENKINS_EXPERIMENTAL_UPDATE_CENTER=https://jenkins-updates.cloudbees.com/upd
 
 COPY plugins.yaml $REF/plugins.yaml 
 
+USER root
+
+RUN apt-get update && \
+    apt-get install -y python3 python3-pip && \
+    rm -rf /var/lib/apt/lists/* && \
+    pip3 install git-remote-codecommit
+
+USER cloudbees-jenkins-distribution
+
 RUN java -jar $REF/jenkins-plugin-manager-$PLUGIN_MANAGER_VERSION.jar\
         --jenkins-update-center $JENKINS_UPDATE_CENTER \
         --jenkins-experimental-update-center $JENKINS_EXPERIMENTAL_UPDATE_CENTER \
