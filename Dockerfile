@@ -1,4 +1,4 @@
-FROM cloudbees/cloudbees-jenkins-distribution:2.289.1
+FROM cloudbees/cloudbees-jenkins-distribution:2.277.4.3
 
 ENV PLUGIN_MANAGER_VERSION=2.1.0
 RUN wget -P $REF "https://github.com/jenkinsci/plugin-installation-manager-tool/releases/download/$PLUGIN_MANAGER_VERSION/jenkins-plugin-manager-$PLUGIN_MANAGER_VERSION.jar"
