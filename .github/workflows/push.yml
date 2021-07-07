@@ -15,18 +15,24 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v1
 
+    - name: Login to  GitHub Container Repository
+      uses: docker/login-action@v1
+      with:
+        registry: ghcr.io
+        username: ${{ github.repository_owner }}
+        password: ${{ secrets.GHCR_PUSH_TOKEN }}
+
     - name: Build Container Image
       uses: docker/build-push-action@v2
       with:
-        tags: local/jenkins-distribution:latest
-        push: false
-        load: true
+        push: true
+        tags: ghcr.io/base2services/jenkins:snapshot_${{env.GITHUB_REF_SLUG}}
     
     - name: Scan image
       uses: anchore/scan-action@v2
       with:
         debug: false
-        image: "local/jenkins-distribution:latest"
+        image: ghcr.io/base2services/jenkins:snapshot_${{env.GITHUB_REF_SLUG}}
         severity-cutoff: critical
         acs-report-enable: true
     
@@ -34,9 +40,3 @@ jobs:
       uses: github/codeql-action/upload-sarif@v1
       with:
         sarif_file: results.sarif
-
-    - name: Build and push Container Image to GitHub Container Repository
-      uses: docker/build-push-action@v2
-      with:
-        push: true
-        tags: ghcr.io/base2services/jenkins-distribution:snapshot_${{env.GITHUB_REF_SLUG}}

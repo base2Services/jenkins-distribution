@@ -27,4 +27,4 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: ghcr.io/base2services/jenkins-distribution:${{ github.event.release.tag_name }},ghcr.io/base2services/jenkins-distribution:lts
+        tags: ghcr.io/base2services/jenkins:${{ github.event.release.tag_name }},ghcr.io/base2services/jenkins:lts
