@@ -34,21 +34,17 @@
           maxTotalUses: -1
           minimumNumberOfInstances: 0
           mode: EXCLUSIVE
-          monitoring: false
           numExecutors: 8
           remoteAdmin: "ec2-user"
           remoteFS: "/home/ec2-user"
           securityGroups: "sg-1234abcd"
           spotConfig:
             fallbackToOndemand: true
-          stopOnTerminate: false
           subnetId: "subnet-1234abcd"
-          t2Unlimited: false
           tags:
           - name: "Name"
             value: "ciianbox-agent-linux"
           type: T3Nano
-          useDedicatedTenancy: false
           useEphemeralDevices: false
         useInstanceProfileForCredentials: false
     disableRememberMe: false
@@ -97,32 +93,9 @@
           manageHooks: false
           repositoriesCacheDuration: 0
           teamCacheDuration: 0
-    buildStepOperation:
-      enabled: false
-    experimentalPlugins:
-      enabled: false
-    email-ext:
-      adminRequiredForTemplateTesting: false
-      allowUnregisteredEnabled: false
-      charset: "UTF-8"
-      debugMode: false
-      defaultBody: |-
-        $PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
-  
-        Check console output at $BUILD_URL to view the results.
-      defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
-      maxAttachmentSize: -1
-      maxAttachmentSizeMb: 0
-      precedenceBulk: false
-      watchingEnabled: false
     location:
       adminAddress: "ciinabox@base2services.com"
       url: "http://localhost:8080/"
-    mailer:
-      charset: "UTF-8"
-      useSsl: false
-    pollSCM:
-      pollingThreadCount: 10
     globalLibraries:
       libraries:
       - defaultVersion: "master"
