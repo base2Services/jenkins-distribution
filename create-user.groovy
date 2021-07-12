@@ -47,10 +47,6 @@ if (user == null && !bootstrap) {
   
   println "[ciinabox] - saving the user"
   user.save()
-  
-  println "[ciinabox] - set the user with admin"
-  def strategy = new hudson.security.ProjectMatrixAuthorizationStrategy()
-  strategy.add(Jenkins.ADMINISTER, username)
 }
 
 if (!bootstrap) {

@@ -95,9 +95,6 @@ plugins:
   - artifactId: configuration-as-code
     source:
       version: 1.51
-  - artifactId: configuration-as-code-support
-    source:
-      version: 1.19
   - artifactId: workflow-aggregator
     source:
       version: 2.6
@@ -212,3 +209,6 @@ plugins:
   - artifactId: matrix-auth
     source:
       version: 2.6.7
+  - artifactId: extended-read-permission
+    source:
+      version: 3.2

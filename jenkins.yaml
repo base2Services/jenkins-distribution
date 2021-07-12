@@ -4,11 +4,9 @@
     - "JNLP4-connect"
     - "Ping"
     authorizationStrategy:
-      loggedInUsersCanDoAnything:
-        allowAnonymousRead: false
-    crumbIssuer:
-      standard:
-        excludeClientIPFromCrumb: false
+      globalMatrix:
+        permissions:
+        - "Overall/Administer:ciinabox"
     clouds:
     - amazonEC2:
         cloudName: "linux"
@@ -67,13 +65,6 @@
       local:
         allowsSignup: false
         enableCaptcha: false
-    slaveAgentPort: 50000
-    updateCenter:
-      sites:
-      - id: "cloudbees-jenkins-distribution-offline"
-        url: "file:/var/cloudbees-jenkins-distribution/war/WEB-INF/plugins/update-center.json"
-      - id: "cap-cloudbees-jenkins-distribution"
-        url: "https://jenkins-updates.cloudbees.com/update-center/envelope-cloudbees-jenkins-distribution/update-center.json"
     views:
     - all:
         name: "all"
