@@ -13,6 +13,7 @@ services:
       - ./jenkins.yaml:/cfg/jenkins.yaml
     environment:
       CASC_JENKINS_CONFIG: /cfg/jenkins.yaml
+      PLUGINS_FORCE_UPGRADE: 'true'
       JAVA_OPTS: >-
           -Dhudson.TcpSlaveAgentListener.hostName=jenkins
           -Dhudson.TcpSlaveAgentListener.port=50000
