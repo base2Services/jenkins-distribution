@@ -202,7 +202,7 @@ plugins:
       version: 1.1.1
   - artifactId: matrix-auth
     source:
-      version: 2.6.7
+      version: 2.6.8
   - artifactId: extended-read-permission
     source:
       version: 3.2
