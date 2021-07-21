@@ -32,12 +32,6 @@ plugins:
   - artifactId: bitbucket-oauth
     source:
       version: 0.10
-  - artifactId: github-oauth
-    source:
-      version: 0.33
-  - artifactId: gitlab-oauth
-    source:
-      version: 1.10
   - artifactId: audit-trail
     source:
       version: 3.8
