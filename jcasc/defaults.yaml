@@ -1,0 +1,122 @@
+---
+jenkins:
+  agentProtocols:
+  - "JNLP4-connect"
+  - "Ping"
+  authorizationStrategy:
+    globalMatrix:
+      permissions:
+      - "Overall/Administer:ciinabox"
+  clouds:
+  - amazonEC2:
+      cloudName: "linux"
+      instanceCapStr: "1"
+      privateKey: ""
+      region: "ap-southeast-2"
+      templates:
+      - ami: "ami-1234abcd"
+        amiType:
+          unixData:
+            sshPort: "22"
+        associatePublicIp: false
+        connectBySSHProcess: false
+        connectionStrategy: PRIVATE_IP
+        deleteRootOnTermination: true
+        description: "Linux Agent"
+        ebsOptimized: false
+        iamInstanceProfile: ""
+        idleTerminationMinutes: "30"
+        instanceCapStr: "2"
+        labelString: "linux docker"
+        launchTimeoutStr: "300"
+        maxTotalUses: -1
+        minimumNumberOfInstances: 0
+        mode: EXCLUSIVE
+        numExecutors: 8
+        remoteAdmin: "ec2-user"
+        remoteFS: "/home/ec2-user"
+        securityGroups: "sg-1234abcd"
+        spotConfig:
+          fallbackToOndemand: true
+        subnetId: "subnet-1234abcd"
+        tags:
+        - name: "Name"
+          value: "ciianbox-agent-linux"
+        type: T3Nano
+        useEphemeralDevices: false
+      useInstanceProfileForCredentials: false
+  disableRememberMe: false
+  systemMessage: <h2>Welcome to CI In A Box 2.0!</h2>
+  markupFormatter:
+    rawHtml:
+      disableSyntaxHighlighting: true
+  mode: NORMAL
+  myViewsTabBar: "standard"
+  numExecutors: 0
+  primaryView:
+    all:
+      name: "all"
+  projectNamingStrategy: "standard"
+  quietPeriod: 5
+  remotingSecurity:
+    enabled: true
+  scmCheckoutRetryCount: 0
+  securityRealm:
+    local:
+      allowsSignup: false
+      enableCaptcha: false
+  views:
+  - all:
+      name: "all"
+  viewsTabBar: "standard"
+security:
+  apiToken:
+    creationOfLegacyTokenEnabled: false
+    tokenGenerationOnCreationEnabled: false
+    usageStatisticsEnabled: true
+  sSHD:
+    port: -1
+unclassified:
+  bitbucketEndpointConfiguration:
+    endpoints:
+    - bitbucketCloudEndpoint:
+        enableCache: false
+        manageHooks: false
+        repositoriesCacheDuration: 0
+        teamCacheDuration: 0
+  location:
+    adminAddress: "ciinabox@base2services.com"
+    url: "http://localhost:8080/"
+  globalLibraries:
+    libraries:
+    - defaultVersion: "master"
+      name: "ciinabox"
+      retriever:
+        modernSCM:
+          scm:
+            github:
+              repoOwner: "base2services"
+              repository: "ciinabox-pipelines"
+              traits:
+              - gitHubBranchDiscovery:
+                  strategyId: 1
+              - gitHubPullRequestDiscovery:
+                  strategyId: 1
+              - gitHubForkDiscovery:
+                  strategyId: 1
+                  trust: "gitHubTrustPermissions"
+  gitHubPluginConfig:
+    hookUrl: "http://localhost:8080/github-webhook/"
+  gitSCM:
+    createAccountBasedOnEmail: false
+  mavenModuleSet:
+    localRepository: "default"
+  pollSCM:
+    pollingThreadCount: 10
+  upstream:
+    globalUpstreamFilterStrategy: UseOldest
+tool:
+  git:
+    installations:
+    - home: "git"
+      name: "Default"

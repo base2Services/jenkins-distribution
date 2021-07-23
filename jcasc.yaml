@@ -1,0 +1,3 @@
+jenkins:
+  systemMessage: local ciinabox jenkins distribution
+  numExecutors: 0
