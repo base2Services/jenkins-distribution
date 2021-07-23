@@ -6,7 +6,6 @@ import click
 import yaml
 import boto3
 import requests
-import base64
 from deepmerge import Merger
 
 @click.command()
@@ -14,10 +13,14 @@ from deepmerge import Merger
 @click.option('--merge/--no-merge', default=True, help='dont use the default jcasc yaml file')
 @click.option('--s3-bucket', help='jcasc yaml s3 bucket')
 @click.option('--s3-prefix', default='jcasc', help='jcasc yaml s3 prefix')
-@click.option('--local-path', help='jcasc yaml local path')
+@click.option('--local-jcasc', help='jcasc yaml local path')
 @click.option('--jenkins-url', help='jenkins url')
-def run(jcasc_yaml, merge, s3_bucket, s3_prefix, local_path, jenkins_url):
+def run(jcasc_yaml, merge, s3_bucket, s3_prefix, local_jcasc, jenkins_url):
     ref_path = os.environ.get('REF', '.')
+    
+    jcasc_reload_token = os.environ.get('JCASC_RELOAD_TOKEN')
+    if jenkins_url and not jcasc_reload_token:
+        raise click.ClickException('jcasc relead token not provided by environemnt variable JCASC_RELOAD_TOKEN')
 
     if merge:
         click.echo(f"merging jcasc yaml {jcasc_yaml} with defaults")
@@ -25,16 +28,34 @@ def run(jcasc_yaml, merge, s3_bucket, s3_prefix, local_path, jenkins_url):
 
     if s3_bucket:
         s3_path = f'{s3_prefix}/jenkins.yaml'
+        click.echo(f"backing up jcasc yaml in s3 bucket {s3_bucket}/{s3_path}")
+        s3_copy(s3_bucket, s3_path, f'{s3_path}.bak')
         click.echo(f"uploading jcasc yaml to s3 bucket {s3_bucket}/{s3_path}")
         s3_upload(s3_bucket, s3_path, jcasc_yaml)
-    elif local_path:
-        click.echo(f"copying jcasc yaml to local path {local_path}")
-        local_copy(local_path, jcasc_yaml)
+    elif local_jcasc:
+        click.echo(f"backing up local jcasc file {local_jcasc}  to {local_jcasc}.bak")
+        local_copy(local_jcasc, f'{local_jcasc}.bak')
+        click.echo(f"copying jcasc yaml to local file {local_jcasc}")
+        local_copy(jcasc_yaml, local_jcasc)
 
     if jenkins_url:
         click.echo(f'releading jcasc for Jenkins {jenkins_url}')
-        reload_jcasc(jenkins_url)
-        click.echo(f'jcasc config has been releaded')
+        reload_success = reload_jcasc(jenkins_url, jcasc_reload_token)
+
+        if not reload_success:
+            click.echo('attempting to rollback jcasc changes ...')
+
+            if s3_bucket:
+                s3_path = f'{s3_prefix}/jenkins.yaml'
+                click.echo(f"rolling back jcasc yaml in s3 bucket {s3_bucket}/{s3_path}")
+                s3_copy(s3_bucket, f'{s3_path}.bak', s3_path)
+            elif local_jcasc:
+                click.echo(f"rolling back local backup jcasc file {local_jcasc}.bak to {local_jcasc}")
+                local_copy(f'{local_jcasc}.bak', local_jcasc)
+
+            raise click.ClickException('failed to reload jcasc, check your checkings logs for more details')
+
+        click.echo(f'jcasc config has been reloaded')
 
 
 def str_presenter(dumper, data):
@@ -44,34 +65,66 @@ def str_presenter(dumper, data):
     return dumper.represent_scalar('tag:yaml.org,2002:str', data)
 
 
+def jcasc_dict_merge(config, path, base, nxt):
+    """
+    if keys match particular jcasc keys that cannont be merged then override
+    for keys that do not exists, use them directly. 
+    if the key exists in both dictionaries, attempt a value merge.
+    """
+    for k, v in nxt.items():
+        if k in ['authorizationStrategy']:
+            base[k] = v
+        elif k not in base:
+            base[k] = v
+        else:
+            base[k] = config.value_strategy(path + [k], base[k], v)
+    return base
+
+
 def merger(ref_path, overriding_jcasc_yaml):
+    # load the jcasc defaults bundles int he docker image
     with open(f'{ref_path}/defaults.yaml') as file:       
         default_jcasc = yaml.load(file, Loader=yaml.FullLoader)
-
+    
+    # load the user supplied jcasc
     with open(overriding_jcasc_yaml) as file:       
         overriding_jcasc = yaml.load(file, Loader=yaml.FullLoader)
 
+    # set up the merger with the merge stratigies
     jcasc_merger = Merger(
         [
             (list, ["override"]),
-            (dict, ["merge"]),
+            (dict, [jcasc_dict_merge]),
             (set, ["union"])
         ],
+        # fallback strategy
         ["override"],
+        # conflict strategy
         ["override"]
     )
 
     merged = jcasc_merger.merge(default_jcasc, overriding_jcasc)
 
+    # add the custom multi line string formatter
     yaml.add_representer(str, str_presenter)
 
     merged_jacsc = f'{ref_path}/jenkins.yaml'
 
+    # write our merged jcasc yaml
     with open(merged_jacsc, 'w') as outfile:
         yaml.dump(merged, outfile, default_flow_style=False)
 
     return merged_jacsc
 
+
+def s3_copy(bucket, path, copy_path):
+    s3 = boto3.resource('s3')
+    bucket = s3.Bucket(bucket)
+    obj = bucket.Object(path)
+    obj.copy({
+        'Bucket': bucket,
+        'Key': copy_path
+    })
 
 def s3_upload(bucket, path, jcasc_yaml):
     s3 = boto3.resource('s3')
@@ -79,22 +132,16 @@ def s3_upload(bucket, path, jcasc_yaml):
     bucket.upload_file(jcasc_yaml, path)
 
 
-def local_copy(path, jcasc_yaml):
+def local_copy(jcasc_yaml, path):
     shutil.copy(jcasc_yaml, path)
 
-def reload_jcasc(jenkins_url):
-    jenkins_api_key = os.environ.get('JENKINS_API_KEY')
-    jenkins_username = os.environ.get('JENKINS_USERNAME')
 
-    if not jenkins_api_key or not jenkins_username:
-        raise click.ClickException('one or more environemnt variables of JENKINS_API_KEY, JENKINS_USERNAME are not set')
-
-    auth = base64.b64encode(f"{jenkins_username}:{jenkins_api_key}".encode('ascii')).decode('ascii')
-    url = f"{jenkins_url}/configuration-as-code/reload"
-    response = requests.post(url, headers={'Authorization': f'Basic {auth}'})
-
+def reload_jcasc(jenkins_url, jcasc_reload_token):
+    response = requests.post(f"{jenkins_url}/reload-configuration-as-code/?casc-reload-token={jcasc_reload_token}")
     if response.status_code != 200:
-        raise click.ClickException(f'failed to reload jenkins jcasc via the jcasc reload url /configuration-as-code/reload')
+        click.echo(f'failed to reload jenkins jcasc via the jcasc reload url /reload-configuration-as-code/?casc-reload-token=****', err=True)
+        return False
+    return True
 
 if __name__ == '__main__':
     run()
