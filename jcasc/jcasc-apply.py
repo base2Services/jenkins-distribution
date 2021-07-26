@@ -5,6 +5,7 @@ import shutil
 import click
 import yaml
 import boto3
+from botocore.exceptions import ClientError
 import requests
 from deepmerge import Merger
 
@@ -40,9 +41,9 @@ def run(jcasc_yaml, merge, s3_bucket, s3_prefix, local_jcasc, jenkins_url):
 
     if jenkins_url:
         click.echo(f'releading jcasc for Jenkins {jenkins_url}')
-        reload_success = reload_jcasc(jenkins_url, jcasc_reload_token)
+        reloaded = reload_jcasc(jenkins_url, jcasc_reload_token)
 
-        if not reload_success:
+        if not reloaded:
             click.echo('attempting to rollback jcasc changes ...')
 
             if s3_bucket:
@@ -120,11 +121,16 @@ def merger(ref_path, overriding_jcasc_yaml):
 def s3_copy(bucket, path, copy_path):
     s3 = boto3.resource('s3')
     bucket = s3.Bucket(bucket)
-    obj = bucket.Object(path)
-    obj.copy({
-        'Bucket': bucket,
-        'Key': copy_path
-    })
+    try:
+        bucket.Object(path).copy({
+            'Bucket': bucket,
+            'Key': copy_path
+        })
+    except ClientError as ex:
+        if 'Not Found' in ex.response['Error']['Message']:
+            click.echo(f'unable to copy s3 file {path} as file doesn\'t exist in bucket {bucket}')
+        else:
+            raise
 
 def s3_upload(bucket, path, jcasc_yaml):
     s3 = boto3.resource('s3')
