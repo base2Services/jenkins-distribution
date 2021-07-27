@@ -118,17 +118,15 @@ def merger(ref_path, overriding_jcasc_yaml):
     return merged_jacsc
 
 
-def s3_copy(bucket, path_copy_from, path_copy_to):
+def s3_copy(bucket_name, path_copy_from, path_copy_to):
     s3 = boto3.resource('s3')
-    bucket = s3.Bucket(bucket)
+    bucket = s3.Bucket(bucket_name)
+    newobj = bucket.Object(path_copy_to)
     try:
-        bucket.Object(path_copy_to).copy({
-            'Bucket': bucket,
-            'Key': path_copy_from
-        })
+        newobj.copy({'Bucket': bucket_name, 'Key': path_copy_from})
     except ClientError as ex:
         if 'Not Found' in ex.response['Error']['Message']:
-            click.echo(f'unable to copy s3 file {path} as file doesn\'t exist in bucket {bucket}')
+            click.echo(f'unable to copy s3 file {path_copy_from} as file doesn\'t exist in bucket {bucket}')
         else:
             raise
 
