@@ -142,8 +142,11 @@ def local_copy(jcasc_yaml, path):
 
 def reload_jcasc(jenkins_url, jcasc_reload_token):
     response = requests.post(f"{jenkins_url}/reload-configuration-as-code/?casc-reload-token={jcasc_reload_token}")
-    if response.status_code != 200:
-        click.echo(f'failed to reload jenkins jcasc via the jcasc reload url /reload-configuration-as-code/?casc-reload-token=****', err=True)
+    if response.status_code == 403:
+        click.echo(f"failed to authenticate to jenkins, check JCASC_RELOAD_TOKEN env var is set on your Jenkins instance.", err=True)
+        return False
+    elif response.status_code != 200:
+        click.echo(f'failed to reload jenkins jcasc via the jcasc reload url /reload-configuration-as-code/?casc-reload-token=**** with status code {response.status_code}', err=True)
         return False
     return True
 
