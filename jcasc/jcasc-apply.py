@@ -118,13 +118,13 @@ def merger(ref_path, overriding_jcasc_yaml):
     return merged_jacsc
 
 
-def s3_copy(bucket, path, copy_path):
+def s3_copy(bucket, path_copy_from, path_copy_to):
     s3 = boto3.resource('s3')
     bucket = s3.Bucket(bucket)
     try:
-        bucket.Object(path).copy({
+        bucket.Object(path_copy_to).copy({
             'Bucket': bucket,
-            'Key': copy_path
+            'Key': path_copy_from
         })
     except ClientError as ex:
         if 'Not Found' in ex.response['Error']['Message']:
