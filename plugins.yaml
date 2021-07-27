@@ -173,9 +173,6 @@ plugins:
   - artifactId: windows-slaves
     source:
       version: 1.8
-  - artifactId: azure-publishersettings-credentials
-    source:
-      version: 1.5
   - artifactId: blueocean
     source:
       version: 1.24.8
