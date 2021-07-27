@@ -31,7 +31,7 @@ plugins:
       version: 0.10
   - artifactId: audit-trail
     source:
-      version: 3.8
+      version: 3.10
   - artifactId: pipeline-github
     source:
       url: https://repo.jenkins-ci.org/incrementals/org/jenkins-ci/plugins/pipeline-github/2.8-134.4da108752a5e/pipeline-github-2.8-134.4da108752a5e.hpi
