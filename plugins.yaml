@@ -10,7 +10,7 @@ plugins:
         version: 1.43
   - artifactId: pipeline-utility-steps
     source:
-        version: 2.8.0
+        version: 2.10.0
   - artifactId: job-dsl
     source:
       version: 1.77
@@ -121,7 +121,7 @@ plugins:
       version: 1.6
   - artifactId: saml
     source:
-      version: 2.0.7
+      version: 2.0.8
   - artifactId: jquery
     source:
       version: 1.12.4-1
