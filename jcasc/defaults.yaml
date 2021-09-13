@@ -77,6 +77,14 @@ security:
   sSHD:
     port: -1
 unclassified:
+  audit-trail:
+    logBuildCause: true
+    loggers:
+    - console:
+        dateFormat: "yyyy-MM-dd HH:mm:ss:SSS"
+        logPrefix: "audit"
+        output: STD_OUT
+    pattern: ".*/(?:configSubmit|doDelete|postBuildResult|enable|disable|cancelQueue|stop|toggleLogKeep|doWipeOutWorkspace|createItem|createView|toggleOffline|cancelQuietDown|quietDown|restart|exit|safeExit)/?.*"
   bitbucketEndpointConfiguration:
     endpoints:
     - bitbucketCloudEndpoint:
