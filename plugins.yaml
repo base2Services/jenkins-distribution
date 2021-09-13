@@ -1,7 +1,7 @@
 plugins:
   - artifactId: aws-secrets-manager-credentials-provider
     source:
-      version: 0.5.3
+      version: 0.5.4
   - artifactId: configuration-as-code-secret-ssm
     source:
         version: 1.0.1
@@ -97,7 +97,7 @@ plugins:
       version: 0.33
   - artifactId: gitlab-oauth
     source:
-      version: 1.10
+      version: 1.12
   - artifactId: github-checks
     source:
       version: 1.0.13
