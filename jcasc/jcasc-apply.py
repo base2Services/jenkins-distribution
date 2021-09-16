@@ -73,7 +73,8 @@ def jcasc_dict_merge(config, path, base, nxt):
     if the key exists in both dictionaries, attempt a value merge.
     """
     for k, v in nxt.items():
-        if k in ['authorizationStrategy']:
+        # keys where a single entry map is expected
+        if k in ['authorizationStrategy', 'securityRealm']:
             base[k] = v
         elif k not in base:
             base[k] = v
