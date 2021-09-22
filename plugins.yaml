@@ -200,3 +200,6 @@ plugins:
   - artifactId: extended-read-permission
     source:
       version: 3.2
+  - artifactId: amazon-ecs
+    source:
+      version: 1.38
