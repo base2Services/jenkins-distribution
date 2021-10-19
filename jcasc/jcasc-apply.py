@@ -9,6 +9,7 @@ import fileinput
 from botocore.exceptions import ClientError
 import requests
 from deepmerge import Merger
+import pathlib
 
 @click.command()
 @click.option('--jcasc-yaml', required=True, help='jcasc yaml file to apply to jenkins, if none is supplied the default jcasc yaml is used')
@@ -202,7 +203,7 @@ def add_job_to_jcasc(jcasc_yaml, file_name):
     write_yaml_file(jcasc_yaml, current_jcasc)
 
 def file_exists(file_name):
-    os.path.isfile(file_name)
+    return os.path.isfile(file_name)
 
 
 if __name__ == '__main__':
