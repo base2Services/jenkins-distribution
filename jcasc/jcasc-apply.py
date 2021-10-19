@@ -9,7 +9,6 @@ import fileinput
 from botocore.exceptions import ClientError
 import requests
 from deepmerge import Merger
-import pathlib
 
 @click.command()
 @click.option('--jcasc-yaml', required=True, help='jcasc yaml file to apply to jenkins, if none is supplied the default jcasc yaml is used')
