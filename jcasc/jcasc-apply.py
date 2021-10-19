@@ -25,6 +25,13 @@ def run(jcasc_yaml, merge, s3_bucket, s3_prefix, local_jcasc, jenkins_url, param
     if jenkins_url and not jcasc_reload_token:
         raise click.ClickException('jcasc relead token not provided by environemnt variable JCASC_RELOAD_TOKEN')
 
+    # If parameters yaml not set, check if default value exists, otherwise set as None
+    if not parameters_yaml:
+        if file_exists('parameters.yaml'):
+            parameters_yaml = 'parameters.yaml'
+        else:
+            parameters_yaml =  None
+
     # over-ride values with default config or config from parameters.yaml if set
     update_file_from_config(f'{ref_path}/jenkmon.txt', config_parameters(ref_path, parameters_yaml))
 
@@ -178,7 +185,7 @@ def update_file_from_config(file_name, parameters_dict):
 def config_parameters(ref_path, parameters_yaml):
     parameters = read_yaml_file(f'{ref_path}/default_parameters.yaml')
     if parameters_yaml is not None:
-        override_parameters = read_yaml_file(f'{ref_path}/{parameters_yaml}')
+        override_parameters = read_yaml_file(parameters_yaml)
         parameters = {**parameters, **override_parameters}
     return parameters.items()
 
@@ -194,6 +201,8 @@ def add_job_to_jcasc(jcasc_yaml, file_name):
         current_jcasc['jobs'] = [script_dict]
     write_yaml_file(jcasc_yaml, current_jcasc)
 
+def file_exists(file_name):
+    os.path.isfile(file_name)
 
 
 if __name__ == '__main__':
