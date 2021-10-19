@@ -29,7 +29,7 @@ def run(jcasc_yaml, merge, s3_bucket, s3_prefix, local_jcasc, jenkins_url, param
     update_file_from_config(f'{ref_path}/jenkmon.txt', config_parameters(ref_path, parameters_yaml))
 
     # add jenkmon to jcasc
-    add_job_to_jcasc(f'{ref_path}/{jcasc_yaml}', f'{ref_path}/jenkmon.txt')
+    add_job_to_jcasc(jcasc_yaml, f'{ref_path}/jenkmon.txt')
 
     if merge:
         click.echo(f"merging jcasc yaml {jcasc_yaml} with defaults")
