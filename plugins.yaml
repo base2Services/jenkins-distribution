@@ -85,7 +85,7 @@ plugins:
       version: 2.5.2
   - artifactId: configuration-as-code
     source:
-      version: 1.52
+      version: 1.54
   - artifactId: workflow-aggregator
     source:
       version: 2.6

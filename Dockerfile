@@ -19,6 +19,9 @@ COPY init.groovy.d/ $REF/init.groovy.d/
 
 COPY --chown=jenkins:jenkins jcasc/defaults.yaml /cfg/jenkins.yaml
 COPY jcasc/defaults.yaml $REF/defaults.yaml
+COPY jcasc/default_parameters.yaml $REF/default_parameters.yaml
+COPY jcasc/jenkmon.txt $REF/jenkmon.txt
+
 COPY jcasc/jcasc-apply.py /usr/local/bin/jcasc-apply
 
 # so we can run this in code build
