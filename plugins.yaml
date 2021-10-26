@@ -91,7 +91,7 @@ plugins:
       version: 2.6
   - artifactId: blueocean-jira
     source:
-      version: 1.24.8
+      version: 1.25.1
   - artifactId: github-oauth
     source:
       version: 0.33
@@ -175,7 +175,7 @@ plugins:
       version: 1.8
   - artifactId: blueocean
     source:
-      version: 1.24.8
+      version: 1.25.1
   - artifactId: parameterized-trigger
     source:
       version: 2.41
