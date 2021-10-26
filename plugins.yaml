@@ -160,7 +160,7 @@ plugins:
       version: 1.0
   - artifactId: ec2
     source:
-      version: 1.63
+      version: 1.66
   - artifactId: mstestrunner
     source:
       version: 1.3.0
