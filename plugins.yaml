@@ -64,7 +64,7 @@ plugins:
       version: 1.12
   - artifactId: nodejs
     source:
-      version: 1.4.0
+      version: 1.4.1
   - artifactId: electricflow
     source:
       version: 1.1.23
