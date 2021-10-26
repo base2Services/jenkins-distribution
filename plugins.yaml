@@ -61,7 +61,7 @@ plugins:
       version: 1.37.1
   - artifactId: ant
     source:
-      version: 1.11
+      version: 1.12
   - artifactId: nodejs
     source:
       version: 1.4.0
