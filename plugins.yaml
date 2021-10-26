@@ -94,7 +94,7 @@ plugins:
       version: 1.25.1
   - artifactId: github-oauth
     source:
-      version: 0.33
+      version: 0.34
   - artifactId: gitlab-oauth
     source:
       version: 1.12
