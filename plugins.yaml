@@ -139,7 +139,7 @@ plugins:
       version: 1.26
   - artifactId: dashboard-view
     source:
-      version: 2.17
+      version: 2.18
   - artifactId: external-monitor-job
     source:
       version: 1.7
