@@ -118,7 +118,7 @@ plugins:
       version: 1.5.1
   - artifactId: pam-auth
     source:
-      version: 1.6
+      version: 1.6.1
   - artifactId: saml
     source:
       version: 2.0.9
@@ -178,7 +178,7 @@ plugins:
       version: 1.25.2
   - artifactId: parameterized-trigger
     source:
-      version: 2.41
+      version: 2.42
   - artifactId: secure-requester-whitelist
     source:
       version: 1.6
