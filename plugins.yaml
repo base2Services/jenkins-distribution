@@ -79,7 +79,7 @@ plugins:
       version: 9.5.1
   - artifactId: timestamper
     source:
-      version: 1.13
+      version: 1.14
   - artifactId: dockerhub-notification
     source:
       version: 2.5.3
