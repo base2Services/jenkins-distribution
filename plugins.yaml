@@ -19,7 +19,7 @@ plugins:
       version: 2.28.1
   - artifactId: artifact-manager-s3
     source:
-      version: 1.18
+      version: 1.16
   - artifactId: greenballs
     source:
       version: 1.15.1
