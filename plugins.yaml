@@ -76,7 +76,7 @@ plugins:
       version: 0.10
   - artifactId: warnings-ng
     source:
-      version: 9.5.1
+      version: 9.8.0
   - artifactId: timestamper
     source:
       version: 1.14
