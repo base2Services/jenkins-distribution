@@ -175,7 +175,7 @@ plugins:
       version: 1.8
   - artifactId: blueocean
     source:
-      version: 1.25.1
+      version: 1.25.2
   - artifactId: parameterized-trigger
     source:
       version: 2.41
