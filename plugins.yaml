@@ -169,7 +169,7 @@ plugins:
       version: 2.85
   - artifactId: s3
     source:
-      version: 0.12.0
+      version: 0.12.1
   - artifactId: windows-slaves
     source:
       version: 1.8
