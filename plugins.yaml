@@ -1,7 +1,7 @@
 plugins:
   - artifactId: aws-secrets-manager-credentials-provider
     source:
-      version: 0.5.5
+      version: 0.5.6
   - artifactId: configuration-as-code-secret-ssm
     source:
         version: 1.0.1
@@ -13,7 +13,7 @@ plugins:
         version: 2.10.0
   - artifactId: job-dsl
     source:
-      version: 1.77
+      version: 1.78.1
   - artifactId: jobConfigHistory
     source:
       version: 2.28.1
@@ -40,7 +40,7 @@ plugins:
       url: https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.3.6/ciinabox-gitops-plugin.hpi
   - artifactId: slack
     source:
-      version: 2.48
+      version: 2.49
   - artifactId: scm-filter-branch-pr
     source:
       version: 0.5.1
@@ -64,7 +64,7 @@ plugins:
       version: 1.12
   - artifactId: nodejs
     source:
-      version: 1.4.1
+      version: 1.4.2
   - artifactId: electricflow
     source:
       version: 1.1.24
@@ -76,10 +76,10 @@ plugins:
       version: 0.10
   - artifactId: warnings-ng
     source:
-      version: 9.5.1
+      version: 9.8.0
   - artifactId: timestamper
     source:
-      version: 1.13
+      version: 1.14
   - artifactId: dockerhub-notification
     source:
       version: 2.5.3
@@ -91,7 +91,7 @@ plugins:
       version: 2.6
   - artifactId: blueocean-jira
     source:
-      version: 1.25.1
+      version: 1.25.2
   - artifactId: github-oauth
     source:
       version: 0.34
@@ -118,7 +118,7 @@ plugins:
       version: 1.5.1
   - artifactId: pam-auth
     source:
-      version: 1.6
+      version: 1.6.1
   - artifactId: saml
     source:
       version: 2.0.9
@@ -166,19 +166,19 @@ plugins:
       version: 1.3.0
   - artifactId: email-ext
     source:
-      version: 2.84
+      version: 2.85
   - artifactId: s3
     source:
-      version: 0.12.0
+      version: 0.12.1
   - artifactId: windows-slaves
     source:
       version: 1.8
   - artifactId: blueocean
     source:
-      version: 1.25.1
+      version: 1.25.2
   - artifactId: parameterized-trigger
     source:
-      version: 2.41
+      version: 2.42
   - artifactId: secure-requester-whitelist
     source:
       version: 1.6
