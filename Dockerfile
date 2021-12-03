@@ -1,4 +1,6 @@
-FROM jenkins/jenkins:2.303.3-jdk11
+FROM jenkins/jenkins:2.319.1-jdk11
+
+LABEL org.opencontainers.image.source = https://github.com/base2Services/jenkins-distribution
 
 USER root
 
