@@ -1,5 +1,7 @@
 FROM jenkins/jenkins:2.319.1-jdk11
 
+LABEL org.opencontainers.image.source = https://github.com/base2Services/jenkins-distribution
+
 USER root
 
 COPY requirements.txt $REF/requirements.txt
