@@ -172,7 +172,7 @@ plugins:
       version: 2.7
   - artifactId: pipeline-rest-api
     source:
-      version: 2.19
+      version: 2.21
   - artifactId: handlebars
     source:
       version: 3.0.8
