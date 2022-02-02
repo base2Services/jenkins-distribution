@@ -43,7 +43,6 @@ jobs:
         image: local/jenkins-distribution:latest
         options: -u root -v ${{ github.workspace }}:/src
         run: |
-          ls -la /src
           jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml --output yaml > /src/plugins.yaml
           jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml > /src/available-plugin-updates.txt
 
@@ -56,15 +55,9 @@ jobs:
 
     - name: commit and push any plugin changes
       run: |
-        echo "================================"
-        echo "==> Available Plugin Updates <=="
-        echo "================================"
-        echo ""
         cat available-plugin-updates.txt
-        echo ""
-        echo "================================"
-        echo "==> committing plugin changes <=="
-        echo "================================"
+        git config --global user.email github@base2services.com
+        git config --global user.name base2bot
         git add plugins.yaml
         git commit -m 'automated plugin updates'
         git push origin plugin-updates-${{ steps.current-time.outputs.formattedTime }}
