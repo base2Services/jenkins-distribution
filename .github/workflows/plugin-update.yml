@@ -43,6 +43,11 @@ jobs:
         image: local/jenkins-distribution:latest
         options: -u root
         run: |
+          whoami
+          pwd
+          ls -la
+          ls -la /github/workflow
+          ls -la /github/workspace
           jenkins-plugin-cli --available-updates --plugin-file plugins.old.yaml --output yaml > plugins.yaml
           jenkins-plugin-cli --available-updates --plugin-file plugins.old.yaml > available-plugin-updates.txt
 
