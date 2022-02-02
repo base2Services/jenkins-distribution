@@ -22,9 +22,10 @@ jobs:
       with:
         format: YYYYMMDDHHmm
 
-    - name: checkout new branch
+    - name: setup
       run: |
         git checkout -b plugin-updates-${{ steps.current-time.outputs.formattedTime }}
+        cp plugins.yaml plugins.old.yaml
 
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v1
@@ -40,7 +41,10 @@ jobs:
       uses: addnab/docker-run-action@v3
       with:
         image: local/jenkins-distribution:latest
-        run: jenkins-plugin-cli --available-updates --plugin-file plugins.yaml --output yaml > plugins.yaml
+        options: -u root
+        run: |
+          jenkins-plugin-cli --available-updates --plugin-file plugins.old.yaml --output yaml > plugins.yaml
+          jenkins-plugin-cli --available-updates --plugin-file plugins.old.yaml > available-plugin-updates.txt
 
     - name: check plugin.yaml diff
       id: git-diff
@@ -51,6 +55,15 @@ jobs:
 
     - name: commit and push any plugin changes
       run: |
+        echo "================================"
+        echo "==> Available Plugin Updates <=="
+        echo "================================"
+        echo ""
+        cat available-plugin-updates.txt
+        echo ""
+        echo "================================"
+        echo "==> committing plugin changes <=="
+        echo "================================"
         git add plugins.yaml
         git commit -m 'automated plugin updates'
         git push origin plugin-updates-${{ steps.current-time.outputs.formattedTime }}
