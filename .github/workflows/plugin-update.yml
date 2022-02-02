@@ -1,0 +1,29 @@
+name: update jenkins plugins
+
+on:
+  schedule:
+      - cron: "0 8 * * 1"
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out the repo
+      uses: actions/checkout@v2
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
+
+    - name: Build Container Image
+      uses: docker/build-push-action@v2
+      with:
+        tags: local/jenkins-distribution:latest
+        push: false
+        load: true
+
+    - uses: addnab/docker-run-action@v3
+      with:
+        image: local/jenkins-distribution:latest
+        run: jenkins-plugin-cli --available-updates --plugin-file /usr/share/jenkins/ref/plugins.yaml --output yaml
