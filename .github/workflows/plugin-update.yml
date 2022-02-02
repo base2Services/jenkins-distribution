@@ -1,6 +1,9 @@
 name: update jenkins plugins
 
 on:
+  push:
+    branches:
+      - feature/gh-action-plugin-updater
   schedule:
       - cron: "0 8 * * 1"
 
