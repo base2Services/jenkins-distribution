@@ -40,8 +40,7 @@ jobs:
       uses: addnab/docker-run-action@v3
       with:
         image: local/jenkins-distribution:latest
-        options: -v ${{ github.workspace }}/plugins.yaml:/src/plugins.yaml
-        run: jenkins-plugin-cli --available-updates --plugin-file /src/plugins.yaml --output yaml > /src/plugins.yaml
+        run: jenkins-plugin-cli --available-updates --plugin-file plugins.yaml --output yaml > plugins.yaml
 
     - name: check plugin.yaml diff
       id: git-diff
