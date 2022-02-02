@@ -24,7 +24,7 @@ jobs:
 
     - name: checkout new branch
       run: |
-        git checkout -b plugin-updates-${{ steps.current-time.outputs.time }}
+        git checkout -b plugin-updates-${{ steps.current-time.outputs.formattedTime }}
 
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v1
@@ -54,5 +54,5 @@ jobs:
       run: |
         git add plugins.yaml
         git commit -m 'automated plugin updates'
-        git push origin plugin-updates-${{ steps.current-time.outputs.time }}
+        git push origin plugin-updates-${{ steps.current-time.outputs.formattedTime }}
       if: steps.git-diff.outputs.diff
