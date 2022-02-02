@@ -41,15 +41,11 @@ jobs:
       uses: addnab/docker-run-action@v3
       with:
         image: local/jenkins-distribution:latest
-        options: -u root
+        options: -u root -v ${{ github.workspace }}:/src
         run: |
-          whoami
-          pwd
-          ls -la
-          ls -la /github/workflow
-          ls -la /github/workspace
-          jenkins-plugin-cli --available-updates --plugin-file plugins.old.yaml --output yaml > plugins.yaml
-          jenkins-plugin-cli --available-updates --plugin-file plugins.old.yaml > available-plugin-updates.txt
+          ls -la /src
+          jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml --output yaml > /src/plugins.yaml
+          jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml > /src/available-plugin-updates.txt
 
     - name: check plugin.yaml diff
       id: git-diff
