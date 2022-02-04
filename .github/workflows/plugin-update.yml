@@ -32,7 +32,6 @@ jobs:
 
     - name: check for plugin updates
       uses: addnab/docker-run-action@v3
-      id: plugin-updates
       with:
         image: ghcr.io/base2services/jenkins-distribution:latest_plugins
         options: -u root -v ${{ github.workspace }}:/src
@@ -49,11 +48,10 @@ jobs:
           plugins.yaml
 
     - name: set PR body output
+      id: plugin-updates
       run: |
         plugins=$(< available-plugin-updates.txt)
-        echo "$plugins"
         plugins="${plugins//$'\n'/'%0A'}"
-        echo "$plugins"
         echo "::set-output name=plugins::$plugins"
 
     - name: create pull request
