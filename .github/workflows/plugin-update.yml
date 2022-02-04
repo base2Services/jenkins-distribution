@@ -1,0 +1,70 @@
+name: update jenkins plugins
+
+on:
+  schedule:
+  - cron: "0 8 * * 1"
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out the repo
+      uses: actions/checkout@v2
+
+    - name: setup
+      run: |
+        cp plugins.yaml plugins.old.yaml
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
+
+    - name: Build Container Image
+      uses: docker/build-push-action@v2
+      with:
+        tags: ghcr.io/base2services/jenkins-distribution:latest_plugins
+        push: false
+        load: true
+
+    - name: check for plugin updates
+      uses: addnab/docker-run-action@v3
+      with:
+        image: ghcr.io/base2services/jenkins-distribution:latest_plugins
+        options: -u root -v ${{ github.workspace }}:/src
+        shell: bash
+        run: |
+          jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml --output yaml > /src/plugins.yaml
+          jenkins-plugin-cli --available-updates --plugin-file $REF/plugins.yaml > /src/available-plugin-updates.txt
+
+    - name: check plugin.yaml diff
+      id: git-diff
+      uses: technote-space/get-diff-action@v6
+      with:
+        FILES: |
+          plugins.yaml
+
+    - name: set PR body output
+      id: plugin-updates
+      run: |
+        # github actions doesn't support multiline strings so we have to escape them
+        plugins=$(< available-plugin-updates.txt)
+        plugins="${plugins//$'\n'/'%0A'}"
+        echo "::set-output name=plugins::$plugins"
+
+    - name: create pull request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        branch: patch/plugin-updates
+        commit-message: automated plugin updates
+        add-paths: |
+          plugins.yaml
+        committer: base2bot <noreply@base2services.com>
+        delete-branch: true
+        title: Jenkins plugin updates
+        body: |
+          ${{ steps.plugin-updates.outputs.plugins }}
+        labels: |
+          plugin-updates
+          jenkins-distribution
+      if: steps.git-diff.outputs.diff
