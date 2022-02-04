@@ -1,0 +1,31 @@
+name: slack notify
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: send pull request notification to slack
+      uses: slackapi/slack-github-action@v1.18.0
+      with:
+        payload: |
+          {
+            "text": "Jenkins Distribution Pull-Request",
+            "blocks": [
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": "Title: ${{ github.event.pull_request.title }}\nURL: ${{ github.event.pull_request.html_url }}\nOpened By: ${{ github.event.pull_request.user.login }}"
+                }
+              }
+            ]
+          }
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
