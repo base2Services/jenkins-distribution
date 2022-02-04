@@ -40,9 +40,6 @@ jobs:
         run: |
           jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml --output yaml > /src/plugins.yaml
           jenkins-plugin-cli --available-updates --plugin-file $REF/plugins.yaml > available-plugin-updates.txt
-          plugins=$(< cat available-plugin-updates.txt)
-          plugin_json=$(printf '%s' "$plugins" | jq --raw-input --slurp '.')
-          echo "::set-output name=plugins::$plugin_json"
 
     - name: check plugin.yaml diff
       id: git-diff
@@ -50,6 +47,12 @@ jobs:
       with:
         FILES: |
           plugins.yaml
+
+    - name: set PR body output
+      run: |
+        plugins=$(< available-plugin-updates.txt)
+        plugin_json=$(printf '%s' "$plugins" | jq --raw-input --slurp '.')
+        echo "::set-output name=plugins::$plugin_json"
 
     - name: create pull request
       uses: peter-evans/create-pull-request@v3
