@@ -51,8 +51,8 @@ jobs:
     - name: set PR body output
       run: |
         plugins=$(< available-plugin-updates.txt)
-        plugin_json=$(printf '%s' "$plugins" | jq --raw-input --slurp '.')
-        echo "::set-output name=plugins::$plugin_json"
+        plugins="${plugins//$'\n'/'%0A'}"
+        echo "::set-output name=plugins::$plugins"
 
     - name: create pull request
       uses: peter-evans/create-pull-request@v3
