@@ -36,6 +36,7 @@ jobs:
       with:
         image: local/jenkins-distribution:latest
         options: -u root -v ${{ github.workspace }}:/src
+        shell: bash
         run: |
           jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml --output yaml > /src/plugins.yaml
           PLUGIN_UPDATES=$(jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml)
