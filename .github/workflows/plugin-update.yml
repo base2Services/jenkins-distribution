@@ -39,7 +39,8 @@ jobs:
         shell: bash
         run: |
           jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml --output yaml > /src/plugins.yaml
-          PLUGIN_UPDATES=$(jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml)
+          jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml > available-plugin-updates.txt
+          PLUGIN_UPDATES=$(cat available-plugin-updates.txt)
           echo $PLUGIN_UPDATES
           PLUGIN_UPDATES="${PLUGIN_UPDATES//'%'/'%25'}"
           PLUGIN_UPDATES="${PLUGIN_UPDATES//$'\n'/'%0A'}"
