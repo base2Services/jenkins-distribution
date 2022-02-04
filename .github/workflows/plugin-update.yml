@@ -3,9 +3,9 @@ name: update jenkins plugins
 on:
   push:
     branches:
-      - feature/gh-action-plugin-updater
+    - feature/gh-action-plugin-updater
   schedule:
-      - cron: "0 8 * * 1"
+  - cron: "0 8 * * 1"
 
 jobs:
   build:
@@ -16,15 +16,8 @@ jobs:
     - name: Check out the repo
       uses: actions/checkout@v2
 
-    - name: Get current time
-      uses: josStorer/get-current-time@v2
-      id: current-time
-      with:
-        format: YYYYMMDDHHmm
-
     - name: setup
       run: |
-        git checkout -b plugin-updates-${{ steps.current-time.outputs.formattedTime }}
         cp plugins.yaml plugins.old.yaml
 
     - name: Set up Docker Buildx
@@ -39,12 +32,14 @@ jobs:
 
     - name: check for plugin updates
       uses: addnab/docker-run-action@v3
+      id: plugin-updates
       with:
         image: local/jenkins-distribution:latest
         options: -u root -v ${{ github.workspace }}:/src
         run: |
           jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml --output yaml > /src/plugins.yaml
           jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml > /src/available-plugin-updates.txt
+          echo ::set-output name=plugins::$(cat /src/available-plugin-updates.txt)
 
     - name: check plugin.yaml diff
       id: git-diff
@@ -53,12 +48,20 @@ jobs:
         FILES: |
           plugins.yaml
 
-    - name: commit and push any plugin changes
-      run: |
-        cat available-plugin-updates.txt
-        git config --global user.email github@base2services.com
-        git config --global user.name base2bot
-        git add plugins.yaml
-        git commit -m 'automated plugin updates'
-        git push origin plugin-updates-${{ steps.current-time.outputs.formattedTime }}
+    - name: create pull request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        branch: patch/plugin-updates
+        commit-message: automated plugin updates
+        add-paths: |
+          plugins.yaml
+        committer: base2bot <noreply@base2services.com>
+        delete-branch: true
+        title: Jenkins plugin updates
+        assignees: Guslington
+        reviewers: Guslington
+        body: ${{ steps.plugin-updates.outputs.plugins }}
+        labels: |
+          plugin-updates
+          jenkins-distribution
       if: steps.git-diff.outputs.diff
