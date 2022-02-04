@@ -40,31 +40,36 @@ jobs:
         run: |
           jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml --output yaml > /src/plugins.yaml
           PLUGIN_UPDATES=$(jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml)
+          echo $PLUGIN_UPDATES
           PLUGIN_UPDATES="${PLUGIN_UPDATES//'%'/'%25'}"
           PLUGIN_UPDATES="${PLUGIN_UPDATES//$'\n'/'%0A'}"
           PLUGIN_UPDATES="${PLUGIN_UPDATES//$'\r'/'%0D'}"
           echo ::set-output name=plugins::$PLUGIN_UPDATES
 
-    - name: check plugin.yaml diff
-      id: git-diff
-      uses: technote-space/get-diff-action@v6
-      with:
-        FILES: |
-          plugins.yaml
+    - name: check output
+      run: |
+        echo ${{ steps.plugin-updates.outputs.plugins }}
 
-    - name: create pull request
-      uses: peter-evans/create-pull-request@v3
-      with:
-        branch: patch/plugin-updates
-        commit-message: automated plugin updates
-        add-paths: |
-          plugins.yaml
-        committer: base2bot <noreply@base2services.com>
-        delete-branch: true
-        title: Jenkins plugin updates
-        body: |
-          ${{ steps.plugin-updates.outputs.plugins }}
-        labels: |
-          plugin-updates
-          jenkins-distribution
-      if: steps.git-diff.outputs.diff
+    # - name: check plugin.yaml diff
+    #   id: git-diff
+    #   uses: technote-space/get-diff-action@v6
+    #   with:
+    #     FILES: |
+    #       plugins.yaml
+
+    # - name: create pull request
+    #   uses: peter-evans/create-pull-request@v3
+    #   with:
+    #     branch: patch/plugin-updates
+    #     commit-message: automated plugin updates
+    #     add-paths: |
+    #       plugins.yaml
+    #     committer: base2bot <noreply@base2services.com>
+    #     delete-branch: true
+    #     title: Jenkins plugin updates
+    #     body: |
+    #       ${{ steps.plugin-updates.outputs.plugins }}
+    #     labels: |
+    #       plugin-updates
+    #       jenkins-distribution
+    #   if: steps.git-diff.outputs.diff
