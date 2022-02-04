@@ -39,7 +39,7 @@ jobs:
         run: |
           jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml --output yaml > /src/plugins.yaml
           jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml > /src/available-plugin-updates.txt
-          echo ::set-output name=plugins::$(cat /src/available-plugin-updates.txt)
+          echo ::set-output name=plugins::$(cat /src/available-plugin-updates.txt | python3 -c 'import sys; print(sys.stdin.read().replace("\\","\\\\").replace("\"","\\\"").replace("\n","\\n"))' )
 
     - name: check plugin.yaml diff
       id: git-diff
@@ -58,8 +58,6 @@ jobs:
         committer: base2bot <noreply@base2services.com>
         delete-branch: true
         title: Jenkins plugin updates
-        assignees: Guslington
-        reviewers: Guslington
         body: ${{ steps.plugin-updates.outputs.plugins }}
         labels: |
           plugin-updates
