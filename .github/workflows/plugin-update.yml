@@ -65,7 +65,7 @@ jobs:
         delete-branch: true
         title: Jenkins plugin updates
         body: |
-          ${{ fromJSON(steps.plugin-updates.outputs.plugins) }}
+          ${{ steps.plugin-updates.outputs.plugins }}
         labels: |
           plugin-updates
           jenkins-distribution
