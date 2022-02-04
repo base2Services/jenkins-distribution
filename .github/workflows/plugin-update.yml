@@ -39,7 +39,7 @@ jobs:
         shell: bash
         run: |
           jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml --output yaml > /src/plugins.yaml
-          jenkins-plugin-cli --available-updates --plugin-file $REF/plugins.yaml > available-plugin-updates.txt
+          jenkins-plugin-cli --available-updates --plugin-file $REF/plugins.yaml > /src/available-plugin-updates.txt
 
     - name: check plugin.yaml diff
       id: git-diff
