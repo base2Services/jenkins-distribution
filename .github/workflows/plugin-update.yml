@@ -62,7 +62,8 @@ jobs:
         committer: base2bot <noreply@base2services.com>
         delete-branch: true
         title: Jenkins plugin updates
-        body: ${{ steps.plugin-updates.outputs.plugins }}
+        body: |
+          ${{ steps.plugin-updates.outputs.plugins }}
         labels: |
           plugin-updates
           jenkins-distribution
