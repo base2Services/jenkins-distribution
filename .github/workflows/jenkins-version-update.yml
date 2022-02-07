@@ -1,0 +1,57 @@
+name: update jenkins version
+
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: "30 21 * * *"
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out the repo
+      uses: actions/checkout@v2
+
+    - name: setup
+      run: |
+        cp plugins.yaml plugins.old.yaml
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
+
+    - name: update for jenkins version
+      id: jenkins-version
+      uses: addnab/docker-run-action@v3
+      with:
+        image: jenkins/jenkins:lts-jdk11
+        options: -u root -v ${{ github.workspace }}:/src
+        shell: bash
+        run: |
+          sed -ie "s|FROM jenkins/jenkins:.*|FROM jenkins/jenkins:${JENKINS_VERSION}-jdk11|" Dockerfile
+          echo "::set-output name=version::$JENKINS_VERSION"
+
+    - name: check plugin.yaml diff
+      id: git-diff
+      uses: technote-space/get-diff-action@v6
+      with:
+        FILES: |
+          Dockerfile
+
+    - name: create pull request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        branch: patch/plugin-updates
+        commit-message: automated Jenkins lts version update
+        add-paths: |
+          Dockerfile
+        committer: base2bot <noreply@base2services.com>
+        delete-branch: true
+        title: Jenkins lts version update
+        body: |
+          ${{ steps.jenkins-version.outputs.version }}
+        labels: |
+          jenkins-distribution
+      if: steps.git-diff.outputs.diff
+
