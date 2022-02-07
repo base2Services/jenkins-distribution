@@ -2,7 +2,7 @@ name: update jenkins plugins
 
 on:
   schedule:
-  - cron: "10 0 * * 1"
+  - cron: "30 0 * * 1"
 
 jobs:
   build:
@@ -25,7 +25,6 @@ jobs:
       with:
         tags: ghcr.io/base2services/jenkins-distribution:latest_plugins
         push: true
-        load: true
 
     - name: check for plugin updates
       uses: addnab/docker-run-action@v3
