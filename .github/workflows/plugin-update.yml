@@ -2,7 +2,7 @@ name: update jenkins plugins
 
 on:
   schedule:
-  - cron: "30 0 * * 1"
+  - cron: "33 1 * * 1"
 
 jobs:
   build:
