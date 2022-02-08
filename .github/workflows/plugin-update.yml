@@ -27,7 +27,7 @@ jobs:
     - name: check for plugin updates
       uses: addnab/docker-run-action@v3
       with:
-        image: jenkins/jenkins:${steps.setup.outputs.jenkins-version}
+        image: jenkins/jenkins:${{ steps.setup.outputs.jenkins-version }}
         options: -u root -v ${{ github.workspace }}:/src
         shell: bash
         run: |
