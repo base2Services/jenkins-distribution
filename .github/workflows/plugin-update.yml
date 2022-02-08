@@ -17,7 +17,7 @@ jobs:
     - name: setup
       id: setup
       run: |
-        cp plugins.yaml plugins.old.yaml
+        cp plugins.yaml plugins.current.yaml
         JENKINS_VERSION=$(grep FROM Dockerfile | cut -d ':' -f2)
         echo "::set-output name=jenkins-version::$JENKINS_VERSION"
 
@@ -31,8 +31,8 @@ jobs:
         options: -u root -v ${{ github.workspace }}:/src
         shell: bash
         run: |
-          jenkins-plugin-cli --available-updates --plugin-file /src/plugins.old.yaml --output yaml > /src/plugins.yaml
-          jenkins-plugin-cli --available-updates --plugin-file $REF/plugins.yaml > /src/available-plugin-updates.txt
+          jenkins-plugin-cli --available-updates --plugin-file /src/plugins.current.yaml --output yaml > /src/plugins.yaml
+          jenkins-plugin-cli --available-updates --plugin-file /src/plugins.current.yaml > /src/available-plugin-updates.txt
 
     - name: check plugin.yaml diff
       id: git-diff
