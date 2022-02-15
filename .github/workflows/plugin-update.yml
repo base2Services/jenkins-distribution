@@ -34,12 +34,9 @@ jobs:
           jenkins-plugin-cli --available-updates --plugin-file /src/plugins.current.yaml --output yaml > /src/plugins.yaml
           jenkins-plugin-cli --available-updates --plugin-file /src/plugins.current.yaml > /src/available-plugin-updates.txt
 
-    - name: check plugin.yaml diff
+    - name: get git diff
       id: git-diff
-      uses: technote-space/get-diff-action@v6
-      with:
-        FILES: |
-          plugins.yaml
+      run: echo "::set-output name=plugins::$(git --no-pager diff --name-only | grep plugins.yaml)"
 
     - name: Login to  GitHub Container Repository
       uses: docker/login-action@v1
@@ -47,14 +44,14 @@ jobs:
         registry: ghcr.io
         username: ${{ github.repository_owner }}
         password: ${{ secrets.GHCR_PUSH_TOKEN }}
-      if: steps.git-diff.outputs.diff
+      if: steps.git-diff.outputs.plugins
 
     - name: Build Container Image
       uses: docker/build-push-action@v2
       with:
         tags: ghcr.io/base2services/jenkins-distribution:latest_plugins
         push: true
-      if: steps.git-diff.outputs.diff
+      if: steps.git-diff.outputs.plugins
 
     - name: set PR body output
       id: plugin-updates
@@ -63,7 +60,7 @@ jobs:
         plugins=$(< available-plugin-updates.txt)
         plugins="${plugins//$'\n'/'%0A'}"
         echo "::set-output name=plugins::$plugins"
-      if: steps.git-diff.outputs.diff
+      if: steps.git-diff.outputs.plugins
 
     - name: create pull request
       uses: peter-evans/create-pull-request@v3
@@ -80,4 +77,4 @@ jobs:
         labels: |
           plugin-updates
           jenkins-distribution
-      if: steps.git-diff.outputs.diff
+      if: steps.git-diff.outputs.plugins
