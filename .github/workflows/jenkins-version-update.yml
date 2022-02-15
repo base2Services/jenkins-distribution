@@ -14,10 +14,6 @@ jobs:
     - name: Check out the repo
       uses: actions/checkout@v2
 
-    - name: setup
-      run: |
-        cp plugins.yaml plugins.old.yaml
-
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v1
 
@@ -29,22 +25,13 @@ jobs:
         options: -u root -v ${{ github.workspace }}:/src
         shell: bash
         run: |
-          echo "JENKINS VERSION: ${JENKINS_VERSION}" 
+          echo "JENKINS VERSION: ${JENKINS_VERSION}"
           sed -ie "s|FROM jenkins/jenkins:.*|FROM jenkins/jenkins:${JENKINS_VERSION}-jdk11|" /src/Dockerfile
-          cat /src/Dockerfile
           echo "::set-output name=version::$JENKINS_VERSION"
 
-    - name: debug
-      run: |
-        cat Dockerfile
-        git --no-pager diff
-
-    - name: check Dockerfile diff
+    - name: get git diff
       id: git-diff
-      uses: technote-space/get-diff-action@v6
-      with:
-        FILES: |
-          Dockerfile
+      run: echo "::set-output name=dockerfile::$(git --no-pager diff --name-only | grep empty)"
 
     - name: create pull request
       uses: peter-evans/create-pull-request@v3
@@ -60,5 +47,5 @@ jobs:
           ${{ steps.jenkins-version.outputs.version }}
         labels: |
           jenkins-distribution
-      if: steps.git-diff.outputs.diff
+      if: steps.git-diff.outputs.dockerfile
 
