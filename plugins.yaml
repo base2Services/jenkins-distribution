@@ -16,7 +16,7 @@ plugins:
     version: "1.78.3"
 - artifactId: "jobConfigHistory"
   source:
-    version: "2.31-rc1107.2354f08725a_8"
+    version: "2.31-rc1118.fdcd7d8898ff"
 - artifactId: "artifact-manager-s3"
   source:
     version: "1.16.1"
@@ -92,7 +92,7 @@ plugins:
     version: "1.13"
 - artifactId: "github-checks"
   source:
-    version: "1.0.16"
+    version: "1.0.17"
 - artifactId: "unique-id"
   source:
     version: "2.2.1"
