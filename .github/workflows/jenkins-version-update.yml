@@ -34,6 +34,11 @@ jobs:
           cat /src/Dockerfile
           echo "::set-output name=version::$JENKINS_VERSION"
 
+    - name: debug
+      run: |
+        cat Dockerfile
+        git --no-pager diff
+
     - name: check Dockerfile diff
       id: git-diff
       uses: technote-space/get-diff-action@v6
