@@ -31,7 +31,7 @@ jobs:
 
     - name: get git diff
       id: git-diff
-      run: echo "::set-output name=dockerfile::$(git --no-pager diff --name-only | grep empty)"
+      run: echo "::set-output name=dockerfile::$(git --no-pager diff --name-only | grep Dockerfile)"
 
     - name: create pull request
       uses: peter-evans/create-pull-request@v3
