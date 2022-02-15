@@ -30,8 +30,8 @@ jobs:
         shell: bash
         run: |
           echo "JENKINS VERSION: ${JENKINS_VERSION}" 
-          sed -ie "s|FROM jenkins/jenkins:.*|FROM jenkins/jenkins:${JENKINS_VERSION}-jdk11|" Dockerfile
-          cat Dockerfile
+          sed -ie "s|FROM jenkins/jenkins:.*|FROM jenkins/jenkins:${JENKINS_VERSION}-jdk11|" /src/Dockerfile
+          cat /src/Dockerfile
           echo "::set-output name=version::$JENKINS_VERSION"
 
     - name: check Dockerfile diff
