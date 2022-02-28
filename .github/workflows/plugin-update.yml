@@ -34,6 +34,9 @@ jobs:
           jenkins-plugin-cli --available-updates --plugin-file /src/plugins.current.yaml --output yaml > /src/plugins.yaml
           jenkins-plugin-cli --available-updates --plugin-file /src/plugins.current.yaml > /src/available-plugin-updates.txt
 
+    - name: show updated plugins.yaml
+      run: cat plugins.yaml
+        
     - name: get git diff
       id: git-diff
       run: echo "::set-output name=plugins::$(git --no-pager diff --name-only | grep plugins.yaml)"
