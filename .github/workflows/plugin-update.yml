@@ -48,7 +48,7 @@ jobs:
         username: ${{ github.repository_owner }}
         password: ${{ secrets.GHCR_PUSH_TOKEN }}
       if: steps.git-diff.outputs.plugins
-
+      
     - name: set PR body output
       id: plugin-updates
       run: |
@@ -73,4 +73,11 @@ jobs:
         labels: |
           latest-plugins
           jenkins-distribution
+      if: steps.git-diff.outputs.plugins
+
+    - name: Build Container Image
+      uses: docker/build-push-action@v2
+      with:
+        tags: ghcr.io/base2services/jenkins-distribution:latest_plugins
+        push: true
       if: steps.git-diff.outputs.plugins
