@@ -36,7 +36,7 @@ jobs:
     - name: create pull request
       uses: peter-evans/create-pull-request@v3
       with:
-        branch: patch/plugin-updates
+        branch: latest/jenkins-lts
         commit-message: automated Jenkins lts version update
         add-paths: |
           Dockerfile
@@ -46,6 +46,7 @@ jobs:
         body: |
           ${{ steps.jenkins-version.outputs.version }}
         labels: |
+          latest-jenkin-lts
           jenkins-distribution
       if: steps.git-diff.outputs.dockerfile
 

@@ -4,8 +4,8 @@ on:
     branches:
       - master
       - feature/*
-  schedule:
-    - cron: "0 22 * * *"
+      - latest/jenkins-lts
+      - latest/plugins
     
 jobs:
   build:
