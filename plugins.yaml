@@ -16,7 +16,7 @@ plugins:
     version: "1.78.3"
 - artifactId: "jobConfigHistory"
   source:
-    version: "2.31-rc1118.fdcd7d8898ff"
+    version: "1119.v509e1017356b_"
 - artifactId: "artifact-manager-s3"
   source:
     version: "1.16.1"
@@ -62,13 +62,13 @@ plugins:
     version: "1.5.1"
 - artifactId: "electricflow"
   source:
-    version: "1.1.25"
+    version: "1.1.26"
 - artifactId: "bitbucket-oauth"
   source:
     version: "0.12"
 - artifactId: "warnings-ng"
   source:
-    version: "9.11.0"
+    version: "9.11.1"
 - artifactId: "timestamper"
   source:
     version: "1.17"
@@ -77,13 +77,13 @@ plugins:
     version: "2.6.0"
 - artifactId: "configuration-as-code"
   source:
-    version: "1346.ve8cfa_3473c94"
+    version: "1414.v878271fc496f"
 - artifactId: "workflow-aggregator"
   source:
     version: "2.6"
 - artifactId: "blueocean-jira"
   source:
-    version: "1.25.2"
+    version: "1.25.3"
 - artifactId: "github-oauth"
   source:
     version: "0.37"
@@ -146,7 +146,7 @@ plugins:
     version: "36.v4c01db_ca_ed16"
 - artifactId: "ec2"
   source:
-    version: "1.66"
+    version: "1.67"
 - artifactId: "mstestrunner"
   source:
     version: "1.5.0"
@@ -161,7 +161,7 @@ plugins:
     version: "1.8"
 - artifactId: "blueocean"
   source:
-    version: "1.25.2"
+    version: "1.25.3"
 - artifactId: "parameterized-trigger"
   source:
     version: "2.43"
@@ -170,10 +170,10 @@ plugins:
     version: "1.6"
 - artifactId: "ldap"
   source:
-    version: "2.7"
+    version: "2.8"
 - artifactId: "pipeline-rest-api"
   source:
-    version: "2.21"
+    version: "2.22"
 - artifactId: "handlebars"
   source:
     version: "3.0.8"
