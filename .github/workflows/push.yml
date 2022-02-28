@@ -1,11 +1,9 @@
-name: build image
+name: build image on push
 on:
   push:
     branches:
       - master
       - feature/*
-      - latest/jenkins-lts
-      - latest/plugins
     
 jobs:
   build:
