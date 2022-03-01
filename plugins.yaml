@@ -35,7 +35,7 @@ plugins:
 - artifactId: "ciinabox-gitops-plugin"
   source:
     version: "latest"
-    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.3.6/ciinabox-gitops-plugin.hpi"
+    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.3.7/ciinabox-gitops-plugin.hpi"
 - artifactId: "slack"
   source:
     version: "602.v0da_f7458945d"
