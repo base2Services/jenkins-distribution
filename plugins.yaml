@@ -128,7 +128,7 @@ plugins:
     version: "1.28"
 - artifactId: "dashboard-view"
   source:
-    version: "2.18"
+    version: "2.19"
 - artifactId: "external-monitor-job"
   source:
     version: "191.v363d0d1efdf8"
@@ -164,7 +164,7 @@ plugins:
     version: "1.25.3"
 - artifactId: "parameterized-trigger"
   source:
-    version: "2.43"
+    version: "2.44"
 - artifactId: "secure-requester-whitelist"
   source:
     version: "1.7"
