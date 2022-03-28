@@ -89,7 +89,7 @@ plugins:
     version: "0.37"
 - artifactId: "gitlab-oauth"
   source:
-    version: "1.13"
+    version: "1.15"
 - artifactId: "github-checks"
   source:
     version: "1.0.18"
@@ -110,7 +110,7 @@ plugins:
     version: "1.7"
 - artifactId: "saml"
   source:
-    version: "2.291.vd3f2cd6d1c3e"
+    version: "2.296.v0016349946db_"
 - artifactId: "jquery"
   source:
     version: "1.12.4-1"
