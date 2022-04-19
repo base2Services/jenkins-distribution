@@ -13,10 +13,10 @@ plugins:
     version: "2.12.0"
 - artifactId: "job-dsl"
   source:
-    version: "1.78.3"
+    version: "1.79"
 - artifactId: "jobConfigHistory"
   source:
-    version: "1119.v509e1017356b_"
+    version: "1133.v0f5420f85053"
 - artifactId: "artifact-manager-s3"
   source:
     version: "617.vd98e61689f41"
@@ -44,7 +44,7 @@ plugins:
     version: "0.5.1"
 - artifactId: "deployer-framework"
   source:
-    version: "75.vcc73e3a_89e64"
+    version: "85.v1d1888e8c021"
 - artifactId: "jacoco"
   source:
     version: "3.3.1"
@@ -68,7 +68,7 @@ plugins:
     version: "0.12"
 - artifactId: "warnings-ng"
   source:
-    version: "9.11.1"
+    version: "9.12.0"
 - artifactId: "timestamper"
   source:
     version: "1.17"
@@ -89,7 +89,7 @@ plugins:
     version: "0.37"
 - artifactId: "gitlab-oauth"
   source:
-    version: "1.15"
+    version: "1.16"
 - artifactId: "github-checks"
   source:
     version: "1.0.18"
@@ -128,7 +128,7 @@ plugins:
     version: "1.28"
 - artifactId: "dashboard-view"
   source:
-    version: "2.19"
+    version: "2.430.vfb_a_dc7e3687b_"
 - artifactId: "external-monitor-job"
   source:
     version: "191.v363d0d1efdf8"
@@ -140,7 +140,7 @@ plugins:
     version: "1.24.1"
 - artifactId: "promoted-builds"
   source:
-    version: "873.v6149db_d64130"
+    version: "876.v99d29788b_36b_"
 - artifactId: "pipeline-github-lib"
   source:
     version: "36.v4c01db_ca_ed16"
