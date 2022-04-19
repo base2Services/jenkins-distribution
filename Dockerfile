@@ -1,6 +1,6 @@
 FROM jenkins/jenkins:2.332.2-jdk11
 
-LABEL org.opencontainers.image.source = https://github.com/base2Services/jenkins-distribution
+LABEL "org.opencontainers.image.source"="https://github.com/base2Services/jenkins-distribution"
 
 USER root
 
