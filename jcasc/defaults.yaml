@@ -25,8 +25,8 @@ jenkins:
         description: "Linux Agent"
         ebsOptimized: false
         iamInstanceProfile: ""
-        idleTerminationMinutes: "30"
-        instanceCapStr: "2"
+        idleTerminationMinutes: "5"
+        instanceCapStr: "8"
         labelString: "linux docker"
         launchTimeoutStr: "300"
         maxTotalUses: -1
