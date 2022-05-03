@@ -5,14 +5,14 @@ import shutil
 import click
 import yaml
 import boto3
-import fileinput
+from pathlib import Path
 from botocore.exceptions import ClientError
 import requests
-from deepmerge import Merger
+from deepmerge import Merger, always_merger
 
 @click.command()
 @click.option('--jcasc-yaml', required=True, help='jcasc yaml file to apply to jenkins, if none is supplied the default jcasc yaml is used')
-@click.option('--merge/--no-merge', default=True, help='dont use the default jcasc yaml file')
+@click.option('--merge/--no-merge', default=True, help='don\'t use the default jcasc yaml file')
 @click.option('--s3-bucket', help='jcasc yaml s3 bucket')
 @click.option('--s3-prefix', default='jcasc', help='jcasc yaml s3 prefix')
 @click.option('--local-jcasc', help='jcasc yaml local path')
@@ -20,10 +20,11 @@ from deepmerge import Merger
 @click.option('--parameters-yaml', help='key-value parameters file to over-ride default config')
 def run(jcasc_yaml, merge, s3_bucket, s3_prefix, local_jcasc, jenkins_url, parameters_yaml):
     ref_path = os.environ.get('REF', '.')
+    ciinabox_jobs_path = f'{ref_path}/ciinabox-jobs'
 
     jcasc_reload_token = os.environ.get('JCASC_RELOAD_TOKEN')
     if jenkins_url and not jcasc_reload_token:
-        raise click.ClickException('jcasc relead token not provided by environemnt variable JCASC_RELOAD_TOKEN')
+        raise click.ClickException('jcasc reload token not provided by environment variable JCASC_RELOAD_TOKEN')
 
     # If parameters yaml not set, check if default value exists, otherwise set as None
     if not parameters_yaml:
@@ -32,16 +33,28 @@ def run(jcasc_yaml, merge, s3_bucket, s3_prefix, local_jcasc, jenkins_url, param
         else:
             parameters_yaml =  None
 
-    # over-ride values with default config or config from parameters.yaml if set
-    update_file_from_config(f'{ref_path}/jenkmon.txt', config_parameters(ref_path, parameters_yaml))
+    # load job override parameters and merge with defaults
+    job_overrides = read_yaml_file(f'{ref_path}/default-job-overrides.yaml')
+    if parameters_yaml:
+        supplied_job_overrides = read_yaml_file(parameters_yaml)
+        job_overrides = always_merger.merge(job_overrides, supplied_job_overrides)
 
-    # add jenkmon to jcasc
-    add_job_to_jcasc(jcasc_yaml, f'{ref_path}/jenkmon.txt')
+    print(job_overrides)
 
+    # load default jobs as a string and add to jcasc jobs
+    default_jobs = Path(f'{ciinabox_jobs_path}/default.groovy').read_text()
+    click.echo("adding default jobdsl jobs to jcasc")
+    add_jobs_to_jcasc(jcasc_yaml, default_jobs)
+
+    # setup jenkmon jobs
+    jenkmon(f'{ciinabox_jobs_path}/jenkmon.groovy', job_overrides, jcasc_yaml)
+
+    # merge jcasc yamls
     if merge:
         click.echo(f"merging jcasc yaml {jcasc_yaml} with defaults")
         jcasc_yaml = merger(ref_path, jcasc_yaml)
 
+    # deploy jcasc yaml to either s3 or local file system
     if s3_bucket:
         s3_path = f'{s3_prefix}/jenkins.yaml'
         click.echo(f"backing up jcasc yaml in s3 bucket {s3_bucket}/{s3_path}")
@@ -54,6 +67,7 @@ def run(jcasc_yaml, merge, s3_bucket, s3_prefix, local_jcasc, jenkins_url, param
         click.echo(f"copying jcasc yaml to local file {local_jcasc}")
         local_copy(jcasc_yaml, local_jcasc)
 
+    # reload jenkins to apply the jcasc yaml
     if jenkins_url:
         click.echo(f'reloading jcasc for Jenkins {jenkins_url}')
         reloaded = reload_jcasc(jenkins_url, jcasc_reload_token)
@@ -69,13 +83,13 @@ def run(jcasc_yaml, merge, s3_bucket, s3_prefix, local_jcasc, jenkins_url, param
                 click.echo(f"rolling back local backup jcasc file {local_jcasc}.bak to {local_jcasc}")
                 local_copy(f'{local_jcasc}.bak', local_jcasc)
 
-            raise click.ClickException('failed to reload jcasc, check your checkings logs for more details')
+            raise click.ClickException('failed to reload jcasc, check jenkins logs for more details')
 
         click.echo(f'jcasc config has been reloaded')
 
 
 def str_presenter(dumper, data):
-    """format multiline strings neatly in the yaml dummper"""
+    """format multiline strings neatly in the yaml dumper"""
     if len(data.splitlines()) > 1:  # check for multiline string
         return dumper.represent_scalar('tag:yaml.org,2002:str', data, style='|')
     return dumper.represent_scalar('tag:yaml.org,2002:str', data)
@@ -83,7 +97,7 @@ def str_presenter(dumper, data):
 
 def jcasc_dict_merge(config, path, base, nxt):
     """
-    if keys match particular jcasc keys that cannont be merged then override
+    if keys match particular jcasc keys that cannot be merged then override
     for keys that do not exists, use them directly. 
     if the key exists in both dictionaries, attempt a value merge.
     """
@@ -107,7 +121,7 @@ def merger(ref_path, overriding_jcasc_yaml):
     with open(overriding_jcasc_yaml) as file:       
         overriding_jcasc = yaml.load(file, Loader=yaml.FullLoader)
 
-    # set up the merger with the merge stratigies
+    # set up the merger with the merge strategies
     jcasc_merger = Merger(
         [
             (list, ["override"]),
@@ -175,31 +189,27 @@ def write_yaml_file(file_name, contents):
     with open(file_name, 'w') as outfile:
         yaml.safe_dump(contents, outfile, default_flow_style=False)
 
-
-def update_file_from_config(file_name, parameters_dict):
-    with fileinput.FileInput(file_name, inplace=True, backup='.bak') as file:
-        for line in file:
-            for parameter_name, parameter_value in parameters_dict:
-                print(line.replace(parameter_name, parameter_value), end='')
-
-def config_parameters(ref_path, parameters_yaml):
-    parameters = read_yaml_file(f'{ref_path}/default_parameters.yaml')
-    if parameters_yaml is not None:
-        override_parameters = read_yaml_file(parameters_yaml)
-        parameters = {**parameters, **override_parameters}
-    return parameters.items()
-
-def add_job_to_jcasc(jcasc_yaml, file_name):
+def add_jobs_to_jcasc(jcasc_yaml, jobs):
     current_jcasc = read_yaml_file(jcasc_yaml)
 
-    with open(file_name,'r') as f:
-        job = f.read()
-    script_dict = {'script': job}
+    script_dict = {'script': jobs}
     if 'jobs' in current_jcasc.keys():
         current_jcasc['jobs'].append(script_dict)
     else:
         current_jcasc['jobs'] = [script_dict]
     write_yaml_file(jcasc_yaml, current_jcasc)
+
+def jenkmon(jenkmon_job_template_path, job_overrides, jcasc_yaml):
+    """
+    load jenkmon job template and override values specified in the job overrides
+    """
+    jenkmon_job_template = Path(jenkmon_job_template_path).read_text()
+    for name, overrides in job_overrides['jenkmon'].items():
+        jenkmon_job = jenkmon_job_template
+        for key, value in overrides.items():
+            jenkmon_job = jenkmon_job.replace(f"{{{{{key.upper()}}}}}", value)
+        click.echo(f"adding {name} jenkmon job to jcasc")
+        add_jobs_to_jcasc(jcasc_yaml, jenkmon_job)
 
 def file_exists(file_name):
     return os.path.isfile(file_name)
