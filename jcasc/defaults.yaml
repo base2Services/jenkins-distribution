@@ -25,8 +25,8 @@ jenkins:
         description: "Linux Agent"
         ebsOptimized: false
         iamInstanceProfile: ""
-        idleTerminationMinutes: "30"
-        instanceCapStr: "2"
+        idleTerminationMinutes: "5"
+        instanceCapStr: "8"
         labelString: "linux docker"
         launchTimeoutStr: "300"
         maxTotalUses: -1
@@ -44,40 +44,6 @@ jenkins:
           value: "ciianbox-agent-linux"
         type: T3Nano
         useEphemeralDevices: false
-      - ami: "ami-1234abcd"
-        amiType:
-          unixData:
-            sshPort: "22"
-        associatePublicIp: false
-        connectBySSHProcess: false
-        connectionStrategy: PRIVATE_IP
-        deleteRootOnTermination: true
-        description: "CI2 Monitoring Agent"
-        ebsOptimized: false
-        hostKeyVerificationStrategy: 'OFF'
-        iamInstanceProfile: ""
-        idleTerminationMinutes: "1"
-        instanceCapStr: "2"
-        labelString: "ci2-monitor"
-        launchTimeoutStr: "300"
-        maxTotalUses: -1
-        minimumNumberOfInstances: 0
-        mode: EXCLUSIVE
-        monitoring: false
-        numExecutors: 2
-        remoteAdmin: "ec2-user"
-        remoteFS: "/home/ec2-user"
-        securityGroups: "sg-1234abcd"
-        spotConfig:
-          fallbackToOndemand: true
-        stopOnTerminate: false
-        subnetId: "subnet-1234abcd"
-        t2Unlimited: false
-        tags:
-        - name: "Name"
-          value: "cinnabox-monitoring-instance"
-        type: T3aNano
-        useEphemeralDevices: false
       useInstanceProfileForCredentials: false
   disableRememberMe: false
   systemMessage: <h2>Welcome to CI In A Box 2.0!</h2>
@@ -92,8 +58,6 @@ jenkins:
       name: "all"
   projectNamingStrategy: "standard"
   quietPeriod: 5
-  remotingSecurity:
-    enabled: true
   scmCheckoutRetryCount: 0
   securityRealm:
     local:

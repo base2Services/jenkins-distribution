@@ -1,0 +1,5 @@
+jenkmon:
+  ec2linux:
+    cron: '0 7 * * *'
+    check_docker: 'true'
+    label: 'linux'
