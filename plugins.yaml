@@ -19,7 +19,7 @@ plugins:
     version: "1139.v888b_656ca_f6d"
 - artifactId: "artifact-manager-s3"
   source:
-    version: "617.vd98e61689f41"
+    version: "633.v4813787e78a_9"
 - artifactId: "greenballs"
   source:
     version: "1.15.1"
@@ -47,7 +47,7 @@ plugins:
     version: "85.v1d1888e8c021"
 - artifactId: "jacoco"
   source:
-    version: "3.3.1"
+    version: "3.3.2"
 - artifactId: "jquery-detached"
   source:
     version: "1.2.1"
@@ -110,7 +110,7 @@ plugins:
     version: "1.8"
 - artifactId: "saml"
   source:
-    version: "2.296.v0016349946db_"
+    version: "2.297.v1a_dff8e51f90"
 - artifactId: "jquery"
   source:
     version: "1.12.4-1"
@@ -137,7 +137,7 @@ plugins:
     version: "1.20"
 - artifactId: "ssh-agent"
   source:
-    version: "1.24.1"
+    version: "295.v9ca_a_1c7cc3a_a_"
 - artifactId: "promoted-builds"
   source:
     version: "876.v99d29788b_36b_"
