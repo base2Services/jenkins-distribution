@@ -83,7 +83,7 @@ plugins:
     version: "578.vf9a_f99755f4a_"
 - artifactId: "blueocean-jira"
   source:
-    version: "1.25.4"
+    version: "1.25.5"
 - artifactId: "github-oauth"
   source:
     version: "0.38"
@@ -161,7 +161,7 @@ plugins:
     version: "1.8.1"
 - artifactId: "blueocean"
   source:
-    version: "1.25.4"
+    version: "1.25.5"
 - artifactId: "parameterized-trigger"
   source:
     version: "2.44"
