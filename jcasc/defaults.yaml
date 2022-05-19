@@ -10,7 +10,7 @@ jenkins:
   clouds:
   - amazonEC2:
       cloudName: "linux"
-      instanceCapStr: "1"
+      instanceCapStr: "8"
       privateKey: ""
       region: "ap-southeast-2"
       templates:
