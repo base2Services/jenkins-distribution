@@ -80,10 +80,10 @@ plugins:
     version: "1429.v09b_044a_c93de"
 - artifactId: "workflow-aggregator"
   source:
-    version: "2.7"
+    version: "578.vf9a_f99755f4a_"
 - artifactId: "blueocean-jira"
   source:
-    version: "1.25.3"
+    version: "1.25.4"
 - artifactId: "github-oauth"
   source:
     version: "0.38"
@@ -158,10 +158,10 @@ plugins:
     version: "0.12.1"
 - artifactId: "windows-slaves"
   source:
-    version: "1.8"
+    version: "1.8.1"
 - artifactId: "blueocean"
   source:
-    version: "1.25.3"
+    version: "1.25.4"
 - artifactId: "parameterized-trigger"
   source:
     version: "2.44"
