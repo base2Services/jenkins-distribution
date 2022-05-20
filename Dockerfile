@@ -15,7 +15,7 @@ USER jenkins
 
 COPY plugins.yaml $REF/plugins.yaml
 
-RUN jenkins-plugin-cli --plugin-file $REF/plugins.yaml --view-all-security-warnings --latest true --verbose
+RUN jenkins-plugin-cli --plugin-file $REF/plugins.yaml --verbose
 
 COPY init.groovy.d/ $REF/init.groovy.d/
 
