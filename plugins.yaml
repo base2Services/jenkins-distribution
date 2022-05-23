@@ -396,6 +396,9 @@ plugins:
 - artifactId: "pipeline-stage-step"
   source:
     version: "293.v200037eefcd5"
+- artifactId: "pipeline-stage-view"
+  source:
+    version: "2.24"
 - artifactId: "pipeline-stage-tags-metadata"
   source:
     version: "2.2081.v3919681ffc1e"
