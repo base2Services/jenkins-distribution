@@ -28,7 +28,7 @@ plugins:
     version: "191.vcb_f183ce58b_9"
 - artifactId: "aws-global-configuration"
   source:
-    version: "1.7"
+    version: "100.v4619b_45d2dfc"
 - artifactId: "aws-java-sdk"
   source:
     version: "1.12.215-339.vdc07efc5320c"
@@ -134,7 +134,7 @@ plugins:
     version: "6.722.v8165b_a_cf25e9"
 - artifactId: "command-launcher"
   source:
-    version: "81.v9c2cb_cb_db_392"
+    version: "84.v4a_97f2027398"
 - artifactId: "config-file-provider"
   source:
     version: "3.10.0"
@@ -194,7 +194,7 @@ plugins:
     version: "1.68"
 - artifactId: "echarts-api"
   source:
-    version: "5.3.2-1"
+    version: "5.3.2-2"
 - artifactId: "electricflow"
   source:
     version: "1.1.26"
@@ -236,7 +236,7 @@ plugins:
     version: "1.2.4"
 - artifactId: "github-branch-source"
   source:
-    version: "1628.vb_2f51293cb_78"
+    version: "1637.vd833b_7ca_7654"
 - artifactId: "github-checks"
   source:
     version: "1.0.18"
@@ -371,7 +371,7 @@ plugins:
     version: "2.8-138.d766e30bb08b"
 - artifactId: "pipeline-github-lib"
   source:
-    version: "36.v4c01db_ca_ed16"
+    version: "38.v445716ea_edda_"
 - artifactId: "pipeline-graph-analysis"
   source:
     version: "195.v5812d95a_a_2f9"
@@ -383,13 +383,13 @@ plugins:
     version: "101.vd572fef9d926"
 - artifactId: "pipeline-model-api"
   source:
-    version: "2.2081.v3919681ffc1e"
+    version: "2.2086.v12b_420f036e5"
 - artifactId: "pipeline-model-definition"
   source:
-    version: "2.2081.v3919681ffc1e"
+    version: "2.2086.v12b_420f036e5"
 - artifactId: "pipeline-model-extensions"
   source:
-    version: "2.2081.v3919681ffc1e"
+    version: "2.2086.v12b_420f036e5"
 - artifactId: "pipeline-rest-api"
   source:
     version: "2.24"
@@ -401,7 +401,7 @@ plugins:
     version: "2.24"
 - artifactId: "pipeline-stage-tags-metadata"
   source:
-    version: "2.2081.v3919681ffc1e"
+    version: "2.2086.v12b_420f036e5"
 - artifactId: "pipeline-utility-steps"
   source:
     version: "2.12.1"
@@ -416,7 +416,7 @@ plugins:
     version: "2.11.5-2"
 - artifactId: "prism-api"
   source:
-    version: "1.28.0-1"
+    version: "1.28.0-2"
 - artifactId: "promoted-builds"
   source:
     version: "876.v99d29788b_36b_"
@@ -425,7 +425,7 @@ plugins:
     version: "1.16"
 - artifactId: "role-strategy"
   source:
-    version: "483.v17281966f5c3"
+    version: "484.v8a_a_e4b_d785fd"
 - artifactId: "s3"
   source:
     version: "0.12.1"
@@ -440,7 +440,7 @@ plugins:
     version: "0.5.1"
 - artifactId: "script-security"
   source:
-    version: "1172.v35f6a_0b_8207e"
+    version: "1175.v4b_d517d6db_f0"
 - artifactId: "secure-requester-whitelist"
   source:
     version: "1.7"
@@ -491,7 +491,7 @@ plugins:
     version: "1.8.1"
 - artifactId: "workflow-aggregator"
   source:
-    version: "578.vf9a_f99755f4a_"
+    version: "581.v0c46fa_697ffd"
 - artifactId: "workflow-api"
   source:
     version: "1153.vb_912c0e47fb_a_"
@@ -500,19 +500,19 @@ plugins:
     version: "948.v2c72a_091b_b_68"
 - artifactId: "workflow-cps"
   source:
-    version: "2692.v76b_089ccd026"
+    version: "2705.v0449852ee36f"
 - artifactId: "workflow-cps-global-lib"
   source:
-    version: "581.ve633085a_8a_87"
+    version: "588.v576c103a_ff86"
 - artifactId: "workflow-durable-task-step"
   source:
     version: "1139.v252a_e12e8463"
 - artifactId: "workflow-job"
   source:
-    version: "1181.va_25d15548158"
+    version: "1182.v60a_e6279b_579"
 - artifactId: "workflow-multibranch"
   source:
-    version: "712.vc169a_1387405"
+    version: "716.vc692a_e52371b_"
 - artifactId: "workflow-scm-step"
   source:
     version: "400.v6b_89a_1317c9a_"
