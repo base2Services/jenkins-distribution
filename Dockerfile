@@ -25,6 +25,7 @@ COPY jcasc/default-job-overrides.yaml $REF/default-job-overrides.yaml
 COPY jcasc/ciinabox-jobs $REF/ciinabox-jobs
 
 COPY jcasc/jcasc-apply.py /usr/local/bin/jcasc-apply
+COPY jcasc/plugin-merger.py /usr/local/bin/plugin-merger
 
 # so we can run this in code build
 VOLUME /var/lib/docker
