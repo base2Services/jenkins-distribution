@@ -131,7 +131,7 @@ plugins:
     version: "773.v4b_9b_005b_562b_"
 - artifactId: "cloudbees-folder"
   source:
-    version: "6.722.v8165b_a_cf25e9"
+    version: "6.729.v2b_9d1a_74d673"
 - artifactId: "command-launcher"
   source:
     version: "84.v4a_97f2027398"
@@ -251,7 +251,7 @@ plugins:
     version: "1.16"
 - artifactId: "gradle"
   source:
-    version: "1.38"
+    version: "1.39.1"
 - artifactId: "greenballs"
   source:
     version: "1.15.1"
@@ -293,7 +293,7 @@ plugins:
     version: "3.7.1"
 - artifactId: "jjwt-api"
   source:
-    version: "0.11.2-71.v2722b_b_06a_2a_f"
+    version: "0.11.5-77.v646c772fddb_0"
 - artifactId: "job-dsl"
   source:
     version: "1.79"
@@ -314,7 +314,7 @@ plugins:
     version: "0.1.55.2"
 - artifactId: "junit"
   source:
-    version: "1.63"
+    version: "1119.va_a_5e9068da_d7"
 - artifactId: "jdk-tool"
   source:
     version: "1.5"
@@ -332,7 +332,7 @@ plugins:
     version: "771.v574584b_39e60"
 - artifactId: "maven-plugin"
   source:
-    version: "3.18"
+    version: "3.19"
 - artifactId: "momentjs"
   source:
     version: "1.1.1"
@@ -404,7 +404,7 @@ plugins:
     version: "2.2086.v12b_420f036e5"
 - artifactId: "pipeline-utility-steps"
   source:
-    version: "2.12.1"
+    version: "2.12.2"
 - artifactId: "plain-credentials"
   source:
     version: "1.8"
@@ -431,7 +431,7 @@ plugins:
     version: "0.12.1"
 - artifactId: "saml"
   source:
-    version: "2.297.v1a_dff8e51f90"
+    version: "2.298.vc7a_2b_3958628"
 - artifactId: "scm-api"
   source:
     version: "608.vfa_f971c5a_a_e9"
@@ -494,22 +494,22 @@ plugins:
     version: "581.v0c46fa_697ffd"
 - artifactId: "workflow-api"
   source:
-    version: "1153.vb_912c0e47fb_a_"
+    version: "1164.v760c223ddb_32"
 - artifactId: "workflow-basic-steps"
   source:
     version: "948.v2c72a_091b_b_68"
 - artifactId: "workflow-cps"
   source:
-    version: "2706.v71dd22b_c5a_a_2"
+    version: "2725.v7b_c717eb_12ce"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "588.v576c103a_ff86"
 - artifactId: "workflow-durable-task-step"
   source:
-    version: "1139.v252a_e12e8463"
+    version: "1144.vd77b_57189936"
 - artifactId: "workflow-job"
   source:
-    version: "1182.v60a_e6279b_579"
+    version: "1186.v8def1a_5f3944"
 - artifactId: "workflow-multibranch"
   source:
     version: "716.vc692a_e52371b_"
