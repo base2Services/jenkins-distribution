@@ -4,7 +4,7 @@ plugins:
     version: "1.1"
 - artifactId: "analysis-model-api"
   source:
-    version: "10.10.1"
+    version: "10.12.0"
 - artifactId: "ant"
   source:
     version: "475.vf34069fef73c"
@@ -19,7 +19,7 @@ plugins:
     version: "633.v4813787e78a_9"
 - artifactId: "audit-trail"
   source:
-    version: "3.10"
+    version: "3.11"
 - artifactId: "authentication-tokens"
   source:
     version: "1.4"
@@ -31,10 +31,10 @@ plugins:
     version: "100.v4619b_45d2dfc"
 - artifactId: "aws-java-sdk"
   source:
-    version: "1.12.215-339.vdc07efc5320c"
+    version: "1.12.215-343.v953e693f0e86"
 - artifactId: "aws-secrets-manager-credentials-provider"
   source:
-    version: "1.1.0"
+    version: "1.2.0"
 - artifactId: "basic-branch-build-strategies"
   source:
     version: "1.3.2"
@@ -149,7 +149,7 @@ plugins:
     version: "1.46.4"
 - artifactId: "credentials"
   source:
-    version: "1087.1089.v2f1b_9a_b_040e4"
+    version: "1129.vef26f5df883c"
 - artifactId: "credentials-binding"
   source:
     version: "523.vd859a_4b_122e6"
@@ -158,7 +158,7 @@ plugins:
     version: "2.432.va_712ce35862d"
 - artifactId: "data-tables-api"
   source:
-    version: "1.11.4-4"
+    version: "1.12.1-1"
 - artifactId: "declarative-pipeline-migration-assistant"
   source:
     version: "1.5.2"
@@ -194,13 +194,13 @@ plugins:
     version: "1.68"
 - artifactId: "echarts-api"
   source:
-    version: "5.3.2-2"
+    version: "5.3.3-1"
 - artifactId: "electricflow"
   source:
     version: "1.1.26"
 - artifactId: "email-ext"
   source:
-    version: "2.88"
+    version: "2.89"
 - artifactId: "extended-read-permission"
   source:
     version: "3.2"
@@ -215,7 +215,7 @@ plugins:
     version: "6.1.1-1"
 - artifactId: "forensics-api"
   source:
-    version: "1.13.0"
+    version: "1.15.1"
 - artifactId: "git"
   source:
     version: "4.11.3"
@@ -242,10 +242,10 @@ plugins:
     version: "1.0.18"
 - artifactId: "github-oauth"
   source:
-    version: "0.38"
+    version: "0.39"
 - artifactId: "gitlab-api"
   source:
-    version: "5.0.1-72.vb_8c272862e86"
+    version: "5.0.1-74.v44f46b_54c775"
 - artifactId: "gitlab-oauth"
   source:
     version: "1.16"
@@ -287,7 +287,7 @@ plugins:
     version: "1.25.5"
 - artifactId: "jersey2-api"
   source:
-    version: "2.35-8"
+    version: "2.36-2"
 - artifactId: "jira"
   source:
     version: "3.7.1"
@@ -299,7 +299,7 @@ plugins:
     version: "1.79"
 - artifactId: "jobConfigHistory"
   source:
-    version: "1139.v888b_656ca_f6d"
+    version: "1148.v8607da_ef251e"
 - artifactId: "jquery"
   source:
     version: "1.12.4-1"
@@ -314,7 +314,7 @@ plugins:
     version: "0.1.55.2"
 - artifactId: "junit"
   source:
-    version: "1119.va_a_5e9068da_d7"
+    version: "1119.1121.vc43d0fc45561"
 - artifactId: "jdk-tool"
   source:
     version: "1.5"
@@ -326,7 +326,7 @@ plugins:
     version: "414.vcc4c33714601"
 - artifactId: "matrix-auth"
   source:
-    version: "3.1.2"
+    version: "3.1.3"
 - artifactId: "matrix-project"
   source:
     version: "771.v574584b_39e60"
@@ -377,19 +377,19 @@ plugins:
     version: "195.v5812d95a_a_2f9"
 - artifactId: "pipeline-input-step"
   source:
-    version: "448.v37cea_9a_10a_70"
+    version: "449.v77f0e8b_845c4"
 - artifactId: "pipeline-milestone-step"
   source:
     version: "101.vd572fef9d926"
 - artifactId: "pipeline-model-api"
   source:
-    version: "2.2086.v12b_420f036e5"
+    version: "2.2097.v33db_b_de764b_e"
 - artifactId: "pipeline-model-definition"
   source:
-    version: "2.2086.v12b_420f036e5"
+    version: "2.2097.v33db_b_de764b_e"
 - artifactId: "pipeline-model-extensions"
   source:
-    version: "2.2086.v12b_420f036e5"
+    version: "2.2097.v33db_b_de764b_e"
 - artifactId: "pipeline-rest-api"
   source:
     version: "2.24"
@@ -401,10 +401,10 @@ plugins:
     version: "2.24"
 - artifactId: "pipeline-stage-tags-metadata"
   source:
-    version: "2.2086.v12b_420f036e5"
+    version: "2.2097.v33db_b_de764b_e"
 - artifactId: "pipeline-utility-steps"
   source:
-    version: "2.12.2"
+    version: "2.13.0"
 - artifactId: "plain-credentials"
   source:
     version: "1.8"
@@ -461,16 +461,16 @@ plugins:
     version: "277.v95c2fec1c047"
 - artifactId: "ssh-slaves"
   source:
-    version: "1.814.vc82988f54b_10"
+    version: "1.821.vd834f8a_c390e"
 - artifactId: "sshd"
   source:
-    version: "3.237.v883d165a_c1d3"
+    version: "3.242.va_db_9da_b_26a_c3"
 - artifactId: "structs"
   source:
     version: "318.va_f3ccb_729b_71"
 - artifactId: "timestamper"
   source:
-    version: "1.17"
+    version: "1.18"
 - artifactId: "token-macro"
   source:
     version: "293.v283932a_0a_b_49"
@@ -485,7 +485,7 @@ plugins:
     version: "1.4"
 - artifactId: "warnings-ng"
   source:
-    version: "9.12.0"
+    version: "9.13.0"
 - artifactId: "windows-slaves"
   source:
     version: "1.8.1"
@@ -506,7 +506,7 @@ plugins:
     version: "588.v576c103a_ff86"
 - artifactId: "workflow-durable-task-step"
   source:
-    version: "1144.vd77b_57189936"
+    version: "1146.v1a_d2e603f929"
 - artifactId: "workflow-job"
   source:
     version: "1186.v8def1a_5f3944"
