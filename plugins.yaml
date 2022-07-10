@@ -31,7 +31,7 @@ plugins:
     version: "100.v4619b_45d2dfc"
 - artifactId: "aws-java-sdk"
   source:
-    version: "1.12.215-343.v953e693f0e86"
+    version: "1.12.246-349.v96b_b_f7eb_a_c3c"
 - artifactId: "aws-secrets-manager-credentials-provider"
   source:
     version: "1.2.0"
@@ -140,7 +140,7 @@ plugins:
     version: "3.10.0"
 - artifactId: "configuration-as-code"
   source:
-    version: "1429.v09b_044a_c93de"
+    version: "1464.vd8507b_82e41a_"
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
@@ -149,7 +149,7 @@ plugins:
     version: "1.46.4"
 - artifactId: "credentials"
   source:
-    version: "1129.vef26f5df883c"
+    version: "1139.veb_9579fca_33b_"
 - artifactId: "credentials-binding"
   source:
     version: "523.vd859a_4b_122e6"
@@ -158,7 +158,7 @@ plugins:
     version: "2.432.va_712ce35862d"
 - artifactId: "data-tables-api"
   source:
-    version: "1.12.1-1"
+    version: "1.12.1-2"
 - artifactId: "declarative-pipeline-migration-assistant"
   source:
     version: "1.5.2"
@@ -182,7 +182,7 @@ plugins:
     version: "1.19"
 - artifactId: "docker-workflow"
   source:
-    version: "1.28"
+    version: "1.29"
 - artifactId: "dockerhub-notification"
   source:
     version: "2.6.0"
@@ -227,7 +227,7 @@ plugins:
     version: "1.11"
 - artifactId: "github"
   source:
-    version: "1.34.3"
+    version: "1.34.4"
 - artifactId: "github-api"
   source:
     version: "1.303-400.v35c2d8258028"
@@ -236,7 +236,7 @@ plugins:
     version: "1.2.4"
 - artifactId: "github-branch-source"
   source:
-    version: "1637.vd833b_7ca_7654"
+    version: "1656.v77eddb_b_e95df"
 - artifactId: "github-checks"
   source:
     version: "1.0.18"
@@ -251,7 +251,7 @@ plugins:
     version: "1.16"
 - artifactId: "gradle"
   source:
-    version: "1.39.1"
+    version: "1.39.3"
 - artifactId: "greenballs"
   source:
     version: "1.15.1"
@@ -296,10 +296,10 @@ plugins:
     version: "0.11.5-77.v646c772fddb_0"
 - artifactId: "job-dsl"
   source:
-    version: "1.79"
+    version: "1.80"
 - artifactId: "jobConfigHistory"
   source:
-    version: "1148.v8607da_ef251e"
+    version: "1155.v28a_46a_cc06a_5"
 - artifactId: "jquery"
   source:
     version: "1.12.4-1"
@@ -326,10 +326,10 @@ plugins:
     version: "414.vcc4c33714601"
 - artifactId: "matrix-auth"
   source:
-    version: "3.1.3"
+    version: "3.1.5"
 - artifactId: "matrix-project"
   source:
-    version: "771.v574584b_39e60"
+    version: "772.v494f19991984"
 - artifactId: "maven-plugin"
   source:
     version: "3.19"
@@ -419,13 +419,13 @@ plugins:
     version: "1.28.0-2"
 - artifactId: "promoted-builds"
   source:
-    version: "876.v99d29788b_36b_"
+    version: "878.v12d3f7937690"
 - artifactId: "pubsub-light"
   source:
     version: "1.16"
 - artifactId: "role-strategy"
   source:
-    version: "488.v0634ce149b_8c"
+    version: "530.ved5445d4875a_"
 - artifactId: "s3"
   source:
     version: "0.12.1"
@@ -446,10 +446,10 @@ plugins:
     version: "1.7"
 - artifactId: "slack"
   source:
-    version: "608.v19e3b_44b_b_9ff"
+    version: "616.v03b_1e98d13dd"
 - artifactId: "snakeyaml-api"
   source:
-    version: "1.30.1"
+    version: "1.30.2-76.vc104f7ce9870"
 - artifactId: "sse-gateway"
   source:
     version: "1.25"
@@ -458,7 +458,7 @@ plugins:
     version: "295.v9ca_a_1c7cc3a_a_"
 - artifactId: "ssh-credentials"
   source:
-    version: "277.v95c2fec1c047"
+    version: "291.v8211e4f8efb_c"
 - artifactId: "ssh-slaves"
   source:
     version: "1.821.vd834f8a_c390e"
@@ -491,25 +491,25 @@ plugins:
     version: "1.8.1"
 - artifactId: "workflow-aggregator"
   source:
-    version: "581.v0c46fa_697ffd"
+    version: "590.v6a_d052e5a_a_b_5"
 - artifactId: "workflow-api"
   source:
-    version: "1164.v760c223ddb_32"
+    version: "1188.v0016b_4f29881"
 - artifactId: "workflow-basic-steps"
   source:
-    version: "948.v2c72a_091b_b_68"
+    version: "969.vc4ec3e4854b_f"
 - artifactId: "workflow-cps"
   source:
-    version: "2725.v7b_c717eb_12ce"
+    version: "2746.v0da_83a_332669"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "588.v576c103a_ff86"
 - artifactId: "workflow-durable-task-step"
   source:
-    version: "1146.v1a_d2e603f929"
+    version: "1174.v73a_9a_17edce0"
 - artifactId: "workflow-job"
   source:
-    version: "1186.v8def1a_5f3944"
+    version: "1203.v7b_7023424efe"
 - artifactId: "workflow-multibranch"
   source:
     version: "716.vc692a_e52371b_"
@@ -521,5 +521,5 @@ plugins:
     version: "625.vd896b_f445a_f8"
 - artifactId: "workflow-support"
   source:
-    version: "820.vd1a_6cc65ef33"
+    version: "827.v7ef666c4d65c"
 
