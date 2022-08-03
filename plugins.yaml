@@ -4,7 +4,7 @@ plugins:
     version: "1.1"
 - artifactId: "analysis-model-api"
   source:
-    version: "10.13.0"
+    version: "10.15.0"
 - artifactId: "ant"
   source:
     version: "475.vf34069fef73c"
@@ -13,10 +13,10 @@ plugins:
     version: "2.7"
 - artifactId: "apache-httpcomponents-client-4-api"
   source:
-    version: "4.5.13-1.0"
+    version: "4.5.13-138.v4e7d9a_7b_a_e61"
 - artifactId: "artifact-manager-s3"
   source:
-    version: "633.v4813787e78a_9"
+    version: "666.v6c461c3d9824"
 - artifactId: "audit-trail"
   source:
     version: "3.11"
@@ -128,10 +128,10 @@ plugins:
     url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.3.7/ciinabox-gitops-plugin.hpi"
 - artifactId: "cloudbees-bitbucket-branch-source"
   source:
-    version: "773.v4b_9b_005b_562b_"
+    version: "784.v7fcdc7c670f6"
 - artifactId: "cloudbees-folder"
   source:
-    version: "6.729.v2b_9d1a_74d673"
+    version: "6.740.ve4f4ffa_dea_54"
 - artifactId: "command-launcher"
   source:
     version: "84.v4a_97f2027398"
@@ -170,7 +170,7 @@ plugins:
     version: "1.9"
 - artifactId: "deployer-framework"
   source:
-    version: "85.v1d1888e8c021"
+    version: "86.v7b_a_4a_55b_f3ec"
 - artifactId: "display-url-api"
   source:
     version: "2.3.6"
@@ -206,7 +206,7 @@ plugins:
     version: "3.2"
 - artifactId: "external-monitor-job"
   source:
-    version: "191.v363d0d1efdf8"
+    version: "192.ve979ca_8b_3ccd"
 - artifactId: "favorite"
   source:
     version: "2.4.1"
@@ -218,16 +218,16 @@ plugins:
     version: "1.15.1"
 - artifactId: "git"
   source:
-    version: "4.11.3"
+    version: "4.11.4"
 - artifactId: "git-client"
   source:
-    version: "3.11.0"
+    version: "3.11.1"
 - artifactId: "git-server"
   source:
     version: "1.11"
 - artifactId: "github"
   source:
-    version: "1.34.4"
+    version: "1.34.5"
 - artifactId: "github-api"
   source:
     version: "1.303-400.v35c2d8258028"
@@ -245,7 +245,7 @@ plugins:
     version: "0.39"
 - artifactId: "gitlab-api"
   source:
-    version: "5.0.1-74.v44f46b_54c775"
+    version: "5.0.1-78.v47a_45b_9f78b_7"
 - artifactId: "gitlab-oauth"
   source:
     version: "1.16"
@@ -299,7 +299,7 @@ plugins:
     version: "1.81"
 - artifactId: "jobConfigHistory"
   source:
-    version: "1156.v536a_97b_8d649"
+    version: "1163.ve82c7c6e60a_3"
 - artifactId: "jquery"
   source:
     version: "1.12.4-1"
@@ -317,10 +317,10 @@ plugins:
     version: "1119.1121.vc43d0fc45561"
 - artifactId: "jdk-tool"
   source:
-    version: "1.5"
+    version: "55.v1b_32b_6ca_f9ca"
 - artifactId: "ldap"
   source:
-    version: "2.10"
+    version: "2.11"
 - artifactId: "mailer"
   source:
     version: "435.v79ef3972b_5c7"
@@ -353,7 +353,7 @@ plugins:
     version: "1.5.1"
 - artifactId: "okhttp-api"
   source:
-    version: "4.9.3-105.vb96869f8ac3a"
+    version: "4.9.3-108.v0feda04578cf"
 - artifactId: "pam-auth"
   source:
     version: "1.8"
@@ -407,7 +407,7 @@ plugins:
     version: "2.13.0"
 - artifactId: "plain-credentials"
   source:
-    version: "1.8"
+    version: "139.ved2b_9cf7587b"
 - artifactId: "plugin-util-api"
   source:
     version: "2.17.0"
@@ -425,7 +425,7 @@ plugins:
     version: "1.16"
 - artifactId: "role-strategy"
   source:
-    version: "546.ve16648865996"
+    version: "552.v14cb_85499b_89"
 - artifactId: "s3"
   source:
     version: "0.12.1"
@@ -434,7 +434,7 @@ plugins:
     version: "2.333.vc81e525974a_c"
 - artifactId: "scm-api"
   source:
-    version: "616.ve67136f6c77d"
+    version: "620.v0a_5b_1f8054c0"
 - artifactId: "scm-filter-branch-pr"
   source:
     version: "0.5.1"
@@ -458,7 +458,7 @@ plugins:
     version: "295.v9ca_a_1c7cc3a_a_"
 - artifactId: "ssh-credentials"
   source:
-    version: "291.v8211e4f8efb_c"
+    version: "295.vced876c18eb_4"
 - artifactId: "ssh-slaves"
   source:
     version: "1.834.v622da_57f702c"
@@ -476,16 +476,16 @@ plugins:
     version: "308.v4f2b_ed62b_b_16"
 - artifactId: "trilead-api"
   source:
-    version: "1.67.vc3938a_35172f"
+    version: "1.71.v9e7860a_67a_df"
 - artifactId: "unique-id"
   source:
     version: "2.2.1"
 - artifactId: "variant"
   source:
-    version: "1.4"
+    version: "59.vf075fe829ccb"
 - artifactId: "warnings-ng"
   source:
-    version: "9.14.0"
+    version: "9.15.0"
 - artifactId: "windows-slaves"
   source:
     version: "1.8.1"
@@ -497,7 +497,7 @@ plugins:
     version: "1188.v0016b_4f29881"
 - artifactId: "workflow-basic-steps"
   source:
-    version: "980.v82219a_ed188e"
+    version: "986.v6b_9c830a_6b_37"
 - artifactId: "workflow-cps"
   source:
     version: "2759.v87459c4eea_ca_"
@@ -521,5 +521,5 @@ plugins:
     version: "639.v6eca_cd8c04a_a_"
 - artifactId: "workflow-support"
   source:
-    version: "833.va_1c71061486b_"
+    version: "838.va_3a_087b_4055b"
 
