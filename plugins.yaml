@@ -4,7 +4,7 @@ plugins:
     version: "1.1"
 - artifactId: "analysis-model-api"
   source:
-    version: "10.15.0"
+    version: "10.16.0"
 - artifactId: "ant"
   source:
     version: "475.vf34069fef73c"
@@ -43,67 +43,67 @@ plugins:
     version: "0.12"
 - artifactId: "blueocean"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-autofavorite"
   source:
     version: "1.2.5"
 - artifactId: "blueocean-bitbucket-pipeline"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-commons"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-config"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-core-js"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-dashboard"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-display-url"
   source:
     version: "2.4.1"
 - artifactId: "blueocean-events"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-git-pipeline"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-github-pipeline"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-i18n"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-jira"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-jwt"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-personalization"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-pipeline-api-impl"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-pipeline-editor"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-pipeline-scm-api"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-rest"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-rest-impl"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "blueocean-web"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "bootstrap5-api"
   source:
     version: "5.1.3-7"
@@ -128,7 +128,7 @@ plugins:
     url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.3.7/ciinabox-gitops-plugin.hpi"
 - artifactId: "cloudbees-bitbucket-branch-source"
   source:
-    version: "784.v7fcdc7c670f6"
+    version: "785.ve724eb_44e286"
 - artifactId: "cloudbees-folder"
   source:
     version: "6.740.ve4f4ffa_dea_54"
@@ -182,13 +182,13 @@ plugins:
     version: "1.19"
 - artifactId: "docker-workflow"
   source:
-    version: "1.29"
+    version: "521.v1a_a_dd2073b_2e"
 - artifactId: "dockerhub-notification"
   source:
     version: "2.6.0"
 - artifactId: "durable-task"
   source:
-    version: "496.va67c6f9eefa7"
+    version: "500.v8927d9fd99d8"
 - artifactId: "ec2"
   source:
     version: "1.68"
@@ -221,7 +221,7 @@ plugins:
     version: "4.11.4"
 - artifactId: "git-client"
   source:
-    version: "3.11.1"
+    version: "3.11.2"
 - artifactId: "git-server"
   source:
     version: "1.11"
@@ -272,7 +272,7 @@ plugins:
     version: "3.3.2"
 - artifactId: "javadoc"
   source:
-    version: "217.v905b_86277a_2a_"
+    version: "226.v71211feb_e7e9"
 - artifactId: "javax-activation-api"
   source:
     version: "1.2.0-4"
@@ -284,7 +284,7 @@ plugins:
     version: "2.3.6-1"
 - artifactId: "jenkins-design-language"
   source:
-    version: "1.25.5"
+    version: "1.25.6"
 - artifactId: "jersey2-api"
   source:
     version: "2.36-2"
@@ -299,7 +299,7 @@ plugins:
     version: "1.81"
 - artifactId: "jobConfigHistory"
   source:
-    version: "1163.ve82c7c6e60a_3"
+    version: "1165.v8cc9fd1f4597"
 - artifactId: "jquery"
   source:
     version: "1.12.4-1"
@@ -311,7 +311,7 @@ plugins:
     version: "3.6.0-4"
 - artifactId: "jsch"
   source:
-    version: "0.1.55.2"
+    version: "0.1.55.61.va_e9ee26616e7"
 - artifactId: "junit"
   source:
     version: "1119.1121.vc43d0fc45561"
@@ -356,7 +356,7 @@ plugins:
     version: "4.9.3-108.v0feda04578cf"
 - artifactId: "pam-auth"
   source:
-    version: "1.8"
+    version: "1.10"
 - artifactId: "parameterized-trigger"
   source:
     version: "2.45"
@@ -419,13 +419,13 @@ plugins:
     version: "1.28.0-2"
 - artifactId: "promoted-builds"
   source:
-    version: "878.v12d3f7937690"
+    version: "881.vb_72da_69ffca_1"
 - artifactId: "pubsub-light"
   source:
     version: "1.16"
 - artifactId: "role-strategy"
   source:
-    version: "552.v14cb_85499b_89"
+    version: "555.v8d194cc85b_30"
 - artifactId: "s3"
   source:
     version: "0.12.1"
@@ -434,7 +434,7 @@ plugins:
     version: "2.333.vc81e525974a_c"
 - artifactId: "scm-api"
   source:
-    version: "620.v0a_5b_1f8054c0"
+    version: "621.vda_a_b_055e58f7"
 - artifactId: "scm-filter-branch-pr"
   source:
     version: "0.5.1"
@@ -485,7 +485,7 @@ plugins:
     version: "59.vf075fe829ccb"
 - artifactId: "warnings-ng"
   source:
-    version: "9.15.0"
+    version: "9.16.0"
 - artifactId: "windows-slaves"
   source:
     version: "1.8.1"
