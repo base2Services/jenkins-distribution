@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.346.3-jdk11
+FROM jenkins/jenkins:2.361.1-jdk11
 
 LABEL "org.opencontainers.image.source"="https://github.com/base2Services/jenkins-distribution"
 
