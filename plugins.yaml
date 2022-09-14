@@ -170,7 +170,7 @@ plugins:
     version: "1.9"
 - artifactId: "deployer-framework"
   source:
-    version: "86.v7b_a_4a_55b_f3ec"
+    version: "88.ve78a_92f39e8e"
 - artifactId: "display-url-api"
   source:
     version: "2.3.6"
@@ -299,7 +299,7 @@ plugins:
     version: "1.81"
 - artifactId: "jobConfigHistory"
   source:
-    version: "1171.v04b_66d78555e"
+    version: "1176.v1b_4290db_41a_5"
 - artifactId: "jquery"
   source:
     version: "1.12.4-1"
@@ -461,7 +461,7 @@ plugins:
     version: "305.v8f4381501156"
 - artifactId: "ssh-slaves"
   source:
-    version: "1.834.v622da_57f702c"
+    version: "2.846.v1b_70190624f5"
 - artifactId: "sshd"
   source:
     version: "3.249.v2dc2ea_416e33"
@@ -470,7 +470,7 @@ plugins:
     version: "324.va_f5d6774f3a_d"
 - artifactId: "timestamper"
   source:
-    version: "1.19"
+    version: "1.20"
 - artifactId: "token-macro"
   source:
     version: "308.v4f2b_ed62b_b_16"
@@ -485,7 +485,7 @@ plugins:
     version: "59.vf075fe829ccb"
 - artifactId: "warnings-ng"
   source:
-    version: "9.19.1"
+    version: "9.19.2"
 - artifactId: "windows-slaves"
   source:
     version: "1.8.1"
