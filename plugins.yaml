@@ -468,6 +468,9 @@ plugins:
 - artifactId: "structs"
   source:
     version: "324.va_f5d6774f3a_d"
+- artifactId: "support-core" 
+  source:
+    version: "1174.vc46f6b_04d894"
 - artifactId: "timestamper"
   source:
     version: "1.20"
