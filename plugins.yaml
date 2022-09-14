@@ -423,6 +423,9 @@ plugins:
 - artifactId: "pubsub-light"
   source:
     version: "1.17"
+- artifactId: "rebuild"
+  source:
+    version: "1.34"
 - artifactId: "role-strategy"
   source:
     version: "561.v9846c7351a_41"
