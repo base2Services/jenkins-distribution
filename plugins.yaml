@@ -7,7 +7,7 @@ plugins:
     version: "10.16.1"
 - artifactId: "ant"
   source:
-    version: "475.vf34069fef73c"
+    version: "481.v7b_09e538fcca"
 - artifactId: "antisamy-markup-formatter"
   source:
     version: "2.7"
@@ -28,13 +28,13 @@ plugins:
     version: "191.vcb_f183ce58b_9"
 - artifactId: "aws-global-configuration"
   source:
-    version: "100.v4619b_45d2dfc"
+    version: "106.v106dc1d8d86e"
 - artifactId: "aws-java-sdk"
   source:
     version: "1.12.287-357.vf82d85a_6eefd"
 - artifactId: "aws-secrets-manager-credentials-provider"
   source:
-    version: "1.188.v8f90a_d7942b_e"
+    version: "1.189.vdb_b_86ddd16e8"
 - artifactId: "basic-branch-build-strategies"
   source:
     version: "1.3.2"
@@ -134,7 +134,7 @@ plugins:
     version: "6.758.vfd75d09eea_a_1"
 - artifactId: "command-launcher"
   source:
-    version: "84.v4a_97f2027398"
+    version: "90.v669d7ccb_7c31"
 - artifactId: "config-file-provider"
   source:
     version: "3.11.1"
@@ -185,7 +185,7 @@ plugins:
     version: "521.v1a_a_dd2073b_2e"
 - artifactId: "dockerhub-notification"
   source:
-    version: "2.6.1"
+    version: "2.6.2"
 - artifactId: "durable-task"
   source:
     version: "500.v8927d9fd99d8"
@@ -206,22 +206,22 @@ plugins:
     version: "3.2"
 - artifactId: "external-monitor-job"
   source:
-    version: "192.ve979ca_8b_3ccd"
+    version: "203.v683c09d993b_9"
 - artifactId: "favorite"
   source:
     version: "2.4.1"
 - artifactId: "font-awesome-api"
   source:
-    version: "6.1.2-1"
+    version: "6.2.0-1"
 - artifactId: "forensics-api"
   source:
     version: "1.15.1"
 - artifactId: "git"
   source:
-    version: "4.11.5"
+    version: "4.12.1"
 - artifactId: "git-client"
   source:
-    version: "3.11.2"
+    version: "3.12.0"
 - artifactId: "git-server"
   source:
     version: "99.va_0826a_b_cdfa_d"
@@ -236,7 +236,7 @@ plugins:
     version: "1.2.4"
 - artifactId: "github-branch-source"
   source:
-    version: "1694.vd46793a_c4a_57"
+    version: "1695.v88de84e9f6b_9"
 - artifactId: "github-checks"
   source:
     version: "1.0.19"
@@ -263,7 +263,7 @@ plugins:
     version: "2.1.8-22.v77d5b_75e6953"
 - artifactId: "htmlpublisher"
   source:
-    version: "1.30"
+    version: "1.31"
 - artifactId: "jackson2-api"
   source:
     version: "2.13.3-285.vc03c0256d517"
@@ -377,7 +377,7 @@ plugins:
     version: "195.v5812d95a_a_2f9"
 - artifactId: "pipeline-input-step"
   source:
-    version: "449.v77f0e8b_845c4"
+    version: "451.vf1a_a_4f405289"
 - artifactId: "pipeline-milestone-step"
   source:
     version: "101.vd572fef9d926"
@@ -443,13 +443,13 @@ plugins:
     version: "0.5.1"
 - artifactId: "script-security"
   source:
-    version: "1175.v4b_d517d6db_f0"
+    version: "1183.v774b_0b_0a_a_451"
 - artifactId: "secure-requester-whitelist"
   source:
     version: "1.7"
 - artifactId: "slack"
   source:
-    version: "616.v03b_1e98d13dd"
+    version: "625.va_eeb_b_168ffb_0"
 - artifactId: "snakeyaml-api"
   source:
     version: "1.31-84.ve43da_fb_49d0b"
@@ -471,9 +471,9 @@ plugins:
 - artifactId: "structs"
   source:
     version: "324.va_f5d6774f3a_d"
-- artifactId: "support-core" 
+- artifactId: "support-core"
   source:
-    version: "1174.vc46f6b_04d894"
+    version: "1206.v14049fa_b_d860"
 - artifactId: "timestamper"
   source:
     version: "1.20"
@@ -515,7 +515,7 @@ plugins:
     version: "1199.v02b_9244f8064"
 - artifactId: "workflow-job"
   source:
-    version: "1232.v5a_4c994312f1"
+    version: "1236.vc3a_d1602f439"
 - artifactId: "workflow-multibranch"
   source:
     version: "716.vc692a_e52371b_"
