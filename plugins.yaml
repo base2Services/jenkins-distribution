@@ -4,7 +4,7 @@ plugins:
     version: "1.1"
 - artifactId: "analysis-model-api"
   source:
-    version: "10.16.1"
+    version: "10.17.0"
 - artifactId: "ant"
   source:
     version: "481.v7b_09e538fcca"
@@ -106,7 +106,7 @@ plugins:
     version: "1.25.8"
 - artifactId: "bootstrap5-api"
   source:
-    version: "5.2.0-3"
+    version: "5.2.1-2"
 - artifactId: "bouncycastle-api"
   source:
     version: "2.26"
@@ -149,7 +149,7 @@ plugins:
     version: "1.47"
 - artifactId: "credentials"
   source:
-    version: "1143.vb_e8b_b_ceee347"
+    version: "1189.vf61b_a_5e2f62e"
 - artifactId: "credentials-binding"
   source:
     version: "523.vd859a_4b_122e6"
@@ -212,10 +212,10 @@ plugins:
     version: "2.4.1"
 - artifactId: "font-awesome-api"
   source:
-    version: "6.2.0-1"
+    version: "6.2.0-3"
 - artifactId: "forensics-api"
   source:
-    version: "1.15.1"
+    version: "1.16.0"
 - artifactId: "git"
   source:
     version: "4.12.1"
@@ -308,13 +308,13 @@ plugins:
     version: "1.2.1"
 - artifactId: "jquery3-api"
   source:
-    version: "3.6.0-4"
+    version: "3.6.1-1"
 - artifactId: "jsch"
   source:
     version: "0.1.55.61.va_e9ee26616e7"
 - artifactId: "junit"
   source:
-    version: "1119.1121.vc43d0fc45561"
+    version: "1143.v8d9a_e3355270"
 - artifactId: "jdk-tool"
   source:
     version: "55.v1b_32b_6ca_f9ca"
@@ -416,7 +416,7 @@ plugins:
     version: "2.11.6-1"
 - artifactId: "prism-api"
   source:
-    version: "1.28.0-2"
+    version: "1.29.0-1"
 - artifactId: "promoted-builds"
   source:
     version: "892.vd6219fc0a_efb"
@@ -452,7 +452,7 @@ plugins:
     version: "625.va_eeb_b_168ffb_0"
 - artifactId: "snakeyaml-api"
   source:
-    version: "1.31-84.ve43da_fb_49d0b"
+    version: "1.32-86.ve3f030a_75631"
 - artifactId: "sse-gateway"
   source:
     version: "1.26"
@@ -491,7 +491,7 @@ plugins:
     version: "59.vf075fe829ccb"
 - artifactId: "warnings-ng"
   source:
-    version: "9.19.2"
+    version: "9.20.0"
 - artifactId: "windows-slaves"
   source:
     version: "1.8.1"
@@ -506,7 +506,7 @@ plugins:
     version: "994.vd57e3ca_46d24"
 - artifactId: "workflow-cps"
   source:
-    version: "2759.v87459c4eea_ca_"
+    version: "2801.vf82a_b_b_e3e8a_5"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "588.v576c103a_ff86"
@@ -515,7 +515,7 @@ plugins:
     version: "1199.v02b_9244f8064"
 - artifactId: "workflow-job"
   source:
-    version: "1236.vc3a_d1602f439"
+    version: "1239.v71b_b_a_124a_725"
 - artifactId: "workflow-multibranch"
   source:
     version: "716.vc692a_e52371b_"
