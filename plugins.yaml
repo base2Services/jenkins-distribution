@@ -221,7 +221,7 @@ plugins:
     version: "4.12.1"
 - artifactId: "git-client"
   source:
-    version: "3.12.0"
+    version: "3.12.1"
 - artifactId: "git-server"
   source:
     version: "99.va_0826a_b_cdfa_d"
@@ -251,7 +251,7 @@ plugins:
     version: "1.16"
 - artifactId: "gradle"
   source:
-    version: "1.39.4"
+    version: "1.40"
 - artifactId: "greenballs"
   source:
     version: "1.15.1"
@@ -428,13 +428,13 @@ plugins:
     version: "1.34"
 - artifactId: "role-strategy"
   source:
-    version: "561.v9846c7351a_41"
+    version: "562.v44e9a_e828d0e"
 - artifactId: "s3"
   source:
     version: "0.12.2"
 - artifactId: "saml"
   source:
-    version: "4.352.vb_722786ea_79d"
+    version: "4.354.vdc8c005cda_34"
 - artifactId: "scm-api"
   source:
     version: "621.vda_a_b_055e58f7"
