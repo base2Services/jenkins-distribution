@@ -106,7 +106,7 @@ plugins:
     version: "1.25.8"
 - artifactId: "bootstrap5-api"
   source:
-    version: "5.2.1-2"
+    version: "5.2.1-3"
 - artifactId: "bouncycastle-api"
   source:
     version: "2.26"
@@ -158,7 +158,7 @@ plugins:
     version: "2.447.vda_124dd35f11"
 - artifactId: "data-tables-api"
   source:
-    version: "1.12.1-3"
+    version: "1.12.1-4"
 - artifactId: "declarative-pipeline-migration-assistant"
   source:
     version: "1.5.2"
@@ -275,13 +275,13 @@ plugins:
     version: "226.v71211feb_e7e9"
 - artifactId: "javax-activation-api"
   source:
-    version: "1.2.0-4"
+    version: "1.2.0-5"
 - artifactId: "javax-mail-api"
   source:
-    version: "1.6.2-7"
+    version: "1.6.2-8"
 - artifactId: "jaxb"
   source:
-    version: "2.3.6-1"
+    version: "2.3.6-2"
 - artifactId: "jenkins-design-language"
   source:
     version: "1.25.8"
@@ -308,13 +308,13 @@ plugins:
     version: "1.2.1"
 - artifactId: "jquery3-api"
   source:
-    version: "3.6.1-1"
+    version: "3.6.1-2"
 - artifactId: "jsch"
   source:
     version: "0.1.55.61.va_e9ee26616e7"
 - artifactId: "junit"
   source:
-    version: "1143.v8d9a_e3355270"
+    version: "1144.v909f4d9978e8"
 - artifactId: "jdk-tool"
   source:
     version: "55.v1b_32b_6ca_f9ca"
@@ -410,10 +410,10 @@ plugins:
     version: "139.ved2b_9cf7587b"
 - artifactId: "plugin-util-api"
   source:
-    version: "2.17.0"
+    version: "2.18.0"
 - artifactId: "popper2-api"
   source:
-    version: "2.11.6-1"
+    version: "2.11.6-2"
 - artifactId: "prism-api"
   source:
     version: "1.29.0-1"
@@ -506,7 +506,7 @@ plugins:
     version: "994.vd57e3ca_46d24"
 - artifactId: "workflow-cps"
   source:
-    version: "2801.vf82a_b_b_e3e8a_5"
+    version: "2802.v5ea_628154b_c2"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "588.v576c103a_ff86"
