@@ -194,7 +194,7 @@ plugins:
     version: "2.0.2"
 - artifactId: "echarts-api"
   source:
-    version: "5.3.3-1"
+    version: "5.4.0-1"
 - artifactId: "electricflow"
   source:
     version: "1.1.27"
@@ -314,7 +314,7 @@ plugins:
     version: "0.1.55.61.va_e9ee26616e7"
 - artifactId: "junit"
   source:
-    version: "1144.v909f4d9978e8"
+    version: "1150.v5c2848328b_60"
 - artifactId: "jdk-tool"
   source:
     version: "55.v1b_32b_6ca_f9ca"
