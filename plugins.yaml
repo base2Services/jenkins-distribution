@@ -121,7 +121,7 @@ plugins:
     version: "2.9.3-65.v6a_47d0f4d1fe"
 - artifactId: "checks-api"
   source:
-    version: "1.7.5"
+    version: "1.8.0"
 - artifactId: "ciinabox-gitops-plugin"
   source:
     version: "latest"
@@ -140,7 +140,7 @@ plugins:
     version: "3.11.1"
 - artifactId: "configuration-as-code"
   source:
-    version: "1559.v38a_b_2e3b_6b_b_7"
+    version: "1569.vb_72405b_80249"
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
@@ -155,7 +155,7 @@ plugins:
     version: "523.vd859a_4b_122e6"
 - artifactId: "dashboard-view"
   source:
-    version: "2.447.vda_124dd35f11"
+    version: "2.466.vdfefd95a_b_f8d"
 - artifactId: "data-tables-api"
   source:
     version: "1.12.1-4"
@@ -218,10 +218,10 @@ plugins:
     version: "1.16.0"
 - artifactId: "git"
   source:
-    version: "4.12.1"
+    version: "4.13.0"
 - artifactId: "git-client"
   source:
-    version: "3.12.1"
+    version: "3.13.0"
 - artifactId: "git-server"
   source:
     version: "99.va_0826a_b_cdfa_d"
@@ -251,7 +251,7 @@ plugins:
     version: "1.16"
 - artifactId: "gradle"
   source:
-    version: "1.40"
+    version: "2.0"
 - artifactId: "greenballs"
   source:
     version: "1.15.1"
@@ -314,10 +314,10 @@ plugins:
     version: "0.1.55.61.va_e9ee26616e7"
 - artifactId: "junit"
   source:
-    version: "1153.v1c24f1a_d2553"
+    version: "1156.vcf492e95a_a_b_0"
 - artifactId: "jdk-tool"
   source:
-    version: "55.v1b_32b_6ca_f9ca"
+    version: "63.v62d2fd4b_4793"
 - artifactId: "ldap"
   source:
     version: "2.12"
@@ -404,7 +404,7 @@ plugins:
     version: "2.2118.v31fd5b_9944b_5"
 - artifactId: "pipeline-utility-steps"
   source:
-    version: "2.13.0"
+    version: "2.13.1"
 - artifactId: "plain-credentials"
   source:
     version: "139.ved2b_9cf7587b"
@@ -434,7 +434,7 @@ plugins:
     version: "0.12.3436.v674b_46258039"
 - artifactId: "saml"
   source:
-    version: "4.369.v13507586ef8c"
+    version: "4.372.v89f13e4c9e97"
 - artifactId: "scm-api"
   source:
     version: "621.vda_a_b_055e58f7"
@@ -515,7 +515,7 @@ plugins:
     version: "1210.va_1e5d77e122b"
 - artifactId: "workflow-job"
   source:
-    version: "1249.v7d974144cc14"
+    version: "1254.v3f64639b_11dd"
 - artifactId: "workflow-multibranch"
   source:
     version: "716.vc692a_e52371b_"
