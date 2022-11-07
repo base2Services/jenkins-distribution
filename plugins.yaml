@@ -4,13 +4,13 @@ plugins:
     version: "1.1"
 - artifactId: "analysis-model-api"
   source:
-    version: "10.17.0"
+    version: "10.19.0"
 - artifactId: "ant"
   source:
     version: "481.v7b_09e538fcca"
 - artifactId: "antisamy-markup-formatter"
   source:
-    version: "2.7"
+    version: "155.v795fb_8702324"
 - artifactId: "apache-httpcomponents-client-4-api"
   source:
     version: "4.5.13-138.v4e7d9a_7b_a_e61"
@@ -34,7 +34,7 @@ plugins:
     version: "1.12.287-357.vf82d85a_6eefd"
 - artifactId: "aws-secrets-manager-credentials-provider"
   source:
-    version: "1.189.vdb_b_86ddd16e8"
+    version: "1.198.v839f082578db"
 - artifactId: "basic-branch-build-strategies"
   source:
     version: "71.vc1421f89888e"
@@ -236,7 +236,7 @@ plugins:
     version: "1.2.4"
 - artifactId: "github-branch-source"
   source:
-    version: "1695.v88de84e9f6b_9"
+    version: "1696.v3a_7603564d04"
 - artifactId: "github-checks"
   source:
     version: "1.0.19"
@@ -251,7 +251,7 @@ plugins:
     version: "1.16"
 - artifactId: "gradle"
   source:
-    version: "2.0"
+    version: "2.1"
 - artifactId: "greenballs"
   source:
     version: "1.15.1"
@@ -506,7 +506,7 @@ plugins:
     version: "994.vd57e3ca_46d24"
 - artifactId: "workflow-cps"
   source:
-    version: "2803.v1a_f77ffcc773"
+    version: "3520.va_8fc49e2f96f"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "588.v576c103a_ff86"
