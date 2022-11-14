@@ -4,7 +4,7 @@ plugins:
     version: "1.1"
 - artifactId: "analysis-model-api"
   source:
-    version: "10.19.0"
+    version: "10.20.0"
 - artifactId: "ant"
   source:
     version: "481.v7b_09e538fcca"
@@ -112,7 +112,7 @@ plugins:
     version: "2.26"
 - artifactId: "branch-api"
   source:
-    version: "2.1046.v0ca_37783ecc5"
+    version: "2.1051.v9985666b_f6cc"
 - artifactId: "build-timeout"
   source:
     version: "1.24"
@@ -251,7 +251,7 @@ plugins:
     version: "1.16"
 - artifactId: "gradle"
   source:
-    version: "2.1"
+    version: "2.1.1"
 - artifactId: "greenballs"
   source:
     version: "1.15.1"
@@ -314,7 +314,7 @@ plugins:
     version: "0.1.55.61.va_e9ee26616e7"
 - artifactId: "junit"
   source:
-    version: "1156.vcf492e95a_a_b_0"
+    version: "1159.v0b_396e1e07dd"
 - artifactId: "jdk-tool"
   source:
     version: "63.v62d2fd4b_4793"
@@ -449,10 +449,10 @@ plugins:
     version: "1.7"
 - artifactId: "slack"
   source:
-    version: "629.vf00ea_cb_40d53"
+    version: "631.v40deea_40323b"
 - artifactId: "snakeyaml-api"
   source:
-    version: "1.32-86.ve3f030a_75631"
+    version: "1.33-90.v80dcb_3814d35"
 - artifactId: "sse-gateway"
   source:
     version: "1.26"
@@ -476,7 +476,7 @@ plugins:
     version: "1206.v14049fa_b_d860"
 - artifactId: "timestamper"
   source:
-    version: "1.20"
+    version: "1.21"
 - artifactId: "token-macro"
   source:
     version: "308.v4f2b_ed62b_b_16"
@@ -506,7 +506,7 @@ plugins:
     version: "994.vd57e3ca_46d24"
 - artifactId: "workflow-cps"
   source:
-    version: "3520.va_8fc49e2f96f"
+    version: "3536.vb_8a_6628079d5"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "588.v576c103a_ff86"
