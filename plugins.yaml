@@ -135,6 +135,12 @@ plugins:
 - artifactId: "command-launcher"
   source:
     version: "90.v669d7ccb_7c31"
+- artifactId: "commons-lang3-api"
+  source: 
+    version: "3.12.0-36.vd97de6465d5b_"
+- artifactId: "commons-text-api"
+  source:
+    version: "1.10.0-27.vb_fa_3896786a_7"
 - artifactId: "config-file-provider"
   source:
     version: "3.11.1"
@@ -333,6 +339,12 @@ plugins:
 - artifactId: "maven-plugin"
   source:
     version: "3.20"
+- artifactId: "mina-sshd-api-core"
+  source:
+    version: "2.9.1-44.v476733c11f82"
+- artifactId: "mina-sshd-api-common"
+  source:
+    version: "2.9.1-44.v476733c11f82"
 - artifactId: "momentjs"
   source:
     version: "1.1.1"
