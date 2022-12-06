@@ -188,7 +188,7 @@ plugins:
     version: "1.21"
 - artifactId: "docker-workflow"
   source:
-    version: "528.v7c193a_0b_e67c"
+    version: "563.vd5d2e5c4007f"
 - artifactId: "dockerhub-notification"
   source:
     version: "2.6.2.1"
@@ -224,10 +224,10 @@ plugins:
     version: "1.16.0"
 - artifactId: "git"
   source:
-    version: "4.14.1"
+    version: "4.14.2"
 - artifactId: "git-client"
   source:
-    version: "3.13.0"
+    version: "3.13.1"
 - artifactId: "git-server"
   source:
     version: "99.va_0826a_b_cdfa_d"
@@ -305,7 +305,7 @@ plugins:
     version: "1.81"
 - artifactId: "jobConfigHistory"
   source:
-    version: "1187.v2a_b_1ca_54d18d"
+    version: "1191.v168c8c2b_956a"
 - artifactId: "jquery"
   source:
     version: "1.12.4-1"
@@ -518,7 +518,7 @@ plugins:
     version: "994.vd57e3ca_46d24"
 - artifactId: "workflow-cps"
   source:
-    version: "3536.vb_8a_6628079d5"
+    version: "3565.v4b_d9b_8c29a_b_3"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "609.vd95673f149b_b"
