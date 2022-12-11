@@ -4,7 +4,7 @@ plugins:
     version: "1.1"
 - artifactId: "analysis-model-api"
   source:
-    version: "10.20.0"
+    version: "10.21.0"
 - artifactId: "ant"
   source:
     version: "481.v7b_09e538fcca"
@@ -43,67 +43,67 @@ plugins:
     version: "0.12"
 - artifactId: "blueocean"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-autofavorite"
   source:
     version: "1.2.5"
 - artifactId: "blueocean-bitbucket-pipeline"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-commons"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-config"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-core-js"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-dashboard"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-display-url"
   source:
     version: "2.4.1"
 - artifactId: "blueocean-events"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-git-pipeline"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-github-pipeline"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-i18n"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-jira"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-jwt"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-personalization"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-pipeline-api-impl"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-pipeline-editor"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-pipeline-scm-api"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-rest"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-rest-impl"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "blueocean-web"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "bootstrap5-api"
   source:
     version: "5.2.1-3"
@@ -224,7 +224,7 @@ plugins:
     version: "1.16.0"
 - artifactId: "git"
   source:
-    version: "4.14.2"
+    version: "4.14.3"
 - artifactId: "git-client"
   source:
     version: "3.13.1"
@@ -290,7 +290,7 @@ plugins:
     version: "2.3.7-1"
 - artifactId: "jenkins-design-language"
   source:
-    version: "1.25.8"
+    version: "1.26.0"
 - artifactId: "jersey2-api"
   source:
     version: "2.37-1"
@@ -332,7 +332,7 @@ plugins:
     version: "438.v02c7f0a_12fa_4"
 - artifactId: "matrix-auth"
   source:
-    version: "3.1.5"
+    version: "3.1.6"
 - artifactId: "matrix-project"
   source:
     version: "785.v06b_7f47b_c631"
@@ -455,7 +455,7 @@ plugins:
     version: "0.5.1"
 - artifactId: "script-security"
   source:
-    version: "1218.v39ca_7f7ed0a_c"
+    version: "1228.vd93135a_2fb_25"
 - artifactId: "secure-requester-whitelist"
   source:
     version: "1.7"
@@ -503,7 +503,7 @@ plugins:
     version: "59.vf075fe829ccb"
 - artifactId: "warnings-ng"
   source:
-    version: "9.20.1"
+    version: "9.21.0"
 - artifactId: "windows-slaves"
   source:
     version: "1.8.1"
