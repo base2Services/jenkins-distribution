@@ -191,7 +191,7 @@ plugins:
     version: "563.vd5d2e5c4007f"
 - artifactId: "dockerhub-notification"
   source:
-    version: "2.6.2.1"
+    version: "2.6.3"
 - artifactId: "durable-task"
   source:
     version: "504.vb10d1ae5ba2f"
@@ -518,7 +518,7 @@ plugins:
     version: "994.vd57e3ca_46d24"
 - artifactId: "workflow-cps"
   source:
-    version: "3616.vb_2e7168f4b_0c"
+    version: "3618.v13db_a_21f0fcf"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "609.vd95673f149b_b"
@@ -530,7 +530,7 @@ plugins:
     version: "1268.v6eb_e2ee1a_85a"
 - artifactId: "workflow-multibranch"
   source:
-    version: "716.vc692a_e52371b_"
+    version: "733.v109046189126"
 - artifactId: "workflow-scm-step"
   source:
     version: "400.v6b_89a_1317c9a_"
