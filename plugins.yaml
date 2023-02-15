@@ -31,7 +31,7 @@ plugins:
     version: "106.v106dc1d8d86e"
 - artifactId: "aws-java-sdk"
   source:
-    version: "1.12.397-362.v050e9394cf8e"
+    version: "1.12.406-370.v8f993c987059"
 - artifactId: "aws-secrets-manager-credentials-provider"
   source:
     version: "1.202.ve0ec0c17611c"
@@ -203,10 +203,10 @@ plugins:
     version: "5.4.0-1"
 - artifactId: "electricflow"
   source:
-    version: "1.1.30"
+    version: "1.1.31"
 - artifactId: "email-ext"
   source:
-    version: "2.93"
+    version: "2.94"
 - artifactId: "extended-read-permission"
   source:
     version: "3.2"
@@ -320,7 +320,7 @@ plugins:
     version: "0.1.55.61.va_e9ee26616e7"
 - artifactId: "junit"
   source:
-    version: "1166.va_436e268e972"
+    version: "1177.v90374a_ef4d09"
 - artifactId: "jdk-tool"
   source:
     version: "63.v62d2fd4b_4793"
@@ -365,7 +365,7 @@ plugins:
     version: "1.6.0"
 - artifactId: "okhttp-api"
   source:
-    version: "4.9.3-108.v0feda04578cf"
+    version: "4.10.0-117.vf786fdfa_22c0"
 - artifactId: "pam-auth"
   source:
     version: "1.10"
@@ -377,7 +377,7 @@ plugins:
     version: "1.43"
 - artifactId: "pipeline-build-step"
   source:
-    version: "2.18"
+    version: "2.18.1"
 - artifactId: "pipeline-github"
   source:
     version: "2.8-138.d766e30bb08b"
