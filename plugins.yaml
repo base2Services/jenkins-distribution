@@ -128,7 +128,7 @@ plugins:
     url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.3.7/ciinabox-gitops-plugin.hpi"
 - artifactId: "cloudbees-bitbucket-branch-source"
   source:
-    version: "791.vb_eea_a_476405b"
+    version: "796.v6cb_1559e1673"
 - artifactId: "cloudbees-folder"
   source:
     version: "6.800.v71307ca_b_986b"
@@ -233,7 +233,7 @@ plugins:
     version: "99.va_0826a_b_cdfa_d"
 - artifactId: "github"
   source:
-    version: "1.36.1"
+    version: "1.37.0"
 - artifactId: "github-api"
   source:
     version: "1.303-400.v35c2d8258028"
@@ -257,7 +257,7 @@ plugins:
     version: "1.16"
 - artifactId: "gradle"
   source:
-    version: "2.2"
+    version: "2.3"
 - artifactId: "greenballs"
   source:
     version: "1.15.1"
@@ -281,10 +281,10 @@ plugins:
     version: "226.v71211feb_e7e9"
 - artifactId: "javax-activation-api"
   source:
-    version: "1.2.0-5"
+    version: "1.2.0-6"
 - artifactId: "javax-mail-api"
   source:
-    version: "1.6.2-8"
+    version: "1.6.2-9"
 - artifactId: "jaxb"
   source:
     version: "2.3.8-1"
@@ -365,7 +365,7 @@ plugins:
     version: "1.6.0"
 - artifactId: "okhttp-api"
   source:
-    version: "4.10.0-117.vf786fdfa_22c0"
+    version: "4.10.0-125.v3593b_a_f8c97b_"
 - artifactId: "pam-auth"
   source:
     version: "1.10"
@@ -464,7 +464,7 @@ plugins:
     version: "631.v40deea_40323b"
 - artifactId: "snakeyaml-api"
   source:
-    version: "1.33-90.v80dcb_3814d35"
+    version: "1.33-95.va_b_a_e3e47b_fa_4"
 - artifactId: "sse-gateway"
   source:
     version: "1.26"
@@ -485,10 +485,10 @@ plugins:
     version: "324.va_f5d6774f3a_d"
 - artifactId: "support-core"
   source:
-    version: "1258.v665d89fa_3607"
+    version: "1260.va_12d1e2d609a"
 - artifactId: "timestamper"
   source:
-    version: "1.21"
+    version: "1.22"
 - artifactId: "token-macro"
   source:
     version: "321.vd7cc1f2a_52c8"
@@ -515,7 +515,7 @@ plugins:
     version: "1208.v0cc7c6e0da_9e"
 - artifactId: "workflow-basic-steps"
   source:
-    version: "994.vd57e3ca_46d24"
+    version: "1010.vf7a_b_98e847c1"
 - artifactId: "workflow-cps"
   source:
     version: "3618.v13db_a_21f0fcf"
@@ -524,7 +524,7 @@ plugins:
     version: "609.vd95673f149b_b"
 - artifactId: "workflow-durable-task-step"
   source:
-    version: "1223.v7f1a_98a_8863e"
+    version: "1234.v019404b_3832a"
 - artifactId: "workflow-job"
   source:
     version: "1268.v6eb_e2ee1a_85a"
