@@ -13,7 +13,7 @@ plugins:
     version: "155.v795fb_8702324"
 - artifactId: "apache-httpcomponents-client-4-api"
   source:
-    version: "4.5.13-138.v4e7d9a_7b_a_e61"
+    version: "4.5.14-150.v7a_b_9d17134a_5"
 - artifactId: "artifact-manager-s3"
   source:
     version: "754.vb_5d21c758eb_3"
@@ -43,67 +43,67 @@ plugins:
     version: "0.13"
 - artifactId: "blueocean"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-autofavorite"
   source:
     version: "1.2.5"
 - artifactId: "blueocean-bitbucket-pipeline"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-commons"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-config"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-core-js"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-dashboard"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-display-url"
   source:
     version: "2.4.1"
 - artifactId: "blueocean-events"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-git-pipeline"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-github-pipeline"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-i18n"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-jira"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-jwt"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-personalization"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-pipeline-api-impl"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-pipeline-editor"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-pipeline-scm-api"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-rest"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-rest-impl"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "blueocean-web"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "bootstrap5-api"
   source:
     version: "5.2.1-3"
@@ -131,7 +131,7 @@ plugins:
     version: "796.v6cb_1559e1673"
 - artifactId: "cloudbees-folder"
   source:
-    version: "6.800.v71307ca_b_986b"
+    version: "6.815.v0dd5a_cb_40e0e"
 - artifactId: "command-launcher"
   source:
     version: "90.v669d7ccb_7c31"
@@ -140,7 +140,7 @@ plugins:
     version: "3.12.0-36.vd97de6465d5b_"
 - artifactId: "commons-text-api"
   source:
-    version: "1.10.0-27.vb_fa_3896786a_7"
+    version: "1.10.0-36.vc008c8fcda_7b_"
 - artifactId: "config-file-provider"
   source:
     version: "3.11.1"
@@ -290,10 +290,10 @@ plugins:
     version: "2.3.8-1"
 - artifactId: "jenkins-design-language"
   source:
-    version: "1.27.1"
+    version: "1.27.2"
 - artifactId: "jersey2-api"
   source:
-    version: "2.38-1"
+    version: "2.39-1"
 - artifactId: "jira"
   source:
     version: "3.9"
@@ -305,7 +305,7 @@ plugins:
     version: "1.81"
 - artifactId: "jobConfigHistory"
   source:
-    version: "1198.v4d5736c2308c"
+    version: "1206.vc8967cc8a_2cb_"
 - artifactId: "jquery"
   source:
     version: "1.12.4-1"
@@ -338,7 +338,7 @@ plugins:
     version: "785.v06b_7f47b_c631"
 - artifactId: "maven-plugin"
   source:
-    version: "3.20"
+    version: "3.21"
 - artifactId: "mina-sshd-api-core"
   source:
     version: "2.9.2-50.va_0e1f42659a_a"
@@ -377,7 +377,7 @@ plugins:
     version: "1.43"
 - artifactId: "pipeline-build-step"
   source:
-    version: "2.18.1"
+    version: "486.vd08f550cceee"
 - artifactId: "pipeline-github"
   source:
     version: "2.8-138.d766e30bb08b"
@@ -416,7 +416,7 @@ plugins:
     version: "2.2118.v31fd5b_9944b_5"
 - artifactId: "pipeline-utility-steps"
   source:
-    version: "2.15.0"
+    version: "2.15.1"
 - artifactId: "plain-credentials"
   source:
     version: "143.v1b_df8b_d3b_e48"
@@ -458,7 +458,7 @@ plugins:
     version: "1229.v4880b_b_e905a_6"
 - artifactId: "secure-requester-whitelist"
   source:
-    version: "1.7"
+    version: "60.vc024d436f4da_"
 - artifactId: "slack"
   source:
     version: "631.v40deea_40323b"
@@ -485,7 +485,7 @@ plugins:
     version: "324.va_f5d6774f3a_d"
 - artifactId: "support-core"
   source:
-    version: "1260.va_12d1e2d609a"
+    version: "1262.vc248605ec68b"
 - artifactId: "timestamper"
   source:
     version: "1.22"
@@ -518,7 +518,7 @@ plugins:
     version: "1010.vf7a_b_98e847c1"
 - artifactId: "workflow-cps"
   source:
-    version: "3618.v13db_a_21f0fcf"
+    version: "3624.v43b_a_38b_62b_b_7"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "609.vd95673f149b_b"
@@ -527,7 +527,7 @@ plugins:
     version: "1234.v019404b_3832a"
 - artifactId: "workflow-job"
   source:
-    version: "1268.v6eb_e2ee1a_85a"
+    version: "1282.ve6d865025906"
 - artifactId: "workflow-multibranch"
   source:
     version: "733.v109046189126"
