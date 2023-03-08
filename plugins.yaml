@@ -10,7 +10,7 @@ plugins:
     version: "481.v7b_09e538fcca"
 - artifactId: "antisamy-markup-formatter"
   source:
-    version: "155.v795fb_8702324"
+    version: "159.v25b_c67cd35fb_"
 - artifactId: "apache-httpcomponents-client-4-api"
   source:
     version: "4.5.14-150.v7a_b_9d17134a_5"
@@ -236,7 +236,7 @@ plugins:
     version: "1.37.0"
 - artifactId: "github-api"
   source:
-    version: "1.303-400.v35c2d8258028"
+    version: "1.303-417.ve35d9dd78549"
 - artifactId: "github-branch-pr-change-filter"
   source:
     version: "1.2.4"
@@ -305,7 +305,7 @@ plugins:
     version: "1.81"
 - artifactId: "jobConfigHistory"
   source:
-    version: "1206.vc8967cc8a_2cb_"
+    version: "1207.vd28a_54732f92"
 - artifactId: "jquery"
   source:
     version: "1.12.4-1"
@@ -470,13 +470,13 @@ plugins:
     version: "1.26"
 - artifactId: "ssh-agent"
   source:
-    version: "295.v9ca_a_1c7cc3a_a_"
+    version: "327.v230ecd01f86f"
 - artifactId: "ssh-credentials"
   source:
     version: "305.v8f4381501156"
 - artifactId: "ssh-slaves"
   source:
-    version: "2.854.v7fd446b_337c9"
+    version: "2.877.v365f5eb_a_b_eec"
 - artifactId: "sshd"
   source:
     version: "3.275.v9e17c10f2571"
@@ -518,7 +518,7 @@ plugins:
     version: "1010.vf7a_b_98e847c1"
 - artifactId: "workflow-cps"
   source:
-    version: "3624.v43b_a_38b_62b_b_7"
+    version: "3629.v8177e69e359a_"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "609.vd95673f149b_b"
