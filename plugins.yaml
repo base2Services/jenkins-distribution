@@ -4,7 +4,7 @@ plugins:
     version: "1.1"
 - artifactId: "analysis-model-api"
   source:
-    version: "11.0.2"
+    version: "11.1.0"
 - artifactId: "ant"
   source:
     version: "481.v7b_09e538fcca"
@@ -22,7 +22,7 @@ plugins:
     version: "333.vb_e1b_b_0f1238c"
 - artifactId: "authentication-tokens"
   source:
-    version: "1.4"
+    version: "1.53.v1c90fd9191a_b_"
 - artifactId: "aws-credentials"
   source:
     version: "191.vcb_f183ce58b_9"
@@ -167,10 +167,10 @@ plugins:
     version: "1.13.3-3"
 - artifactId: "declarative-pipeline-migration-assistant"
   source:
-    version: "1.5.5"
+    version: "1.5.6"
 - artifactId: "declarative-pipeline-migration-assistant-api"
   source:
-    version: "1.5.5"
+    version: "1.5.6"
 - artifactId: "deployed-on-column"
   source:
     version: "1.9"
@@ -380,7 +380,7 @@ plugins:
     version: "487.va_823138eee8b_"
 - artifactId: "pipeline-github"
   source:
-    version: "2.8-138.d766e30bb08b"
+    version: "2.8-141.7e985db66f30"
 - artifactId: "pipeline-github-lib"
   source:
     version: "42.v0739460cda_c4"
@@ -404,13 +404,13 @@ plugins:
     version: "2.2125.vddb_a_44a_d605e"
 - artifactId: "pipeline-rest-api"
   source:
-    version: "2.31"
+    version: "2.32"
 - artifactId: "pipeline-stage-step"
   source:
     version: "305.ve96d0205c1c6"
 - artifactId: "pipeline-stage-view"
   source:
-    version: "2.31"
+    version: "2.32"
 - artifactId: "pipeline-stage-tags-metadata"
   source:
     version: "2.2125.vddb_a_44a_d605e"
@@ -503,7 +503,7 @@ plugins:
     version: "59.vf075fe829ccb"
 - artifactId: "warnings-ng"
   source:
-    version: "10.0.3"
+    version: "10.1.0"
 - artifactId: "windows-slaves"
   source:
     version: "1.8.1"
@@ -518,16 +518,16 @@ plugins:
     version: "1010.vf7a_b_98e847c1"
 - artifactId: "workflow-cps"
   source:
-    version: "3641.vf58904a_b_b_5d8"
+    version: "3653.v07ea_433c90b_4"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "609.vd95673f149b_b"
 - artifactId: "workflow-durable-task-step"
   source:
-    version: "1234.v019404b_3832a"
+    version: "1241.v1a_63e465f943"
 - artifactId: "workflow-job"
   source:
-    version: "1284.v2fe8ed4573d4"
+    version: "1289.vd1c337fd5354"
 - artifactId: "workflow-multibranch"
   source:
     version: "733.v109046189126"
