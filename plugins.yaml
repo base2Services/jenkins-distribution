@@ -320,7 +320,7 @@ plugins:
     version: "0.1.55.61.va_e9ee26616e7"
 - artifactId: "junit"
   source:
-    version: "1196.vb_4cf28b_c7724"
+    version: "1198.ve38db_d1b_c975"
 - artifactId: "jdk-tool"
   source:
     version: "66.vd8fa_64ee91b_d"
@@ -440,7 +440,7 @@ plugins:
     version: "1.34"
 - artifactId: "role-strategy"
   source:
-    version: "627.ve8b_b_4c71293b_"
+    version: "631.va_dd0d500b_fc5"
 - artifactId: "s3"
   source:
     version: "0.12.3436.v674b_46258039"
