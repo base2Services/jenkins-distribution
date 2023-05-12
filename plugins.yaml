@@ -38,6 +38,9 @@ plugins:
 - artifactId: "basic-branch-build-strategies"
   source:
     version: "71.vc1421f89888e"
+- artifactId: "bitbucket-push-and-pull-request"
+  source:
+    version: "2.8.3"
 - artifactId: "bitbucket-oauth"
   source:
     version: "0.13"
@@ -125,10 +128,11 @@ plugins:
 - artifactId: "ciinabox-gitops-plugin"
   source:
     version: "latest"
-    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.3.7/ciinabox-gitops-plugin.hpi"
+    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.4.1b24fc16/ciinabox-gitops-plugin.hpi"
 - artifactId: "cloudbees-bitbucket-branch-source"
   source:
-    version: "800.va_b_b_9a_a_5035c1"
+    version: "800.va_b_b_9a_a_5035c1_ciinabox"
+    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/cloudbees-bitbucket-branch-source/800.va_b_b_9a_a_5035c1_ciinabox/cloudbees-bitbucket-branch-source.hpi"
 - artifactId: "cloudbees-folder"
   source:
     version: "6.815.v0dd5a_cb_40e0e"
