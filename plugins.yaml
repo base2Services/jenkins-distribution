@@ -168,7 +168,7 @@ plugins:
     version: "2.487.vcf0ff9008a_c0"
 - artifactId: "data-tables-api"
   source:
-    version: "1.13.4-1"
+    version: "1.13.4-2"
 - artifactId: "declarative-pipeline-migration-assistant"
   source:
     version: "1.5.6"
@@ -246,7 +246,7 @@ plugins:
     version: "1.2.4"
 - artifactId: "github-branch-source"
   source:
-    version: "1725.vd391eef681a_e"
+    version: "1728.v859147241f49"
 - artifactId: "github-checks"
   source:
     version: "545.v79a_a_68b_ca_682"
@@ -399,13 +399,13 @@ plugins:
     version: "111.v449306f708b_7"
 - artifactId: "pipeline-model-api"
   source:
-    version: "2.2133.ve46a_6113dfc3"
+    version: "2.2141.v5402e818a_779"
 - artifactId: "pipeline-model-definition"
   source:
-    version: "2.2133.ve46a_6113dfc3"
+    version: "2.2141.v5402e818a_779"
 - artifactId: "pipeline-model-extensions"
   source:
-    version: "2.2133.ve46a_6113dfc3"
+    version: "2.2141.v5402e818a_779"
 - artifactId: "pipeline-rest-api"
   source:
     version: "2.32"
@@ -417,7 +417,7 @@ plugins:
     version: "2.32"
 - artifactId: "pipeline-stage-tags-metadata"
   source:
-    version: "2.2133.ve46a_6113dfc3"
+    version: "2.2141.v5402e818a_779"
 - artifactId: "pipeline-utility-steps"
   source:
     version: "2.15.4"
@@ -456,7 +456,7 @@ plugins:
     version: "672.v64378a_b_20c60"
 - artifactId: "scm-filter-branch-pr"
   source:
-    version: "61.v45f2e5f81fde"
+    version: "77.vf2b_85e1970d5"
 - artifactId: "script-security"
   source:
     version: "1251.vfe552ed55f8d"
