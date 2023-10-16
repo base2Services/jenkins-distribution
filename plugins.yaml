@@ -544,4 +544,7 @@ plugins:
 - artifactId: "workflow-support"
   source:
     version: "865.v43e78cc44e0d"
+- artifactId: "pipeline-graph-view"
+  source:
+    version: "202.v6da_a_9e590325"
 
