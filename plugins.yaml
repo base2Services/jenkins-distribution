@@ -4,7 +4,7 @@ plugins:
     version: "1.1"
 - artifactId: "analysis-model-api"
   source:
-    version: "11.11.0"
+    version: "11.15.0"
 - artifactId: "ant"
   source:
     version: "497.v94e7d9fffa_b_9"
@@ -16,10 +16,10 @@ plugins:
     version: "4.5.14-208.v438351942757"
 - artifactId: "artifact-manager-s3"
   source:
-    version: "822.vf129d4836c31"
+    version: "845.vb_0805c11eb_26"
 - artifactId: "audit-trail"
   source:
-    version: "357.v916a_82927d6e"
+    version: "361.v82cde86c784e"
 - artifactId: "authentication-tokens"
   source:
     version: "1.53.v1c90fd9191a_b_"
@@ -28,13 +28,13 @@ plugins:
     version: "218.v1b_e9466ec5da_"
 - artifactId: "aws-global-configuration"
   source:
-    version: "128.ve2c5685a_09c3"
+    version: "130.v35b_7b_96f53c3"
 - artifactId: "aws-java-sdk"
   source:
-    version: "1.12.529-406.vdeff15e5817d"
+    version: "1.12.633-430.vf9a_e567a_244f"
 - artifactId: "aws-secrets-manager-credentials-provider"
   source:
-    version: "1.213.vca_3f37306fed"
+    version: "1.214.va_0a_d8268d068"
 - artifactId: "basic-branch-build-strategies"
   source:
     version: "81.v05e333931c7d"
@@ -43,19 +43,19 @@ plugins:
     version: "0.13"
 - artifactId: "bitbucket-push-and-pull-request"
   source:
-    version: "3.0.0"
+    version: "3.0.1"
 - artifactId: "bootstrap5-api"
   source:
-    version: "5.3.2-2"
+    version: "5.3.2-3"
 - artifactId: "bouncycastle-api"
   source:
-    version: "2.29"
+    version: "2.30.1.77-225.v26ea_c9455fd9"
 - artifactId: "branch-api"
   source:
     version: "2.1128.v717130d4f816"
 - artifactId: "build-timeout"
   source:
-    version: "1.31"
+    version: "1.32"
 - artifactId: "caffeine-api"
   source:
     version: "3.1.8-133.v17b_1ff2e0599"
@@ -81,13 +81,13 @@ plugins:
     version: "3.13.0-62.v7d18e55f51e2"
 - artifactId: "commons-text-api"
   source:
-    version: "1.11.0-94.v3e1f4a_926e49"
+    version: "1.11.0-95.v22a_d30ee5d36"
 - artifactId: "config-file-provider"
   source:
-    version: "959.vcff671a_4518b_"
+    version: "968.ve1ca_eb_913f8c"
 - artifactId: "configuration-as-code"
   source:
-    version: "1714.v09593e830cfa"
+    version: "1775.v810dc950b_514"
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
@@ -96,10 +96,10 @@ plugins:
     version: "722.v0662a_9b_e22a_c"
 - artifactId: "credentials"
   source:
-    version: "1307.v3757c78f17c3"
+    version: "1319.v7eb_51b_3a_c97b_"
 - artifactId: "credentials-binding"
   source:
-    version: "642.v737c34dea_6c2"
+    version: "657.v2b_19db_7d6e6d"
 - artifactId: "dashboard-view"
   source:
     version: "2.495.v07e81500c3f2"
@@ -108,10 +108,10 @@ plugins:
     version: "1.13.6-5"
 - artifactId: "declarative-pipeline-migration-assistant"
   source:
-    version: "1.6.1"
+    version: "1.6.2"
 - artifactId: "declarative-pipeline-migration-assistant-api"
   source:
-    version: "1.6.1"
+    version: "1.6.2"
 - artifactId: "deployed-on-column"
   source:
     version: "1.9"
@@ -132,22 +132,22 @@ plugins:
     version: "572.v950f58993843"
 - artifactId: "dockerhub-notification"
   source:
-    version: "2.7.1"
+    version: "2.7.2"
 - artifactId: "durable-task"
   source:
-    version: "523.va_a_22cf15d5e0"
+    version: "547.vd1ea_007d100c"
 - artifactId: "ec2"
   source:
-    version: "1628.v6d7b_fc58b_a_1d"
+    version: "1648.vf3d852e00486"
 - artifactId: "echarts-api"
   source:
     version: "5.4.0-7"
 - artifactId: "electricflow"
   source:
-    version: "1.1.33"
+    version: "1.1.34"
 - artifactId: "email-ext"
   source:
-    version: "2.102"
+    version: "2.104"
 - artifactId: "extended-read-permission"
   source:
     version: "53.v6499940139e5"
@@ -156,34 +156,34 @@ plugins:
     version: "215.v2e88e894db_f8"
 - artifactId: "favorite"
   source:
-    version: "2.4.3"
+    version: "2.208.v91d65b_7792a_c"
 - artifactId: "font-awesome-api"
   source:
-    version: "6.4.2-1"
+    version: "6.5.1-2"
 - artifactId: "forensics-api"
   source:
     version: "2.3.0"
 - artifactId: "git"
   source:
-    version: "5.2.0"
+    version: "5.2.1"
 - artifactId: "git-client"
   source:
-    version: "4.5.0"
+    version: "4.6.0"
 - artifactId: "git-server"
   source:
-    version: "99.va_0826a_b_cdfa_d"
+    version: "114.v068a_c7cc2574"
 - artifactId: "github"
   source:
     version: "1.37.3.1"
 - artifactId: "github-api"
   source:
-    version: "1.316-451.v15738eef3414"
+    version: "1.318-461.v7a_c09c9fa_d63"
 - artifactId: "github-branch-pr-change-filter"
   source:
     version: "1.2.4"
 - artifactId: "github-branch-source"
   source:
-    version: "1741.va_3028eb_9fd21"
+    version: "1772.va_69eda_d018d4"
 - artifactId: "github-checks"
   source:
     version: "554.vb_ee03a_000f65"
@@ -195,7 +195,7 @@ plugins:
     version: "5.3.0-91.v1f9a_fda_d654f"
 - artifactId: "gitlab-oauth"
   source:
-    version: "1.18"
+    version: "1.19"
 - artifactId: "gradle"
   source:
     version: "2.9"
@@ -207,13 +207,13 @@ plugins:
     version: "3.0.8"
 - artifactId: "handy-uri-templates-2-api"
   source:
-    version: "2.1.8-22.v77d5b_75e6953"
+    version: "2.1.8-30.v7e777411b_148"
 - artifactId: "htmlpublisher"
   source:
     version: "1.32"
 - artifactId: "jackson2-api"
   source:
-    version: "2.15.3-366.vfe8d1fa_f8c87"
+    version: "2.16.1-373.ve709c6871598"
 - artifactId: "jacoco"
   source:
     version: "3.3.5"
@@ -234,13 +234,13 @@ plugins:
     version: "73.vddf737284550"
 - artifactId: "jenkins-design-language"
   source:
-    version: "1.27.9"
+    version: "1.27.10"
 - artifactId: "jersey2-api"
   source:
     version: "2.41-133.va_03323b_a_1396"
 - artifactId: "jira"
   source:
-    version: "3.11"
+    version: "3.12"
 - artifactId: "jjwt-api"
   source:
     version: "0.11.5-77.v646c772fddb_0"
@@ -261,10 +261,10 @@ plugins:
     version: "3.7.1-1"
 - artifactId: "jsch"
   source:
-    version: "0.2.8-65.v052c39de79b_2"
+    version: "0.2.16-86.v42e010d9484b_"
 - artifactId: "junit"
   source:
-    version: "1240.vf9529b_881428"
+    version: "1256.v002534a_5f33e"
 - artifactId: "ldap"
   source:
     version: "711.vb_d1a_491714dc"
@@ -276,16 +276,16 @@ plugins:
     version: "3.2.1"
 - artifactId: "matrix-project"
   source:
-    version: "818.v7eb_e657db_924"
+    version: "822.824.v14451b_c0fd42"
 - artifactId: "maven-plugin"
   source:
     version: "3.23"
 - artifactId: "mina-sshd-api-common"
   source:
-    version: "2.11.0-86.v836f585d47fa_"
+    version: "2.12.0-90.v9f7fb_9fa_3d3b_"
 - artifactId: "mina-sshd-api-core"
   source:
-    version: "2.11.0-86.v836f585d47fa_"
+    version: "2.12.0-90.v9f7fb_9fa_3d3b_"
 - artifactId: "momentjs"
   source:
     version: "1.1.1"
@@ -297,7 +297,7 @@ plugins:
     version: "1.5.0"
 - artifactId: "multibranch-build-strategy-extension"
   source:
-    version: "1.1.0"
+    version: "48.v3dc306525d0c"
 - artifactId: "node-iterator-api"
   source:
     version: "55.v3b_77d4032326"
@@ -306,22 +306,22 @@ plugins:
     version: "1.6.1"
 - artifactId: "okhttp-api"
   source:
-    version: "4.11.0-157.v6852a_a_fa_ec11"
+    version: "4.11.0-172.vda_da_1feeb_c6e"
 - artifactId: "pam-auth"
   source:
     version: "1.10"
 - artifactId: "parameterized-trigger"
   source:
-    version: "2.46"
+    version: "787.v665fcf2a_830b_"
 - artifactId: "pipeline-aws"
   source:
     version: "1.43"
 - artifactId: "pipeline-build-step"
   source:
-    version: "516.v8ee60a_81c5b_9"
+    version: "540.vb_e8849e1a_b_d8"
 - artifactId: "pipeline-github"
   source:
-    version: "2.8-155.8eab375ac9f8"
+    version: "2.8-159.09e4403bc62f"
 - artifactId: "pipeline-github-lib"
   source:
     version: "42.v0739460cda_c4"
@@ -330,7 +330,7 @@ plugins:
     version: "202.va_d268e64deb_3"
 - artifactId: "pipeline-graph-view"
   source:
-    version: "203.vdb_a_10c0076b_6"
+    version: "205.vb_8e3a_b_51f12e"
 - artifactId: "pipeline-input-step"
   source:
     version: "477.v339683a_8d55e"
@@ -360,13 +360,13 @@ plugins:
     version: "2.34"
 - artifactId: "pipeline-utility-steps"
   source:
-    version: "2.16.0"
+    version: "2.16.1"
 - artifactId: "plain-credentials"
   source:
     version: "143.v1b_df8b_d3b_e48"
 - artifactId: "plugin-util-api"
   source:
-    version: "3.6.0"
+    version: "3.8.0"
 - artifactId: "popper2-api"
   source:
     version: "2.11.6-4"
@@ -375,13 +375,13 @@ plugins:
     version: "1.29.0-8"
 - artifactId: "promoted-builds"
   source:
-    version: "936.va_571a_a_b_f8da_5"
+    version: "945.v597f5c6a_d3fd"
 - artifactId: "pubsub-light"
   source:
     version: "1.18"
 - artifactId: "rebuild"
   source:
-    version: "320.v5a_0933a_e7d61"
+    version: "330.v645b_7df10e2a_"
 - artifactId: "role-strategy"
   source:
     version: "689.v731678c3e0eb_"
@@ -390,16 +390,16 @@ plugins:
     version: "466.vf5b_3db_8e3eb_2"
 - artifactId: "saml"
   source:
-    version: "4.429.v9a_781a_61f1da_"
+    version: "4.464.vea_cb_75d7f5e0"
 - artifactId: "scm-api"
   source:
     version: "676.v886669a_199a_a_"
 - artifactId: "scm-filter-branch-pr"
   source:
-    version: "77.vf2b_85e1970d5"
+    version: "115.v4705a_3a_4df58"
 - artifactId: "script-security"
   source:
-    version: "1275.v23895f409fb_d"
+    version: "1313.v7a_6067dc7087"
 - artifactId: "secure-requester-whitelist"
   source:
     version: "67.vca_a_d9205723f"
@@ -420,25 +420,25 @@ plugins:
     version: "308.ve4497b_ccd8f4"
 - artifactId: "ssh-slaves"
   source:
-    version: "2.916.vd17b_43357ce4"
+    version: "2.948.vb_8050d697fec"
 - artifactId: "sshd"
   source:
-    version: "3.312.v1c601b_c83b_0e"
+    version: "3.322.v159e91f6a_550"
 - artifactId: "structs"
   source:
-    version: "325.vcb_307d2a_2782"
+    version: "337.v1b_04ea_4df7c8"
 - artifactId: "support-core"
   source:
-    version: "1362.vf5fe14238165"
+    version: "1375.va_256158e8881"
 - artifactId: "timestamper"
   source:
     version: "1.26"
 - artifactId: "token-macro"
   source:
-    version: "384.vf35b_f26814ec"
+    version: "400.v35420b_922dcb_"
 - artifactId: "trilead-api"
   source:
-    version: "2.84.v72119de229b_7"
+    version: "2.133.vfb_8a_7b_9c5dd1"
 - artifactId: "unique-id"
   source:
     version: "2.101.v21a_b_6390a_b_04"
@@ -447,7 +447,7 @@ plugins:
     version: "60.v7290fc0eb_b_cd"
 - artifactId: "warnings-ng"
   source:
-    version: "10.5.1"
+    version: "10.7.0"
 - artifactId: "windows-slaves"
   source:
     version: "1.8.1"
@@ -456,31 +456,31 @@ plugins:
     version: "596.v8c21c963d92d"
 - artifactId: "workflow-api"
   source:
-    version: "1283.v99c10937efcb_"
+    version: "1291.v51fd2a_625da_7"
 - artifactId: "workflow-basic-steps"
   source:
     version: "1042.ve7b_140c4a_e0c"
 - artifactId: "workflow-cps"
   source:
-    version: "3806.va_3a_6988277b_2"
+    version: "3853.vb_a_490d892963"
 - artifactId: "workflow-cps-global-lib"
   source:
-    version: "609.vd95673f149b_b"
+    version: "612.v55f2f80781ef"
 - artifactId: "workflow-durable-task-step"
   source:
-    version: "1289.v4d3e7b_01546b_"
+    version: "1317.v5337e0c1fe28"
 - artifactId: "workflow-job"
   source:
-    version: "1360.vc6700e3136f5"
+    version: "1385.vb_58b_86ea_fff1"
 - artifactId: "workflow-multibranch"
   source:
-    version: "756.v891d88f2cd46"
+    version: "773.vc4fe1378f1d5"
 - artifactId: "workflow-scm-step"
   source:
     version: "415.v434365564324"
 - artifactId: "workflow-step-api"
   source:
-    version: "639.v6eca_cd8c04a_a_"
+    version: "657.v03b_e8115821b_"
 - artifactId: "workflow-support"
   source:
     version: "865.v43e78cc44e0d"
