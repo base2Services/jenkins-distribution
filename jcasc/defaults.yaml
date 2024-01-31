@@ -9,7 +9,7 @@ jenkins:
       - "Overall/Administer:ciinabox"
   clouds:
   - amazonEC2:
-      cloudName: "linux"
+      name: "linux"
       instanceCapStr: "8"
       privateKey: ""
       region: "ap-southeast-2"
