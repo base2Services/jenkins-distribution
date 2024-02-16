@@ -43,7 +43,7 @@ plugins:
     version: "0.13"
 - artifactId: "bitbucket-push-and-pull-request"
   source:
-    version: "3.0.1"
+    version: "3.0.2"
 - artifactId: "bootstrap5-api"
   source:
     version: "5.3.2-3"
@@ -52,7 +52,7 @@ plugins:
     version: "2.30.1.77-225.v26ea_c9455fd9"
 - artifactId: "branch-api"
   source:
-    version: "2.1128.v717130d4f816"
+    version: "2.1148.vce12cfcdf090"
 - artifactId: "build-timeout"
   source:
     version: "1.32"
@@ -102,16 +102,16 @@ plugins:
     version: "657.v2b_19db_7d6e6d"
 - artifactId: "dashboard-view"
   source:
-    version: "2.495.v07e81500c3f2"
+    version: "2.508.va_74654f026d1"
 - artifactId: "data-tables-api"
   source:
-    version: "1.13.6-5"
+    version: "1.13.8-2"
 - artifactId: "declarative-pipeline-migration-assistant"
   source:
-    version: "1.6.2"
+    version: "1.6.3"
 - artifactId: "declarative-pipeline-migration-assistant-api"
   source:
-    version: "1.6.2"
+    version: "1.6.3"
 - artifactId: "deployed-on-column"
   source:
     version: "1.9"
@@ -135,13 +135,13 @@ plugins:
     version: "2.7.2"
 - artifactId: "durable-task"
   source:
-    version: "547.vd1ea_007d100c"
+    version: "550.v0930093c4b_a_6"
 - artifactId: "ec2"
   source:
     version: "1648.vf3d852e00486"
 - artifactId: "echarts-api"
   source:
-    version: "5.4.0-7"
+    version: "5.4.3-2"
 - artifactId: "electricflow"
   source:
     version: "1.1.34"
@@ -174,7 +174,7 @@ plugins:
     version: "114.v068a_c7cc2574"
 - artifactId: "github"
   source:
-    version: "1.37.3.1"
+    version: "1.38.0"
 - artifactId: "github-api"
   source:
     version: "1.318-461.v7a_c09c9fa_d63"
@@ -198,7 +198,7 @@ plugins:
     version: "1.19"
 - artifactId: "gradle"
   source:
-    version: "2.9"
+    version: "2.10"
 - artifactId: "greenballs"
   source:
     version: "1.15.1"
@@ -264,7 +264,7 @@ plugins:
     version: "0.2.16-86.v42e010d9484b_"
 - artifactId: "junit"
   source:
-    version: "1256.v002534a_5f33e"
+    version: "1259.v65ffcef24a_88"
 - artifactId: "ldap"
   source:
     version: "711.vb_d1a_491714dc"
@@ -330,7 +330,7 @@ plugins:
     version: "202.va_d268e64deb_3"
 - artifactId: "pipeline-graph-view"
   source:
-    version: "205.vb_8e3a_b_51f12e"
+    version: "215.vc0ea_557e4d6f"
 - artifactId: "pipeline-input-step"
   source:
     version: "477.v339683a_8d55e"
@@ -339,13 +339,13 @@ plugins:
     version: "111.v449306f708b_7"
 - artifactId: "pipeline-model-api"
   source:
-    version: "2.2150.v4cfd8916915c"
+    version: "2.2175.v76a_fff0a_2618"
 - artifactId: "pipeline-model-definition"
   source:
-    version: "2.2150.v4cfd8916915c"
+    version: "2.2175.v76a_fff0a_2618"
 - artifactId: "pipeline-model-extensions"
   source:
-    version: "2.2150.v4cfd8916915c"
+    version: "2.2175.v76a_fff0a_2618"
 - artifactId: "pipeline-rest-api"
   source:
     version: "2.34"
@@ -354,13 +354,13 @@ plugins:
     version: "305.ve96d0205c1c6"
 - artifactId: "pipeline-stage-tags-metadata"
   source:
-    version: "2.2150.v4cfd8916915c"
+    version: "2.2175.v76a_fff0a_2618"
 - artifactId: "pipeline-stage-view"
   source:
     version: "2.34"
 - artifactId: "pipeline-utility-steps"
   source:
-    version: "2.16.1"
+    version: "2.16.2"
 - artifactId: "plain-credentials"
   source:
     version: "143.v1b_df8b_d3b_e48"
@@ -372,7 +372,7 @@ plugins:
     version: "2.11.6-4"
 - artifactId: "prism-api"
   source:
-    version: "1.29.0-8"
+    version: "1.29.0-10"
 - artifactId: "promoted-builds"
   source:
     version: "945.v597f5c6a_d3fd"
@@ -393,13 +393,13 @@ plugins:
     version: "4.464.vea_cb_75d7f5e0"
 - artifactId: "scm-api"
   source:
-    version: "676.v886669a_199a_a_"
+    version: "683.vb_16722fb_b_80b_"
 - artifactId: "scm-filter-branch-pr"
   source:
-    version: "115.v4705a_3a_4df58"
+    version: "148.v0b_5f06e8b_c84"
 - artifactId: "script-security"
   source:
-    version: "1313.v7a_6067dc7087"
+    version: "1326.vdb_c154de8669"
 - artifactId: "secure-requester-whitelist"
   source:
     version: "67.vca_a_d9205723f"
@@ -468,7 +468,7 @@ plugins:
     version: "612.v55f2f80781ef"
 - artifactId: "workflow-durable-task-step"
   source:
-    version: "1317.v5337e0c1fe28"
+    version: "1331.vc8c2fed35334"
 - artifactId: "workflow-job"
   source:
     version: "1385.vb_58b_86ea_fff1"
