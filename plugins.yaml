@@ -234,7 +234,7 @@ plugins:
     version: "73.vddf737284550"
 - artifactId: "jenkins-design-language"
   source:
-    version: "1.27.10"
+    version: "1.27.11"
 - artifactId: "jersey2-api"
   source:
     version: "2.41-133.va_03323b_a_1396"
@@ -462,7 +462,7 @@ plugins:
     version: "1042.ve7b_140c4a_e0c"
 - artifactId: "workflow-cps"
   source:
-    version: "3853.vb_a_490d892963"
+    version: "3867.v535458ce43fd"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "612.v55f2f80781ef"
