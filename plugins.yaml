@@ -4,7 +4,7 @@ plugins:
     version: "1.1"
 - artifactId: "analysis-model-api"
   source:
-    version: "11.15.0"
+    version: "12.1.0"
 - artifactId: "ant"
   source:
     version: "497.v94e7d9fffa_b_9"
@@ -46,13 +46,13 @@ plugins:
     version: "3.0.2"
 - artifactId: "bootstrap5-api"
   source:
-    version: "5.3.2-3"
+    version: "5.3.2-4"
 - artifactId: "bouncycastle-api"
   source:
     version: "2.30.1.77-225.v26ea_c9455fd9"
 - artifactId: "branch-api"
   source:
-    version: "2.1148.vce12cfcdf090"
+    version: "2.1152.v6f101e97dd77"
 - artifactId: "build-timeout"
   source:
     version: "1.32"
@@ -96,7 +96,7 @@ plugins:
     version: "722.v0662a_9b_e22a_c"
 - artifactId: "credentials"
   source:
-    version: "1319.v7eb_51b_3a_c97b_"
+    version: "1337.v60b_d7b_c7b_c9f"
 - artifactId: "credentials-binding"
   source:
     version: "657.v2b_19db_7d6e6d"
@@ -105,7 +105,7 @@ plugins:
     version: "2.508.va_74654f026d1"
 - artifactId: "data-tables-api"
   source:
-    version: "1.13.8-2"
+    version: "1.13.8-4"
 - artifactId: "declarative-pipeline-migration-assistant"
   source:
     version: "1.6.3"
@@ -141,13 +141,13 @@ plugins:
     version: "1648.vf3d852e00486"
 - artifactId: "echarts-api"
   source:
-    version: "5.4.3-2"
+    version: "5.4.3-4"
 - artifactId: "electricflow"
   source:
     version: "1.1.34"
 - artifactId: "email-ext"
   source:
-    version: "2.104"
+    version: "2.105"
 - artifactId: "extended-read-permission"
   source:
     version: "53.v6499940139e5"
@@ -159,10 +159,10 @@ plugins:
     version: "2.208.v91d65b_7792a_c"
 - artifactId: "font-awesome-api"
   source:
-    version: "6.5.1-2"
+    version: "6.5.1-3"
 - artifactId: "forensics-api"
   source:
-    version: "2.3.0"
+    version: "2.4.0"
 - artifactId: "git"
   source:
     version: "5.2.1"
@@ -258,7 +258,7 @@ plugins:
     version: "1.2.1"
 - artifactId: "jquery3-api"
   source:
-    version: "3.7.1-1"
+    version: "3.7.1-2"
 - artifactId: "jsch"
   source:
     version: "0.2.16-86.v42e010d9484b_"
@@ -270,7 +270,7 @@ plugins:
     version: "711.vb_d1a_491714dc"
 - artifactId: "mailer"
   source:
-    version: "463.vedf8358e006b_"
+    version: "470.vc91f60c5d8e2"
 - artifactId: "matrix-auth"
   source:
     version: "3.2.1"
@@ -327,7 +327,7 @@ plugins:
     version: "42.v0739460cda_c4"
 - artifactId: "pipeline-graph-analysis"
   source:
-    version: "202.va_d268e64deb_3"
+    version: "216.vfd8b_ece330ca_"
 - artifactId: "pipeline-graph-view"
   source:
     version: "215.vc0ea_557e4d6f"
@@ -363,16 +363,16 @@ plugins:
     version: "2.16.2"
 - artifactId: "plain-credentials"
   source:
-    version: "143.v1b_df8b_d3b_e48"
+    version: "179.vc5cb_98f6db_38"
 - artifactId: "plugin-util-api"
   source:
-    version: "3.8.0"
+    version: "4.1.0"
 - artifactId: "popper2-api"
   source:
     version: "2.11.6-4"
 - artifactId: "prism-api"
   source:
-    version: "1.29.0-10"
+    version: "1.29.0-13"
 - artifactId: "promoted-builds"
   source:
     version: "945.v597f5c6a_d3fd"
@@ -384,7 +384,7 @@ plugins:
     version: "330.v645b_7df10e2a_"
 - artifactId: "role-strategy"
   source:
-    version: "689.v731678c3e0eb_"
+    version: "711.vf33a_d2c994b_a_"
 - artifactId: "s3"
   source:
     version: "466.vf5b_3db_8e3eb_2"
@@ -417,7 +417,7 @@ plugins:
     version: "346.vda_a_c4f2c8e50"
 - artifactId: "ssh-credentials"
   source:
-    version: "308.ve4497b_ccd8f4"
+    version: "322.v124df57ed808"
 - artifactId: "ssh-slaves"
   source:
     version: "2.948.vb_8050d697fec"
@@ -429,7 +429,7 @@ plugins:
     version: "337.v1b_04ea_4df7c8"
 - artifactId: "support-core"
   source:
-    version: "1375.va_256158e8881"
+    version: "1408.vf28a_13c74f1d"
 - artifactId: "timestamper"
   source:
     version: "1.26"
@@ -447,7 +447,7 @@ plugins:
     version: "60.v7290fc0eb_b_cd"
 - artifactId: "warnings-ng"
   source:
-    version: "10.7.0"
+    version: "11.1.0"
 - artifactId: "windows-slaves"
   source:
     version: "1.8.1"
@@ -459,10 +459,10 @@ plugins:
     version: "1291.v51fd2a_625da_7"
 - artifactId: "workflow-basic-steps"
   source:
-    version: "1042.ve7b_140c4a_e0c"
+    version: "1049.v257a_e6b_30fb_d"
 - artifactId: "workflow-cps"
   source:
-    version: "3867.v535458ce43fd"
+    version: "3880.vb_ef4b_5cfd270"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "612.v55f2f80781ef"
