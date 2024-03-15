@@ -339,13 +339,13 @@ plugins:
     version: "111.v449306f708b_7"
 - artifactId: "pipeline-model-api"
   source:
-    version: "2.2183.vb_36481468374"
+    version: "2.2184.v0b_358b_953e69"
 - artifactId: "pipeline-model-definition"
   source:
-    version: "2.2183.vb_36481468374"
+    version: "2.2184.v0b_358b_953e69"
 - artifactId: "pipeline-model-extensions"
   source:
-    version: "2.2183.vb_36481468374"
+    version: "2.2184.v0b_358b_953e69"
 - artifactId: "pipeline-rest-api"
   source:
     version: "2.34"
@@ -354,7 +354,7 @@ plugins:
     version: "305.ve96d0205c1c6"
 - artifactId: "pipeline-stage-tags-metadata"
   source:
-    version: "2.2183.vb_36481468374"
+    version: "2.2184.v0b_358b_953e69"
 - artifactId: "pipeline-stage-view"
   source:
     version: "2.34"
@@ -477,7 +477,7 @@ plugins:
     version: "773.vc4fe1378f1d5"
 - artifactId: "workflow-scm-step"
   source:
-    version: "415.v434365564324"
+    version: "427.v4ca_6512e7df1"
 - artifactId: "workflow-step-api"
   source:
     version: "657.v03b_e8115821b_"
