@@ -41,12 +41,12 @@ jobs:
       id: git-diff
       run: echo "::set-output name=plugins::$(git --no-pager diff --name-only | grep plugins.yaml)"
 
-    - name: Login to  GitHub Container Repository
+    - name: Login to GitHub Container Repository
       uses: docker/login-action@v1
       with:
         registry: ghcr.io
-        username: ${{ github.repository_owner }}
-        password: ${{ secrets.GHCR_PUSH_TOKEN }}
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
       if: steps.git-diff.outputs.plugins
       
     - name: set PR body output
