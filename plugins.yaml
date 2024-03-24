@@ -88,6 +88,9 @@ plugins:
 - artifactId: "configuration-as-code"
   source:
     version: "1775.v810dc950b_514"
+- artifactId: "configuration-as-code-secret-ssm"
+  source:
+    version: "1.0.1"
 - artifactId: "aws-secrets-manager-secret-source"
   source:
     version: "1.72.v61781b_35c542"
