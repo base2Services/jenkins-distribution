@@ -91,6 +91,15 @@ plugins:
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
+- artifactId: "aws-secrets-manager-secret-source"
+  source:
+    version: "1.72.v61781b_35c542"
+- artifactId: "multiple-scms"
+  source:
+    version: "0.8"
+- artifactId: "conditional-buildstep"
+  source:
+    version: "1.4.3"
 - artifactId: "copyartifact"
   source:
     version: "722.v0662a_9b_e22a_c"
