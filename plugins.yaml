@@ -196,6 +196,9 @@ plugins:
 - artifactId: "gitlab-oauth"
   source:
     version: "1.19"
+- artifactId: "global-slack-notifier"
+  source:
+    version: "1.5"
 - artifactId: "gradle"
   source:
     version: "2.10"
