@@ -21,12 +21,12 @@ jobs:
       id: jenkins-version
       uses: addnab/docker-run-action@v3
       with:
-        image: jenkins/jenkins:lts-jdk11
+        image: jenkins/jenkins:lts-jdk17
         options: -u root -v ${{ github.workspace }}:/src
         shell: bash
         run: |
           echo "JENKINS VERSION: ${JENKINS_VERSION}"
-          sed -ie "s|FROM jenkins/jenkins:.*|FROM jenkins/jenkins:${JENKINS_VERSION}-jdk11|" /src/Dockerfile
+          sed -ie "s|FROM jenkins/jenkins:.*|FROM jenkins/jenkins:${JENKINS_VERSION}-jdk17|" /src/Dockerfile
           echo "::set-output name=version::$JENKINS_VERSION"
 
     - name: get git diff
