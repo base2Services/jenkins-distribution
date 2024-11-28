@@ -40,7 +40,7 @@ plugins:
     version: "1.72.v61781b_35c542"
 - artifactId: "basic-branch-build-strategies"
   source:
-    version: "81.v05e333931c7d"
+    version: "190.v343a_ee70d920"
 - artifactId: "bitbucket-oauth"
   source:
     version: "0.13"
@@ -75,7 +75,7 @@ plugins:
     url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/cloudbees-bitbucket-branch-source/800.va_b_b_9a_a_5035c1_ciinabox/cloudbees-bitbucket-branch-source.hpi"
 - artifactId: "cloudbees-folder"
   source:
-    version: "6.955.v81e2a_35c08d3"
+    version: "6.959.v4ed5cc9e2dd4"
 - artifactId: "command-launcher"
   source:
     version: "116.vd85919c54a_d6"
@@ -93,7 +93,7 @@ plugins:
     version: "980.v88956a_a_5d6a_d"
 - artifactId: "configuration-as-code"
   source:
-    version: "1873.vea_5814ca_9c93"
+    version: "1897.v79281e066ea_7"
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
@@ -102,10 +102,10 @@ plugins:
     version: "757.v05365583a_455"
 - artifactId: "credentials"
   source:
-    version: "1384.vf0a_2ed06f9c6"
+    version: "1389.vd7a_b_f5fa_50a_2"
 - artifactId: "credentials-binding"
   source:
-    version: "681.vf91669a_32e45"
+    version: "687.v619cb_15e923f"
 - artifactId: "dashboard-view"
   source:
     version: "2.521.v339b_a_f4d8da_8"
@@ -126,7 +126,7 @@ plugins:
     version: "88.ve78a_92f39e8e"
 - artifactId: "display-url-api"
   source:
-    version: "2.204.vf6fddd8a_8b_e9"
+    version: "2.209.v582ed814ff2f"
 - artifactId: "docker-build-publish"
   source:
     version: "1.4.0"
@@ -138,7 +138,7 @@ plugins:
     version: "580.vc0c340686b_54"
 - artifactId: "dockerhub-notification"
   source:
-    version: "2.7.2"
+    version: "2.7.3"
 - artifactId: "durable-task"
   source:
     version: "581.v299a_5609d767"
@@ -153,7 +153,7 @@ plugins:
     version: "1.1.37"
 - artifactId: "email-ext"
   source:
-    version: "1849.v6dd03b_f6e423"
+    version: "1861.vdb_d991590994"
 - artifactId: "extended-read-permission"
   source:
     version: "53.v6499940139e5"
@@ -171,10 +171,10 @@ plugins:
     version: "2.6.0"
 - artifactId: "git"
   source:
-    version: "5.5.2"
+    version: "5.6.0"
 - artifactId: "git-client"
   source:
-    version: "5.0.0"
+    version: "6.1.0"
 - artifactId: "git-server"
   source:
     version: "126.v0d945d8d2b_39"
@@ -183,7 +183,7 @@ plugins:
     version: "1.40.0"
 - artifactId: "github-api"
   source:
-    version: "1.321-468.v6a_9f5f2d5a_7e"
+    version: "1.321-478.vc9ce627ce001"
 - artifactId: "github-branch-pr-change-filter"
   source:
     version: "1.2.4"
@@ -195,7 +195,7 @@ plugins:
     version: "589.v845136f916cd"
 - artifactId: "github-oauth"
   source:
-    version: "597.ve0c3480fcb_d0"
+    version: "621.v33b_4394dda_4d"
 - artifactId: "gitlab-api"
   source:
     version: "5.6.0-97.v6603a_83f8690"
@@ -252,7 +252,7 @@ plugins:
     version: "0.11.5-112.ve82dfb_224b_a_d"
 - artifactId: "job-dsl"
   source:
-    version: "1.89"
+    version: "1.90"
 - artifactId: "jobConfigHistory"
   source:
     version: "1283.veb_dfb_00b_5ec0"
@@ -273,16 +273,16 @@ plugins:
     version: "1309.v0078b_fecd6ed"
 - artifactId: "ldap"
   source:
-    version: "725.v3cb_b_711b_1a_ef"
+    version: "770.vb_455e934581a_"
 - artifactId: "mailer"
   source:
-    version: "488.v0c9639c1a_eb_3"
+    version: "489.vd4b_25144138f"
 - artifactId: "matrix-auth"
   source:
     version: "3.2.3"
 - artifactId: "matrix-project"
   source:
-    version: "839.vff91cd7e3a_b_2"
+    version: "840.v812f627cb_578"
 - artifactId: "maven-plugin"
   source:
     version: "3.24"
@@ -315,7 +315,7 @@ plugins:
     version: "1.6.2"
 - artifactId: "okhttp-api"
   source:
-    version: "4.11.0-172.vda_da_1feeb_c6e"
+    version: "4.11.0-181.v1de5b_83857df"
 - artifactId: "pam-auth"
   source:
     version: "1.11"
@@ -339,7 +339,7 @@ plugins:
     version: "216.vfd8b_ece330ca_"
 - artifactId: "pipeline-graph-view"
   source:
-    version: "340.v28cecee8b_25f"
+    version: "382.vb_9a_27b_7b_ea_71"
 - artifactId: "pipeline-input-step"
   source:
     version: "495.ve9c153f6067b_"
@@ -399,10 +399,10 @@ plugins:
     version: "483.vcb_db_3dcee68f"
 - artifactId: "saml"
   source:
-    version: "4.464.vea_cb_75d7f5e0"
+    version: "4.501.v4313a_01e3a_18"
 - artifactId: "scm-api"
   source:
-    version: "696.v778d637b_a_762"
+    version: "698.v8e3b_c788f0a_6"
 - artifactId: "scm-filter-branch-pr"
   source:
     version: "210.vf35256163d30"
@@ -441,7 +441,7 @@ plugins:
     version: "1523.v5486c8d6da_f3"
 - artifactId: "timestamper"
   source:
-    version: "1.27"
+    version: "1.28"
 - artifactId: "token-macro"
   source:
     version: "400.v35420b_922dcb_"
@@ -477,10 +477,10 @@ plugins:
     version: "612.v55f2f80781ef"
 - artifactId: "workflow-durable-task-step"
   source:
-    version: "1378.v6a_3e903058a_3"
+    version: "1398.vf6c9e89e5988"
 - artifactId: "workflow-job"
   source:
-    version: "1436.vfa_244484591f"
+    version: "1468.vcf4f5ee92395"
 - artifactId: "workflow-multibranch"
   source:
     version: "795.ve0cb_1f45ca_9a_"
