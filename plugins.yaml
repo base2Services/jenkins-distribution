@@ -16,7 +16,7 @@ plugins:
     version: "4.5.14-208.v438351942757"
 - artifactId: "artifact-manager-s3"
   source:
-    version: "888.v342fb_0718408"
+    version: "894.v29efa_d1a_6383"
 - artifactId: "audit-trail"
   source:
     version: "382.vf64d6f626060"
@@ -25,10 +25,10 @@ plugins:
     version: "1.119.v50285141b_7e1"
 - artifactId: "aws-credentials"
   source:
-    version: "231.v08a_59f17d742"
+    version: "240.v6d844a_6f5480"
 - artifactId: "aws-global-configuration"
   source:
-    version: "130.v35b_7b_96f53c3"
+    version: "141.v3a_5c7ded79ee"
 - artifactId: "aws-java-sdk"
   source:
     version: "1.12.772-474.v7f79a_2046a_fb_"
@@ -55,7 +55,7 @@ plugins:
     version: "2.30.1.78.1-248.ve27176eb_46cb_"
 - artifactId: "branch-api"
   source:
-    version: "2.1200.v4b_a_3da_2eb_db_4"
+    version: "2.1202.vc51412f3ed84"
 - artifactId: "build-timeout"
   source:
     version: "1.33"
@@ -75,7 +75,7 @@ plugins:
     url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/cloudbees-bitbucket-branch-source/800.va_b_b_9a_a_5035c1_ciinabox/cloudbees-bitbucket-branch-source.hpi"
 - artifactId: "cloudbees-folder"
   source:
-    version: "6.959.v4ed5cc9e2dd4"
+    version: "6.975.v4161e479479f"
 - artifactId: "command-launcher"
   source:
     version: "116.vd85919c54a_d6"
@@ -93,7 +93,7 @@ plugins:
     version: "980.v88956a_a_5d6a_d"
 - artifactId: "configuration-as-code"
   source:
-    version: "1897.v79281e066ea_7"
+    version: "1903.v004d55388f30"
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
@@ -102,7 +102,7 @@ plugins:
     version: "757.v05365583a_455"
 - artifactId: "credentials"
   source:
-    version: "1389.vd7a_b_f5fa_50a_2"
+    version: "1393.v6017143c1763"
 - artifactId: "credentials-binding"
   source:
     version: "687.v619cb_15e923f"
@@ -138,13 +138,13 @@ plugins:
     version: "580.vc0c340686b_54"
 - artifactId: "dockerhub-notification"
   source:
-    version: "2.7.3"
+    version: "2.7.4"
 - artifactId: "durable-task"
   source:
     version: "581.v299a_5609d767"
 - artifactId: "ec2"
   source:
-    version: "1751.v47818f82a_83d"
+    version: "1790.ve2a_e5e0b_d90d"
 - artifactId: "echarts-api"
   source:
     version: "5.5.1-4"
@@ -153,7 +153,7 @@ plugins:
     version: "1.1.37"
 - artifactId: "email-ext"
   source:
-    version: "1861.vdb_d991590994"
+    version: "1866.v14fa_6d201654"
 - artifactId: "extended-read-permission"
   source:
     version: "53.v6499940139e5"
@@ -168,7 +168,7 @@ plugins:
     version: "6.6.0-2"
 - artifactId: "forensics-api"
   source:
-    version: "2.6.0"
+    version: "2.7.0"
 - artifactId: "git"
   source:
     version: "5.6.0"
@@ -204,7 +204,7 @@ plugins:
     version: "1.20"
 - artifactId: "gradle"
   source:
-    version: "2.13.1"
+    version: "2.14"
 - artifactId: "greenballs"
   source:
     version: "1.15.1"
@@ -270,7 +270,7 @@ plugins:
     version: "0.2.16-86.v42e010d9484b_"
 - artifactId: "junit"
   source:
-    version: "1309.v0078b_fecd6ed"
+    version: "1311.v39e1716e4eb_e"
 - artifactId: "ldap"
   source:
     version: "770.vb_455e934581a_"
@@ -288,10 +288,10 @@ plugins:
     version: "3.24"
 - artifactId: "mina-sshd-api-common"
   source:
-    version: "2.14.0-133.vcc091215a_358"
+    version: "2.14.0-136.v4d2b_0853615e"
 - artifactId: "mina-sshd-api-core"
   source:
-    version: "2.14.0-133.vcc091215a_358"
+    version: "2.14.0-136.v4d2b_0853615e"
 - artifactId: "momentjs"
   source:
     version: "1.1.1"
@@ -399,7 +399,7 @@ plugins:
     version: "483.vcb_db_3dcee68f"
 - artifactId: "saml"
   source:
-    version: "4.501.v4313a_01e3a_18"
+    version: "4.511.vef666858a_167"
 - artifactId: "scm-api"
   source:
     version: "698.v8e3b_c788f0a_6"
@@ -429,7 +429,7 @@ plugins:
     version: "349.vb_8b_6b_9709f5b_"
 - artifactId: "ssh-slaves"
   source:
-    version: "2.973.v0fa_8c0dea_f9f"
+    version: "2.1010.v64ec48721231"
 - artifactId: "sshd"
   source:
     version: "3.330.vc866a_8389b_58"
@@ -438,7 +438,7 @@ plugins:
     version: "338.v848422169819"
 - artifactId: "support-core"
   source:
-    version: "1523.v5486c8d6da_f3"
+    version: "1534.v39e20b_212219"
 - artifactId: "timestamper"
   source:
     version: "1.28"
@@ -471,7 +471,7 @@ plugins:
     version: "1058.vcb_fc1e3a_21a_9"
 - artifactId: "workflow-cps"
   source:
-    version: "3996.va_f5c1799f978"
+    version: "4000.v5198556e9cea_"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "612.v55f2f80781ef"
@@ -480,7 +480,7 @@ plugins:
     version: "1398.vf6c9e89e5988"
 - artifactId: "workflow-job"
   source:
-    version: "1468.vcf4f5ee92395"
+    version: "1472.ve4d5eca_143c4"
 - artifactId: "workflow-multibranch"
   source:
     version: "795.ve0cb_1f45ca_9a_"
