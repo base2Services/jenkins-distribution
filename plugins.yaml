@@ -493,4 +493,6 @@ plugins:
 - artifactId: "workflow-support"
   source:
     version: "936.v9fa_77211ca_e1"
-
+- artifactId: "parameterized-scheduler"
+  source:
+    version: "378.va_234d1c44456"

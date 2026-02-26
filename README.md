@@ -131,7 +131,7 @@ The Jenkins distribution follows this general data flow for job execution:
 The infrastructure for this Jenkins distribution is primarily defined in the `Dockerfile` and `docker-compose.yaml` files. Key components include:
 
 - Docker:
-  - `Dockerfile`: Defines the custom Jenkins image based on `jenkins/jenkins:2.479.2-jdk17`
+  - `Dockerfile`: Defines the custom Jenkins image based on `jenkins/jenkins:2.479.3-jdk17`
   - `docker-compose.yaml`: Configures the Jenkins service for local development
 
 - Jenkins:
