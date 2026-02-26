@@ -52,10 +52,10 @@ plugins:
     version: "5.3.3-1"
 - artifactId: "bouncycastle-api"
   source:
-    version: "2.30.1.78.1-248.ve27176eb_46cb_"
+    version: "2.30.1.80-256.vf98926042a_9b_"
 - artifactId: "branch-api"
   source:
-    version: "2.1200.v4b_a_3da_2eb_db_4"
+    version: "2.1206.vd9f35001c95c"
 - artifactId: "build-timeout"
   source:
     version: "1.33"
@@ -75,7 +75,7 @@ plugins:
     url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/cloudbees-bitbucket-branch-source/800.va_b_b_9a_a_5035c1_ciinabox/cloudbees-bitbucket-branch-source.hpi"
 - artifactId: "cloudbees-folder"
   source:
-    version: "6.959.v4ed5cc9e2dd4"
+    version: "6.976.v4dc79fb_c458d"
 - artifactId: "command-launcher"
   source:
     version: "116.vd85919c54a_d6"
@@ -219,7 +219,7 @@ plugins:
     version: "1.37"
 - artifactId: "jackson2-api"
   source:
-    version: "2.17.0-379.v02de8ec9f64c"
+    version: "2.18.3-402.v74c4eb_f122b_2"
 - artifactId: "jacoco"
   source:
     version: "3.3.7"
@@ -453,7 +453,7 @@ plugins:
     version: "2.107.v3fa_e48679298"
 - artifactId: "variant"
   source:
-    version: "60.v7290fc0eb_b_cd"
+    version: "70.va_d9f17f859e0"
 - artifactId: "warnings-ng"
   source:
     version: "11.12.0"
@@ -471,7 +471,7 @@ plugins:
     version: "1058.vcb_fc1e3a_21a_9"
 - artifactId: "workflow-cps"
   source:
-    version: "3996.va_f5c1799f978"
+    version: "4007.vd705fc76a_34e"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "612.v55f2f80781ef"
