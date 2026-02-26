@@ -465,7 +465,7 @@ plugins:
     version: "600.vb_57cdd26fdd7"
 - artifactId: "workflow-api"
   source:
-    version: "1336.vee415d95c521"
+    version: "1363.v03f731255494"
 - artifactId: "workflow-basic-steps"
   source:
     version: "1058.vcb_fc1e3a_21a_9"
@@ -489,10 +489,10 @@ plugins:
     version: "427.v4ca_6512e7df1"
 - artifactId: "workflow-step-api"
   source:
-    version: "678.v3ee58b_469476"
+    version: "686.v603d058a_e148"
 - artifactId: "workflow-support"
   source:
-    version: "936.v9fa_77211ca_e1"
+    version: "944.v5a_859593b_98a_"
 - artifactId: "parameterized-scheduler"
   source:
     version: "378.va_234d1c44456"
