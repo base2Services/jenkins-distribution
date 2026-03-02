@@ -25,7 +25,9 @@ jobs:
         options: -u root -v ${{ github.workspace }}:/src
         shell: bash
         run: |
-          cd /tmp; jar xf /usr/share/jenkins/jenkins.war
+          echo "Finding Jenkins Version"
+          cd /tmp
+          jar xf /usr/share/jenkins/jenkins.war
           export JENKINS VERSION=$(awk -F': *' '/^Implementation-Version:/ {print $2}' /tmp/META-INF/MANIFEST.MF)
           echo "JENKINS VERSION: ${JENKINS_VERSION}"
           sed -ie "s|FROM jenkins/jenkins:.*|FROM jenkins/jenkins:${JENKINS_VERSION}-jdk17|" /src/Dockerfile
