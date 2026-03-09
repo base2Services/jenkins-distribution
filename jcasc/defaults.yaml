@@ -47,7 +47,6 @@ jenkins:
     rawHtml:
       disableSyntaxHighlighting: true
   mode: NORMAL
-  myViewsTabBar: "standard"
   numExecutors: 0
   primaryView:
     all:
