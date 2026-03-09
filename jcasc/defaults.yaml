@@ -1,8 +1,5 @@
 ---
 jenkins:
-  agentProtocols:
-  - "JNLP4-connect"
-  - "Ping"
   authorizationStrategy:
     globalMatrix:
       permissions:
