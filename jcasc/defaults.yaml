@@ -15,7 +15,6 @@ jenkins:
         amiType:
           unixData:
             sshPort: "22"
-        associatePublicIp: false
         connectBySSHProcess: false
         connectionStrategy: PRIVATE_IP
         deleteRootOnTermination: true
