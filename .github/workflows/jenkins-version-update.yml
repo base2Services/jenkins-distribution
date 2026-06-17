@@ -21,7 +21,7 @@ jobs:
       id: jenkins-version
       uses: addnab/docker-run-action@v3
       with:
-        image: jenkins/jenkins:lts-jdk17
+        image: jenkins/jenkins:lts-jdk25
         options: -u root -v ${{ github.workspace }}:/src
         shell: bash
         run: |
