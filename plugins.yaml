@@ -19,7 +19,7 @@ plugins:
     version: "973.v6a_51253e896b_"
 - artifactId: "audit-trail"
   source:
-    version: "436.vc0d1e79fc5a_3"
+    version: "455.v2ee2f7a_da_b_25"
 - artifactId: "authentication-tokens"
   source:
     version: "1.144.v5ff4a_5ec5c33"
@@ -441,7 +441,7 @@ plugins:
     version: "362.va_b_695ef4fdf9"
 - artifactId: "support-core"
   source:
-    version: "1830.v95660efff726"
+    version: "1840.v08d78d1b_4db_c"
 - artifactId: "timestamper"
   source:
     version: "1.30"
