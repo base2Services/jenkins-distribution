@@ -30,7 +30,7 @@ jobs:
           jar xf /usr/share/jenkins/jenkins.war
           export JENKINS_VERSION=$(awk -F': *' '/^Implementation-Version:/ {gsub(/\r/,"",$2); print $2}' /tmp/META-INF/MANIFEST.MF)
           echo "JENKINS VERSION: ${JENKINS_VERSION}"
-          sed -ie "s|FROM jenkins/jenkins:.*|FROM jenkins/jenkins:${JENKINS_VERSION}-jdk17|" /src/Dockerfile
+          sed -ie "s|FROM jenkins/jenkins:.*|FROM jenkins/jenkins:${JENKINS_VERSION}-jdk25|" /src/Dockerfile
           echo "::set-output name=version::$JENKINS_VERSION"
 
     - name: get git diff
