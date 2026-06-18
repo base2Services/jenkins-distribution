@@ -147,6 +147,9 @@ plugins:
 - artifactId: "echarts-api"
   source:
     version: "6.0.0-1247.vf3e35a_c1813f"
+- artifactId: "eddsa-api"
+  source:
+    version: "0.3.0.1-19.vc432d923e5ee"
 - artifactId: "electricflow"
   source:
     version: "1.1.42"
