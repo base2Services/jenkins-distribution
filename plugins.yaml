@@ -46,8 +46,7 @@ plugins:
     version: "0.18"
 - artifactId: "bitbucket-push-and-pull-request"
   source:
-    version: "3.3.10-SNAPSHOT"
-    url: "https://ci.jenkins.io/job/Plugins/job/bitbucket-push-and-pull-request-plugin/job/PR-389/1/artifact/target/bitbucket-push-and-pull-request.hpi"
+    version: "3.3.9"
 - artifactId: "bootstrap5-api"
   source:
     version: "5.3.8-895.v4d0d8e47fea_d"
