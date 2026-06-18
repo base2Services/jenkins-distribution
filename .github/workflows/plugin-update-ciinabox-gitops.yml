@@ -6,7 +6,6 @@ on:
   workflow_dispatch: # Allow manual trigger
 
 permissions:
-  id-token: write
   contents: write
   pull-requests: write
 
@@ -20,8 +19,10 @@ jobs:
 
       - name: Get latest release version
         id: latest
+        env:
+          GH_TOKEN: ${{ secrets.CIINABOX_REPO_TOKEN }}
         run: |
-          LATEST=$(curl -s https://api.github.com/repos/ciinabox/ciinabox-gitops-plugin/releases/latest | jq -r '.tag_name')
+          LATEST=$(gh release view --repo ciinabox/ciinabox-gitops-plugin --json tagName -q '.tagName')
           echo "version=${LATEST}" >> "$GITHUB_OUTPUT"
           echo "Latest release: ${LATEST}"
 
@@ -35,7 +36,7 @@ jobs:
       - name: Check if update needed
         id: check
         run: |
-          if [ "${{ steps.latest.outputs.version }}" != "${{ steps.current.outputs.version }}" ] && [ "${{ steps.latest.outputs.version }}" != "null" ]; then
+          if [ "${{ steps.latest.outputs.version }}" != "${{ steps.current.outputs.version }}" ] && [ -n "${{ steps.latest.outputs.version }}" ]; then
             echo "update=true" >> "$GITHUB_OUTPUT"
             echo "Update available: ${{ steps.current.outputs.version }} -> ${{ steps.latest.outputs.version }}"
           else
