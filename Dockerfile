@@ -17,11 +17,6 @@ COPY plugins.yaml $REF/plugins.yaml
 
 RUN jenkins-plugin-cli --plugin-file $REF/plugins.yaml --verbose
 
-# Override bitbucket-push-and-pull-request with PR-389 build (SCMHead fix)
-# Download from: https://ci.jenkins.io/job/Plugins/job/bitbucket-push-and-pull-request-plugin/job/PR-389/1/artifact/target/bitbucket-push-and-pull-request.hpi
-# Place the .hpi file in the build context root as bitbucket-push-and-pull-request.hpi
-COPY bitbucket-push-and-pull-request.hpi $REF/plugins/bitbucket-push-and-pull-request.jpi
-
 COPY init.groovy.d/ $REF/init.groovy.d/
 
 COPY --chown=jenkins:jenkins jcasc/defaults.yaml /cfg/jenkins.yaml
