@@ -1,0 +1,81 @@
+name: Update ciinabox-gitops-plugin
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Daily at 6am UTC
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  id-token: write
+  contents: write
+  pull-requests: write
+
+jobs:
+  check-update:
+    name: Check for new ciinabox-gitops-plugin release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Get latest release version
+        id: latest
+        run: |
+          LATEST=$(curl -s https://api.github.com/repos/ciinabox/ciinabox-gitops-plugin/releases/latest | jq -r '.tag_name')
+          echo "version=${LATEST}" >> "$GITHUB_OUTPUT"
+          echo "Latest release: ${LATEST}"
+
+      - name: Get current version from plugins.yaml
+        id: current
+        run: |
+          CURRENT=$(grep -A2 'artifactId: "ciinabox-gitops-plugin"' plugins.yaml | grep 'version:' | awk '{print $2}' | tr -d '"')
+          echo "version=${CURRENT}" >> "$GITHUB_OUTPUT"
+          echo "Current version: ${CURRENT}"
+
+      - name: Check if update needed
+        id: check
+        run: |
+          if [ "${{ steps.latest.outputs.version }}" != "${{ steps.current.outputs.version }}" ] && [ "${{ steps.latest.outputs.version }}" != "null" ]; then
+            echo "update=true" >> "$GITHUB_OUTPUT"
+            echo "Update available: ${{ steps.current.outputs.version }} -> ${{ steps.latest.outputs.version }}"
+          else
+            echo "update=false" >> "$GITHUB_OUTPUT"
+            echo "No update needed"
+          fi
+
+      - name: Update plugins.yaml
+        if: steps.check.outputs.update == 'true'
+        run: |
+          VERSION="${{ steps.latest.outputs.version }}"
+          S3_URL="https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/${VERSION}/ciinabox-gitops-plugin.hpi"
+
+          # Update version
+          sed -i "/artifactId: \"ciinabox-gitops-plugin\"/{n;s/version: .*/version: \"${VERSION}\"/}" plugins.yaml
+
+          # Update URL
+          sed -i "s|url: .*ciinabox-gitops-plugin.hpi.*|url: \"${S3_URL}\"|" plugins.yaml
+
+          echo "Updated plugins.yaml to version ${VERSION}"
+          grep -A3 'artifactId: "ciinabox-gitops-plugin"' plugins.yaml
+
+      - name: Create Pull Request
+        if: steps.check.outputs.update == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: update ciinabox-gitops-plugin to ${{ steps.latest.outputs.version }}"
+          branch: auto/ciinabox-gitops-plugin-update
+          delete-branch: true
+          title: "Update ciinabox-gitops-plugin to ${{ steps.latest.outputs.version }}"
+          body: |
+            Automated update of `ciinabox-gitops-plugin` to version **${{ steps.latest.outputs.version }}**.
+
+            **Changes:** https://github.com/ciinabox/ciinabox-gitops-plugin/releases/tag/${{ steps.latest.outputs.version }}
+
+            Previous version: `${{ steps.current.outputs.version }}`
+
+            ---
+            _This PR was created automatically by the daily plugin update workflow._
+          labels: |
+            dependencies
+            automated
