@@ -46,8 +46,7 @@ plugins:
     version: "0.18"
 - artifactId: "bitbucket-push-and-pull-request"
   source:
-    version: "3.3.10-SNAPSHOT"
-    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/bitbucket-push-and-pull-request/3.3.10-SNAPSHOT/bitbucket-push-and-pull-request.hpi"
+    version: "3.4.0"
 - artifactId: "bootstrap5-api"
   source:
     version: "5.3.8-895.v4d0d8e47fea_d"
