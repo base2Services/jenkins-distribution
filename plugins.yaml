@@ -4,7 +4,7 @@ plugins:
     version: "1.1"
 - artifactId: "analysis-model-api"
   source:
-    version: "13.21.0-945.va_f5a_0b_c1404b_"
+    version: "14.14.0-1004.vf53c9efb_f455"
 - artifactId: "ant"
   source:
     version: "520.vd082ecfb_16a_9"
@@ -49,7 +49,7 @@ plugins:
     version: "3.4.0"
 - artifactId: "bootstrap5-api"
   source:
-    version: "5.3.8-895.v4d0d8e47fea_d"
+    version: "5.3.8-1048.va_c299057e35c"
 - artifactId: "bouncycastle-api"
   source:
     version: "2.30.1.84-291.v9f17b_21896e2"
@@ -61,7 +61,7 @@ plugins:
     version: "1.40"
 - artifactId: "caffeine-api"
   source:
-    version: "3.2.3-194.v31a_b_f7a_b_5a_81"
+    version: "3.2.4-208.v7e2da_a_7db_82b_"
 - artifactId: "checks-api"
   source:
     version: "415.vf022234a_931d"
@@ -71,7 +71,7 @@ plugins:
     url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.5.4/ciinabox-gitops-plugin.hpi"
 - artifactId: "cloudbees-bitbucket-branch-source"
   source:
-    version: "937.3.2"
+    version: "937.3.4"
 - artifactId: "cloudbees-folder"
   source:
     version: "6.1100.ve9eed61d16c4"
@@ -89,10 +89,10 @@ plugins:
     version: "1.5.0"
 - artifactId: "config-file-provider"
   source:
-    version: "1006.vc7366c201f57"
+    version: "1013.v73c323e52b_1f"
 - artifactId: "configuration-as-code"
   source:
-    version: "2088.ve3b_42c663c80"
+    version: "2089.v970a_0b_a_8cc6d"
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
@@ -110,7 +110,7 @@ plugins:
     version: "2.558.v96b_901978e47"
 - artifactId: "data-tables-api"
   source:
-    version: "2.3.7-1534.v539d4edf109d"
+    version: "2.3.8-1570.v1cb_1cd2a_0fb_c"
 - artifactId: "declarative-pipeline-migration-assistant"
   source:
     version: "1.6.6"
@@ -146,13 +146,13 @@ plugins:
     version: "2053.v86eb_364849fc"
 - artifactId: "echarts-api"
   source:
-    version: "6.0.0-1247.vf3e35a_c1813f"
+    version: "6.0.0-1287.vfd24c22a_3d00"
 - artifactId: "eddsa-api"
   source:
-    version: "0.3.0.1-19.vc432d923e5ee"
+    version: "0.3.0.1-29.v67e9a_1c969b_b_"
 - artifactId: "electricflow"
   source:
-    version: "1.1.42"
+    version: "1.1.43"
 - artifactId: "email-ext"
   source:
     version: "2038.v7b_8817a_499d9"
@@ -167,16 +167,16 @@ plugins:
     version: "2.263.v941d21defef7"
 - artifactId: "font-awesome-api"
   source:
-    version: "7.2.0-965.ve3840b_696418"
+    version: "7.2.0-990.vf220b_2a_496f9"
 - artifactId: "forensics-api"
   source:
-    version: "3.1832.va_1179842528b_"
+    version: "4.1891.v5e60f3377506"
 - artifactId: "git"
   source:
     version: "5.10.1"
 - artifactId: "git-client"
   source:
-    version: "6.6.0"
+    version: "6.6.1"
 - artifactId: "git-server"
   source:
     version: "137.ve0060b_432302"
@@ -191,7 +191,7 @@ plugins:
     version: "1.2.4"
 - artifactId: "github-branch-source"
   source:
-    version: "1967.1969.v205fd594c821"
+    version: "1967.1970.vd86979736546"
 - artifactId: "github-checks"
   source:
     version: "679.v74133da_b_435a_"
@@ -221,7 +221,7 @@ plugins:
     version: "427.1"
 - artifactId: "jackson2-api"
   source:
-    version: "2.21.2-436.v29efdb_7418ff"
+    version: "2.22.0-439.vb_b_43658d6176"
 - artifactId: "jacoco"
   source:
     version: "3.3.7"
@@ -257,7 +257,7 @@ plugins:
     version: "3654.vdf58f53e2d15"
 - artifactId: "jobConfigHistory"
   source:
-    version: "1356.ve360da_6c523a_"
+    version: "1367.vc8fa_b_15101dc"
 - artifactId: "jquery"
   source:
     version: "1.12.4-3"
@@ -266,7 +266,7 @@ plugins:
     version: "1.2.1"
 - artifactId: "jquery3-api"
   source:
-    version: "3.7.1-619.vdb_10e002501a_"
+    version: "3.7.1-687.v68d468e40b_30"
 - artifactId: "jsch"
   source:
     version: "0.2.16-95.v3eecb_55fa_b_78"
@@ -299,7 +299,7 @@ plugins:
     version: "1.1.1"
 - artifactId: "msbuild"
   source:
-    version: "1.42"
+    version: "1.43"
 - artifactId: "mstestrunner"
   source:
     version: "1.5.0"
@@ -344,10 +344,10 @@ plugins:
     version: "254.v0f63a_a_447dca_"
 - artifactId: "pipeline-graph-view"
   source:
-    version: "940.v790e7a_c51722"
+    version: "953.v23894ccf0079"
 - artifactId: "pipeline-input-step"
   source:
-    version: "551.vdff487c5998c"
+    version: "560.v56198a_642157"
 - artifactId: "pipeline-milestone-step"
   source:
     version: "152.v6e22b_8cfc66c"
@@ -380,13 +380,13 @@ plugins:
     version: "199.v9f8e1f741799"
 - artifactId: "plugin-util-api"
   source:
-    version: "6.1192.v30fe6e2837ff"
+    version: "7.1341.v039f146993d9"
 - artifactId: "popper2-api"
   source:
     version: "2.11.6-5"
 - artifactId: "prism-api"
   source:
-    version: "1.30.0-717.vb_f8360844b_53"
+    version: "1.30.0-741.v034eb_0b_0a_a_fa_"
 - artifactId: "promoted-builds"
   source:
     version: "992.va_00888f21b_74"
@@ -413,7 +413,7 @@ plugins:
     version: "264.v39ce4f34d572"
 - artifactId: "script-security"
   source:
-    version: "1402.v94c9ce464861"
+    version: "1402.1405.vc96e74964250"
 - artifactId: "secure-requester-whitelist"
   source:
     version: "72.v6cce468c5513"
@@ -461,7 +461,7 @@ plugins:
     version: "70.va_d9f17f859e0"
 - artifactId: "warnings-ng"
   source:
-    version: "13.10085.v94a_d6ca_82b_f6"
+    version: "13.10153.v011f47a_3ef01"
 - artifactId: "windows-slaves"
   source:
     version: "1.8.1"
@@ -476,7 +476,7 @@ plugins:
     version: "1098.v808b_fd7f8cf4"
 - artifactId: "workflow-cps"
   source:
-    version: "4331.v9d06ed4658ff"
+    version: "4350.vcc65d4958821"
 - artifactId: "workflow-cps-global-lib"
   source:
     version: "615.vb_b_0664a_b_19f3"
