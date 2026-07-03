@@ -67,8 +67,8 @@ plugins:
     version: "415.vf022234a_931d"
 - artifactId: "ciinabox-gitops-plugin"
   source:
-    version: "0.5.3"
-    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.5.3/ciinabox-gitops-plugin.hpi"
+    version: "0.5.4"
+    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.5.4/ciinabox-gitops-plugin.hpi"
 - artifactId: "cloudbees-bitbucket-branch-source"
   source:
     version: "937.3.2"
