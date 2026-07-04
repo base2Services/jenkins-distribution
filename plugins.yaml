@@ -67,8 +67,8 @@ plugins:
     version: "415.vf022234a_931d"
 - artifactId: "ciinabox-gitops-plugin"
   source:
-    version: "0.5.4"
-    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.5.4/ciinabox-gitops-plugin.hpi"
+    version: "1.0-999999-SNAPSHOT"
+    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/1.0-999999-SNAPSHOT/ciinabox-gitops-plugin.hpi"
 - artifactId: "cloudbees-bitbucket-branch-source"
   source:
     version: "937.3.4"
@@ -171,6 +171,9 @@ plugins:
 - artifactId: "forensics-api"
   source:
     version: "4.1891.v5e60f3377506"
+- artifactId: "generic-webhook-trigger"
+  source:
+    version: "2.2.2"
 - artifactId: "git"
   source:
     version: "5.10.1"
@@ -201,6 +204,9 @@ plugins:
 - artifactId: "gitlab-api"
   source:
     version: "6.3.0-126.vd066b_d896159"
+- artifactId: "gitlab-branch-source"
+  source:
+    version: "773.v3ccbd44ea_d3c"
 - artifactId: "gitlab-oauth"
   source:
     version: "1.30"
