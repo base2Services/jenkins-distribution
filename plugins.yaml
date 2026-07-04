@@ -206,7 +206,7 @@ plugins:
     version: "6.3.0-126.vd066b_d896159"
 - artifactId: "gitlab-branch-source"
   source:
-    version: "773.v3ccbd44ea_d3c"
+    version: "740.v04f287f9194d"
 - artifactId: "gitlab-oauth"
   source:
     version: "1.30"
