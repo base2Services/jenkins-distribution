@@ -49,7 +49,7 @@ jobs:
           S3_URL="https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/${VERSION}/ciinabox-gitops-plugin.hpi"
 
           # Update version
-          sed -i "/artifactId: \"ciinabox-gitops-plugin\"/{n;s/version: .*/version: \"${VERSION}\"/}" plugins.yaml
+          sed -i "/artifactId: \"ciinabox-gitops-plugin\"/{n;n;s/version: .*/version: \"${VERSION}\"/}" plugins.yaml
 
           # Update URL
           sed -i "s|url: .*ciinabox-gitops-plugin.hpi.*|url: \"${S3_URL}\"|" plugins.yaml
