@@ -498,4 +498,10 @@ plugins:
 - artifactId: "workflow-support"
   source:
     version: "1015.v785e5a_b_b_8b_22"
+- artifactId: "gitlab-branch-source"
+  source:
+    version: "740.v04f287f9194d"
+- artifactId: "generic-webhook-trigger"
+  source:
+    version: "2.4.2"
 
