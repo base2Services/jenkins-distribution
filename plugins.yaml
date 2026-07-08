@@ -501,7 +501,4 @@ plugins:
 - artifactId: "gitlab-branch-source"
   source:
     version: "740.v04f287f9194d"
-- artifactId: "generic-webhook-trigger"
-  source:
-    version: "2.4.2"
 
