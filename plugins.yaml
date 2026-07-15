@@ -67,8 +67,8 @@ plugins:
     version: "415.vf022234a_931d"
 - artifactId: "ciinabox-gitops-plugin"
   source:
-    version: "0.5.4"
-    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.5.4/ciinabox-gitops-plugin.hpi"
+    version: "1.0-999999-SNAPSHOT"
+    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/1.0-999999-SNAPSHOT/ciinabox-gitops-plugin.hpi"
 - artifactId: "cloudbees-bitbucket-branch-source"
   source:
     version: "937.3.5"
@@ -498,4 +498,6 @@ plugins:
 - artifactId: "workflow-support"
   source:
     version: "1015.v785e5a_b_b_8b_22"
-
+- artifactId: "gitlab-branch-source"
+  source:
+    version: "740.v04f287f9194d"
