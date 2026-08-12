@@ -43,7 +43,7 @@ plugins:
     version: "317.v85b_331d6cc42"
 - artifactId: "bitbucket-oauth"
   source:
-    version: "0.18"
+    version: "0.19"
 - artifactId: "bitbucket-push-and-pull-request"
   source:
     version: "4.0.1"
@@ -92,7 +92,7 @@ plugins:
     version: "1013.v73c323e52b_1f"
 - artifactId: "configuration-as-code"
   source:
-    version: "2116.v98dde145b_dce"
+    version: "2117.vc05a_0b_e6b_f4e"
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
@@ -254,7 +254,7 @@ plugins:
     version: "0.13.0-141.vd58b_a_9592b_6c"
 - artifactId: "job-dsl"
   source:
-    version: "3654.vdf58f53e2d15"
+    version: "3732.v9a_c49a_61a_313"
 - artifactId: "jobConfigHistory"
   source:
     version: "1367.vc8fa_b_15101dc"
@@ -344,7 +344,7 @@ plugins:
     version: "254.v0f63a_a_447dca_"
 - artifactId: "pipeline-graph-view"
   source:
-    version: "980.vb_db_0b_e5f683c"
+    version: "998.vc30deece0e36"
 - artifactId: "pipeline-input-step"
   source:
     version: "560.v56198a_642157"
@@ -461,7 +461,7 @@ plugins:
     version: "70.va_d9f17f859e0"
 - artifactId: "warnings-ng"
   source:
-    version: "13.10212.v247e4d8d9430"
+    version: "13.10221.v6e946b_9a_b_1fa_"
 - artifactId: "windows-slaves"
   source:
     version: "1.8.1"
