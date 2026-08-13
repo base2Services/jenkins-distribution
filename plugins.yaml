@@ -68,7 +68,7 @@ plugins:
     url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.5.8/ciinabox-gitops-plugin.hpi"
 - artifactId: "cloudbees-bitbucket-branch-source"
   source:
-    version: "937.3.7"
+    version: "937.3.8"
 - artifactId: "cloudbees-folder"
   source:
     version: "6.1106.v3a_d9a_6d2465e"
@@ -320,13 +320,13 @@ plugins:
     version: "152.v6e22b_8cfc66c"
 - artifactId: "pipeline-model-api"
   source:
-    version: "2.2291.v2934911987b_6"
+    version: "2.2293.v6e7193cec599"
 - artifactId: "pipeline-model-definition"
   source:
-    version: "2.2291.v2934911987b_6"
+    version: "2.2293.v6e7193cec599"
 - artifactId: "pipeline-model-extensions"
   source:
-    version: "2.2291.v2934911987b_6"
+    version: "2.2293.v6e7193cec599"
 - artifactId: "pipeline-rest-api"
   source:
     version: "2.41"
@@ -335,7 +335,7 @@ plugins:
     version: "345.va_96187909426"
 - artifactId: "pipeline-stage-tags-metadata"
   source:
-    version: "2.2291.v2934911987b_6"
+    version: "2.2293.v6e7193cec599"
 - artifactId: "pipeline-stage-view"
   source:
     version: "2.41"
