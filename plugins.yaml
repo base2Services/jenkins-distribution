@@ -1,7 +1,4 @@
 plugins:
-- artifactId: "ace-editor"
-  source:
-    version: "1.1"
 - artifactId: "analysis-model-api"
   source:
     version: "14.16.0-1014.v2802998b_7789"
@@ -162,9 +159,6 @@ plugins:
 - artifactId: "external-monitor-job"
   source:
     version: "223.vb_fddcf42c9b_3"
-- artifactId: "favorite"
-  source:
-    version: "2.263.v941d21defef7"
 - artifactId: "font-awesome-api"
   source:
     version: "7.3.1-1013.v0835a_879ec6d"
@@ -207,12 +201,6 @@ plugins:
 - artifactId: "gradle"
   source:
     version: "2.19.1252.v15196b_5a_6e10"
-- artifactId: "greenballs"
-  source:
-    version: "1.15.1"
-- artifactId: "handlebars"
-  source:
-    version: "3.0.8"
 - artifactId: "handy-uri-templates-2-api"
   source:
     version: "2.1.8-38.vcea_5d521d5f3"
@@ -222,9 +210,6 @@ plugins:
 - artifactId: "jackson2-api"
   source:
     version: "2.22.1-443.vc91f592333c4"
-- artifactId: "jacoco"
-  source:
-    version: "3.3.7"
 - artifactId: "javadoc"
   source:
     version: "354.vee1a_660b_4990"
@@ -240,30 +225,18 @@ plugins:
 - artifactId: "jdk-tool"
   source:
     version: "83.v417146707a_3d"
-- artifactId: "jenkins-design-language"
-  source:
-    version: "1.27.26"
 - artifactId: "jersey2-api"
   source:
     version: "2.48-180.ve47b_264f849b_"
 - artifactId: "jira"
   source:
     version: "3.22"
-- artifactId: "jjwt-api"
-  source:
-    version: "0.13.0-141.vd58b_a_9592b_6c"
 - artifactId: "job-dsl"
   source:
     version: "3732.v9a_c49a_61a_313"
 - artifactId: "jobConfigHistory"
   source:
     version: "1367.vc8fa_b_15101dc"
-- artifactId: "jquery"
-  source:
-    version: "1.12.4-3"
-- artifactId: "jquery-detached"
-  source:
-    version: "1.2.1"
 - artifactId: "jquery3-api"
   source:
     version: "3.7.1-687.v68d468e40b_30"
@@ -294,9 +267,6 @@ plugins:
 - artifactId: "mina-sshd-api-core"
   source:
     version: "2.19.0-192.v2b_a_7b_2c1dc71"
-- artifactId: "momentjs"
-  source:
-    version: "1.1.1"
 - artifactId: "msbuild"
   source:
     version: "1.43"
@@ -306,9 +276,6 @@ plugins:
 - artifactId: "multibranch-build-strategy-extension"
   source:
     version: "92.v6a_3f6939331d"
-- artifactId: "multiple-scms"
-  source:
-    version: "0.8"
 - artifactId: "node-iterator-api"
   source:
     version: "72.vc90e81737df1"
@@ -381,18 +348,12 @@ plugins:
 - artifactId: "plugin-util-api"
   source:
     version: "7.1341.v039f146993d9"
-- artifactId: "popper2-api"
-  source:
-    version: "2.11.6-5"
 - artifactId: "prism-api"
   source:
     version: "1.30.0-741.v034eb_0b_0a_a_fa_"
 - artifactId: "promoted-builds"
   source:
     version: "1029.v979cc7835e39"
-- artifactId: "pubsub-light"
-  source:
-    version: "1.19"
 - artifactId: "rebuild"
   source:
     version: "338.va_0a_b_50e29397"
@@ -423,9 +384,6 @@ plugins:
 - artifactId: "snakeyaml-api"
   source:
     version: "2.5-149.v72471e9c6371"
-- artifactId: "sse-gateway"
-  source:
-    version: "1.29"
 - artifactId: "ssh-agent"
   source:
     version: "418.v59904cc02b_71"
@@ -462,9 +420,6 @@ plugins:
 - artifactId: "warnings-ng"
   source:
     version: "13.10221.v6e946b_9a_b_1fa_"
-- artifactId: "windows-slaves"
-  source:
-    version: "1.8.1"
 - artifactId: "workflow-aggregator"
   source:
     version: "608.v67378e9d3db_1"
@@ -477,9 +432,6 @@ plugins:
 - artifactId: "workflow-cps"
   source:
     version: "4362.v9b_991749898e"
-- artifactId: "workflow-cps-global-lib"
-  source:
-    version: "636.v3d2c06d018a_6"
 - artifactId: "workflow-durable-task-step"
   source:
     version: "1479.v56e587f413a_7"
