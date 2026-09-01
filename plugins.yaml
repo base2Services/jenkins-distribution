@@ -49,7 +49,7 @@ plugins:
     version: "5.3.8-1048.va_c299057e35c"
 - artifactId: "bouncycastle-api"
   source:
-    version: "2.30.1.84-291.v9f17b_21896e2"
+    version: "2.30.1.85-299.v15f4832d1275"
 - artifactId: "branch-api"
   source:
     version: "2.1280.v0d4e5b_b_460ef"
@@ -61,14 +61,14 @@ plugins:
     version: "3.2.4-208.v7e2da_a_7db_82b_"
 - artifactId: "checks-api"
   source:
-    version: "415.vf022234a_931d"
+    version: "422.vc7e8b_51488c6"
 - artifactId: "ciinabox-gitops-plugin"
   source:
     version: "0.5.8"
     url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.5.8/ciinabox-gitops-plugin.hpi"
 - artifactId: "cloudbees-bitbucket-branch-source"
   source:
-    version: "937.3.8"
+    version: "937.3.10"
 - artifactId: "cloudbees-folder"
   source:
     version: "6.1106.v3a_d9a_6d2465e"
@@ -89,7 +89,7 @@ plugins:
     version: "1013.v73c323e52b_1f"
 - artifactId: "configuration-as-code"
   source:
-    version: "2117.vc05a_0b_e6b_f4e"
+    version: "2121.v86fe99d4b_b_a_b_"
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
@@ -110,10 +110,10 @@ plugins:
     version: "2.3.8-1570.v1cb_1cd2a_0fb_c"
 - artifactId: "declarative-pipeline-migration-assistant"
   source:
-    version: "1.6.7"
+    version: "1.6.8"
 - artifactId: "declarative-pipeline-migration-assistant-api"
   source:
-    version: "1.6.7"
+    version: "1.6.8"
 - artifactId: "deployed-on-column"
   source:
     version: "1.9"
@@ -131,7 +131,7 @@ plugins:
     version: "477.v289085a_b_6896"
 - artifactId: "docker-workflow"
   source:
-    version: "647.vf474049b_b_303"
+    version: "653.v2f2c08eff0ec"
 - artifactId: "dockerhub-notification"
   source:
     version: "225.ve7d7c6a_4a_e35"
@@ -140,7 +140,7 @@ plugins:
     version: "686.v80ff80875b_82"
 - artifactId: "ec2"
   source:
-    version: "2059.v05f9d511d7e5"
+    version: "2061.v9ec2584f3b_38"
 - artifactId: "echarts-api"
   source:
     version: "6.1.0-1306.vcee1648c16a_4"
@@ -149,13 +149,13 @@ plugins:
     version: "0.3.0.1-29.v67e9a_1c969b_b_"
 - artifactId: "electricflow"
   source:
-    version: "1.1.43"
+    version: "1.1.44"
 - artifactId: "email-ext"
   source:
     version: "2038.v7b_8817a_499d9"
 - artifactId: "extended-read-permission"
   source:
-    version: "68.vd270568a_7520"
+    version: "92.v1b_f0c20b_75db_"
 - artifactId: "external-monitor-job"
   source:
     version: "223.vb_fddcf42c9b_3"
@@ -206,10 +206,10 @@ plugins:
     version: "2.1.8-38.vcea_5d521d5f3"
 - artifactId: "htmlpublisher"
   source:
-    version: "428"
+    version: "429"
 - artifactId: "jackson2-api"
   source:
-    version: "2.22.1-443.vc91f592333c4"
+    version: "2.22.2-445.vdc613f1d8012"
 - artifactId: "javadoc"
   source:
     version: "354.vee1a_660b_4990"
@@ -236,7 +236,7 @@ plugins:
     version: "3732.v9a_c49a_61a_313"
 - artifactId: "jobConfigHistory"
   source:
-    version: "1367.vc8fa_b_15101dc"
+    version: "1380.v762185b_9a_793"
 - artifactId: "jquery3-api"
   source:
     version: "3.7.1-687.v68d468e40b_30"
@@ -245,7 +245,7 @@ plugins:
     version: "0.2.16-95.v3eecb_55fa_b_78"
 - artifactId: "junit"
   source:
-    version: "1418.v67a_81935603c"
+    version: "1424.vc64a_edde7777"
 - artifactId: "ldap"
   source:
     version: "807.809.vd3a_4e5e4ec98"
@@ -257,7 +257,7 @@ plugins:
     version: "3.3"
 - artifactId: "matrix-project"
   source:
-    version: "905.vcc6831e8760a_"
+    version: "917.v22eda_817646e"
 - artifactId: "maven-plugin"
   source:
     version: "3.27"
@@ -311,7 +311,7 @@ plugins:
     version: "254.v0f63a_a_447dca_"
 - artifactId: "pipeline-graph-view"
   source:
-    version: "998.vc30deece0e36"
+    version: "1013.v9f83fd83c063"
 - artifactId: "pipeline-input-step"
   source:
     version: "560.v56198a_642157"
@@ -359,7 +359,7 @@ plugins:
     version: "338.va_0a_b_50e29397"
 - artifactId: "role-strategy"
   source:
-    version: "867.vd09254229f9b_"
+    version: "898.vc050ed2424ca_"
 - artifactId: "s3"
   source:
     version: "521.ve80885ef9718"
@@ -386,7 +386,7 @@ plugins:
     version: "2.5-149.v72471e9c6371"
 - artifactId: "ssh-agent"
   source:
-    version: "418.v59904cc02b_71"
+    version: "430.v8c9869373423"
 - artifactId: "ssh-credentials"
   source:
     version: "372.va_250881b_08cd"
@@ -401,7 +401,7 @@ plugins:
     version: "362.va_b_695ef4fdf9"
 - artifactId: "support-core"
   source:
-    version: "1840.v08d78d1b_4db_c"
+    version: "1863.vdddd6f8d12a_8"
 - artifactId: "timestamper"
   source:
     version: "1.30"
@@ -419,7 +419,7 @@ plugins:
     version: "70.va_d9f17f859e0"
 - artifactId: "warnings-ng"
   source:
-    version: "13.10221.v6e946b_9a_b_1fa_"
+    version: "13.10258.va_17d49a_78c3b_"
 - artifactId: "workflow-aggregator"
   source:
     version: "608.v67378e9d3db_1"
@@ -431,13 +431,13 @@ plugins:
     version: "1098.v808b_fd7f8cf4"
 - artifactId: "workflow-cps"
   source:
-    version: "4362.v9b_991749898e"
+    version: "4370.v49a_6937566b_6"
 - artifactId: "workflow-durable-task-step"
   source:
     version: "1479.v56e587f413a_7"
 - artifactId: "workflow-job"
   source:
-    version: "1571.1580.v18e46842c125"
+    version: "1600.v6f36ed83529d"
 - artifactId: "workflow-multibranch"
   source:
     version: "841.vec5b_9e1806ec"
