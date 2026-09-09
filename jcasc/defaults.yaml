@@ -53,7 +53,7 @@ jenkins:
       name: "all"
   projectNamingStrategy: "standard"
   quietPeriod: 5
-  scmCheckoutRetryCount: 0
+  scmCheckoutRetryCount: 3
   securityRealm:
     local:
       allowsSignup: false
