@@ -62,6 +62,9 @@ plugins:
 - artifactId: "checks-api"
   source:
     version: "422.vc7e8b_51488c6"
+- artifactId: "lockable-resources"
+  source:
+    version: "1554.v491fcb_27c716"
 - artifactId: "ciinabox-gitops-plugin"
   source:
     version: "0.6.1"
