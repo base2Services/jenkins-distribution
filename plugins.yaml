@@ -67,8 +67,8 @@ plugins:
     version: "1554.v491fcb_27c716"
 - artifactId: "ciinabox-gitops-plugin"
   source:
-    version: "0.6.1"
-    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.6.1/ciinabox-gitops-plugin.hpi"
+    version: "0.6.2"
+    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.6.2/ciinabox-gitops-plugin.hpi"
 - artifactId: "cloudbees-bitbucket-branch-source"
   source:
     version: "937.3.10"
@@ -288,6 +288,9 @@ plugins:
 - artifactId: "nodejs"
   source:
     version: "1.6.6"
+- artifactId: "nunit"
+  source:
+    version: "648.vdc8c6431f464"
 - artifactId: "okhttp-api"
   source:
     version: "5.3.2-200.vedb_720a_cf1f8"
