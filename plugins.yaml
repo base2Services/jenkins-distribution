@@ -201,6 +201,9 @@ plugins:
 - artifactId: "gitlab-oauth"
   source:
     version: "1.30"
+- artifactId: "google-oauth-plugin"
+  source:
+    version: "1.346.v712b_a_e0d1e60"
 - artifactId: "gradle"
   source:
     version: "2.19.1252.v15196b_5a_6e10"
