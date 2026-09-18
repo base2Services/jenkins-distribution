@@ -428,7 +428,7 @@ plugins:
     version: "70.va_d9f17f859e0"
 - artifactId: "warnings-ng"
   source:
-    version: "13.10266.vefe0a_717b_e11"
+    version: "13.10275.vb_61ff8f4c340"
 - artifactId: "workflow-aggregator"
   source:
     version: "608.v67378e9d3db_1"
@@ -446,7 +446,7 @@ plugins:
     version: "1479.v56e587f413a_7"
 - artifactId: "workflow-job"
   source:
-    version: "1600.v6f36ed83529d"
+    version: "1602.v2a_70b_80a_2396"
 - artifactId: "workflow-multibranch"
   source:
     version: "842.v3a_b_59b_57b_e6e"
