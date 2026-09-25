@@ -1,7 +1,7 @@
 plugins:
 - artifactId: "analysis-model-api"
   source:
-    version: "14.17.0-1026.v569d23ce841e"
+    version: "14.18.0-1028.v9c938eeda_ef2"
 - artifactId: "ant"
   source:
     version: "520.vd082ecfb_16a_9"
@@ -13,7 +13,7 @@ plugins:
     version: "4.5.14-269.vfa_2321039a_83"
 - artifactId: "artifact-manager-s3"
   source:
-    version: "998.v95a_357538dfa_"
+    version: "1002.v005e958510dd"
 - artifactId: "audit-trail"
   source:
     version: "456.v39d2fd1ed556"
@@ -52,7 +52,7 @@ plugins:
     version: "2.30.1.85.2-304.v4b_5b_62e59a_a_7"
 - artifactId: "branch-api"
   source:
-    version: "2.1280.v0d4e5b_b_460ef"
+    version: "2.1303.v9f3b_95dc329d"
 - artifactId: "build-timeout"
   source:
     version: "1.41"
@@ -248,7 +248,7 @@ plugins:
     version: "0.2.16-95.v3eecb_55fa_b_78"
 - artifactId: "junit"
   source:
-    version: "1425.v9c7318dca_96d"
+    version: "1431.vc0d98912a_756"
 - artifactId: "ldap"
   source:
     version: "825.v2fca_37dd5b_cb_"
@@ -263,7 +263,7 @@ plugins:
     version: "3.3"
 - artifactId: "matrix-project"
   source:
-    version: "917.v22eda_817646e"
+    version: "928.v1effc3f3a_236"
 - artifactId: "maven-plugin"
   source:
     version: "3.27"
@@ -305,7 +305,7 @@ plugins:
     version: "893.va_383a_9b_a_4c11"
 - artifactId: "pipeline-aws"
   source:
-    version: "751.v34a_8f1c5f312"
+    version: "762.v007988c4b_700"
 - artifactId: "pipeline-build-step"
   source:
     version: "601.v6d4c6d1a_9dc7"
@@ -320,7 +320,7 @@ plugins:
     version: "254.v0f63a_a_447dca_"
 - artifactId: "pipeline-graph-view"
   source:
-    version: "1013.v9f83fd83c063"
+    version: "1038.v5b_b_dfc9553cf"
 - artifactId: "pipeline-input-step"
   source:
     version: "560.v56198a_642157"
@@ -368,7 +368,7 @@ plugins:
     version: "338.va_0a_b_50e29397"
 - artifactId: "role-strategy"
   source:
-    version: "898.vc050ed2424ca_"
+    version: "918.v91e5468d8db_2"
 - artifactId: "s3"
   source:
     version: "521.ve80885ef9718"
@@ -428,7 +428,7 @@ plugins:
     version: "70.va_d9f17f859e0"
 - artifactId: "warnings-ng"
   source:
-    version: "13.10266.vefe0a_717b_e11"
+    version: "13.10289.vdb_4e605fb_c80"
 - artifactId: "workflow-aggregator"
   source:
     version: "608.v67378e9d3db_1"
@@ -446,7 +446,7 @@ plugins:
     version: "1479.v56e587f413a_7"
 - artifactId: "workflow-job"
   source:
-    version: "1600.v6f36ed83529d"
+    version: "1602.v2a_70b_80a_2396"
 - artifactId: "workflow-multibranch"
   source:
     version: "842.v3a_b_59b_57b_e6e"
