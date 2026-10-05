@@ -181,8 +181,7 @@ def read_yaml_file(file_name):
         try:
             return yaml.safe_load(stream)
         except yaml.YAMLError as exc:
-            print(exc)
-            return {}
+            raise click.ClickException(f'unable to parse yaml file {file_name}: {exc}')
 
 def write_yaml_file(file_name, contents):
     yaml.add_representer(str, str_presenter, Dumper=yaml.SafeDumper)
