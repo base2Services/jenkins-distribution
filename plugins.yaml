@@ -14,6 +14,9 @@ plugins:
 - artifactId: "artifact-manager-s3"
   source:
     version: "998.v95a_357538dfa_"
+- artifactId: "asm-api"
+  source:
+    version: "9.11.1-226.vff833a_e4c58e"
 - artifactId: "audit-trail"
   source:
     version: "456.v39d2fd1ed556"
@@ -35,6 +38,16 @@ plugins:
 - artifactId: "aws-secrets-manager-secret-source"
   source:
     version: "2.87.v49cc86c50c3b_"
+- artifactId: "azure-credentials"
+  source:
+    version: "426.v5627e6a_4c7a_7"
+- artifactId: "azure-devops-branch-source"
+  source:
+    version: "0.1.0"
+    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.1.0/azure-devops-branch-source.hpi"
+- artifactId: "azure-sdk"
+  source:
+    version: "299.v3996878fe83a_"
 - artifactId: "basic-branch-build-strategies"
   source:
     version: "317.v85b_331d6cc42"
@@ -246,6 +259,9 @@ plugins:
 - artifactId: "jsch"
   source:
     version: "0.2.16-95.v3eecb_55fa_b_78"
+- artifactId: "json-path-api"
+  source:
+    version: "3.0.0-218.vcd4dd1355de2"
 - artifactId: "junit"
   source:
     version: "1425.v9c7318dca_96d"
@@ -282,6 +298,9 @@ plugins:
 - artifactId: "multibranch-build-strategy-extension"
   source:
     version: "92.v6a_3f6939331d"
+- artifactId: "netty-api"
+  source:
+    version: "4.2.18.Final-34.v861b_21a_78c0f"
 - artifactId: "node-iterator-api"
   source:
     version: "72.vc90e81737df1"
