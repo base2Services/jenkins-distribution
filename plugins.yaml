@@ -35,6 +35,10 @@ plugins:
 - artifactId: "aws-secrets-manager-secret-source"
   source:
     version: "2.87.v49cc86c50c3b_"
+- artifactId: "azure-devops-branch-source"
+  source:
+    version: "0.1.0"
+    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.1.0/azure-devops-branch-source.hpi"
 - artifactId: "basic-branch-build-strategies"
   source:
     version: "317.v85b_331d6cc42"

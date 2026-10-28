@@ -1,0 +1,80 @@
+name: Update azure-devops-branch-source
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Daily at 6am UTC
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check-update:
+    name: Check for new azure-devops-branch-source release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Get latest release version
+        id: latest
+        run: |
+          LATEST=$(curl -sf https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/azure-devops-branch-source.version)
+          echo "version=${LATEST}" >> "$GITHUB_OUTPUT"
+          echo "Latest release: ${LATEST}"
+
+      - name: Get current version from plugins.yaml
+        id: current
+        run: |
+          CURRENT=$(grep -A2 'artifactId: "azure-devops-branch-source"' plugins.yaml | grep 'version:' | awk '{print $2}' | tr -d '"')
+          echo "version=${CURRENT}" >> "$GITHUB_OUTPUT"
+          echo "Current version: ${CURRENT}"
+
+      - name: Check if update needed
+        id: check
+        run: |
+          if [ "${{ steps.latest.outputs.version }}" != "${{ steps.current.outputs.version }}" ] && [ -n "${{ steps.latest.outputs.version }}" ]; then
+            echo "update=true" >> "$GITHUB_OUTPUT"
+            echo "Update available: ${{ steps.current.outputs.version }} -> ${{ steps.latest.outputs.version }}"
+          else
+            echo "update=false" >> "$GITHUB_OUTPUT"
+            echo "No update needed"
+          fi
+
+      - name: Update plugins.yaml
+        if: steps.check.outputs.update == 'true'
+        run: |
+          VERSION="${{ steps.latest.outputs.version }}"
+          S3_URL="https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/${VERSION}/azure-devops-branch-source.hpi"
+
+          # Update version
+          sed -i "/artifactId: \"azure-devops-branch-source\"/{n;n;s/version: .*/version: \"${VERSION}\"/}" plugins.yaml
+
+          # Update URL
+          sed -i "s|url: .*azure-devops-branch-source.hpi.*|url: \"${S3_URL}\"|" plugins.yaml
+
+          echo "Updated plugins.yaml to version ${VERSION}"
+          grep -A3 'artifactId: "azure-devops-branch-source"' plugins.yaml
+
+      - name: Create Pull Request
+        if: steps.check.outputs.update == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: update azure-devops-branch-source to ${{ steps.latest.outputs.version }}"
+          branch: auto/azure-devops-branch-source-update
+          delete-branch: true
+          title: "Update azure-devops-branch-source to ${{ steps.latest.outputs.version }}"
+          body: |
+            Automated update of `azure-devops-branch-source` to version **${{ steps.latest.outputs.version }}**.
+
+            **Changes:** https://github.com/ciinabox/azure-devops-branch-source-plugin/releases/tag/${{ steps.latest.outputs.version }}
+
+            Previous version: `${{ steps.current.outputs.version }}`
+
+            ---
+            _This PR was created automatically by the daily plugin update workflow._
+          labels: |
+            dependencies
+            automated
