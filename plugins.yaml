@@ -1,7 +1,7 @@
 plugins:
 - artifactId: "analysis-model-api"
   source:
-    version: "14.17.0-1026.v569d23ce841e"
+    version: "14.18.0-1028.v9c938eeda_ef2"
 - artifactId: "ant"
   source:
     version: "520.vd082ecfb_16a_9"
@@ -13,13 +13,13 @@ plugins:
     version: "4.5.14-269.vfa_2321039a_83"
 - artifactId: "artifact-manager-s3"
   source:
-    version: "998.v95a_357538dfa_"
+    version: "1002.v005e958510dd"
 - artifactId: "asm-api"
   source:
     version: "9.11.1-226.vff833a_e4c58e"
 - artifactId: "audit-trail"
   source:
-    version: "456.v39d2fd1ed556"
+    version: "472.vb_51e5934ec50"
 - artifactId: "authentication-tokens"
   source:
     version: "1.144.v5ff4a_5ec5c33"
@@ -34,7 +34,7 @@ plugins:
     version: "1.12.780-480.v4a_0819121a_9e"
 - artifactId: "aws-secrets-manager-credentials-provider"
   source:
-    version: "2.222.v376939a_9ffb_b"
+    version: "2.227.v1b_359849c4a_2"
 - artifactId: "aws-secrets-manager-secret-source"
   source:
     version: "2.87.v49cc86c50c3b_"
@@ -62,16 +62,16 @@ plugins:
     version: "5.3.8-1048.va_c299057e35c"
 - artifactId: "bouncycastle-api"
   source:
-    version: "2.30.1.85.2-304.v4b_5b_62e59a_a_7"
+    version: "2.30.1.86.2-310.v4655f6742752"
 - artifactId: "branch-api"
   source:
-    version: "2.1280.v0d4e5b_b_460ef"
+    version: "2.1303.v9f3b_95dc329d"
 - artifactId: "build-timeout"
   source:
     version: "1.41"
 - artifactId: "caffeine-api"
   source:
-    version: "3.2.4-208.v7e2da_a_7db_82b_"
+    version: "3.3.1-214.v18eb_56b_34920"
 - artifactId: "checks-api"
   source:
     version: "422.vc7e8b_51488c6"
@@ -81,16 +81,16 @@ plugins:
     url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.7.0/ciinabox-gitops-plugin.hpi"
 - artifactId: "cloudbees-bitbucket-branch-source"
   source:
-    version: "937.3.10"
+    version: "937.3.11"
 - artifactId: "cloudbees-folder"
   source:
     version: "6.1106.v3a_d9a_6d2465e"
 - artifactId: "command-launcher"
   source:
-    version: "141.v9578cf36b_311"
+    version: "144.vb_6cb_566c6c04"
 - artifactId: "commons-lang3-api"
   source:
-    version: "3.20.0-109.ve43756e2d2b_4"
+    version: "3.21.0-122.v6a_ea_4fd34049"
 - artifactId: "commons-text-api"
   source:
     version: "1.15.0-218.va_61573470393"
@@ -102,22 +102,22 @@ plugins:
     version: "1013.v73c323e52b_1f"
 - artifactId: "configuration-as-code"
   source:
-    version: "2121.v86fe99d4b_b_a_b_"
+    version: "2140.v00e72b_047734"
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
 - artifactId: "copyartifact"
   source:
-    version: "795.ve8e151429b_27"
+    version: "805.v9d1393350780"
 - artifactId: "credentials"
   source:
-    version: "1511.v2e3cb_0008ef0"
+    version: "1514.vb_01eb_014e7d4"
 - artifactId: "credentials-binding"
   source:
     version: "728.v902a_273b_8947"
 - artifactId: "dashboard-view"
   source:
-    version: "2.558.v96b_901978e47"
+    version: "2.569.v5ddb_c9b_a_7264"
 - artifactId: "data-tables-api"
   source:
     version: "2.3.8-1570.v1cb_1cd2a_0fb_c"
@@ -153,7 +153,7 @@ plugins:
     version: "686.v80ff80875b_82"
 - artifactId: "ec2"
   source:
-    version: "2064.v79de4fd2d03b_"
+    version: "2068.vd80935072db_b_"
 - artifactId: "echarts-api"
   source:
     version: "6.1.0-1321.v86c4c5114494"
@@ -180,7 +180,7 @@ plugins:
     version: "4.1923.v445c56df9b_2e"
 - artifactId: "git"
   source:
-    version: "5.10.1"
+    version: "5.11.0"
 - artifactId: "git-client"
   source:
     version: "6.6.1"
@@ -198,10 +198,10 @@ plugins:
     version: "1.2.4"
 - artifactId: "github-branch-source"
   source:
-    version: "1983.vfa_27ed961853"
+    version: "1986.v801e40614d00"
 - artifactId: "github-checks"
   source:
-    version: "679.v74133da_b_435a_"
+    version: "710.v756946918b_dd"
 - artifactId: "github-oauth"
   source:
     version: "685.v53b_070455063"
@@ -216,7 +216,7 @@ plugins:
     version: "1.346.v712b_a_e0d1e60"
 - artifactId: "gradle"
   source:
-    version: "2.20.1253.vc116f0763a_eb_"
+    version: "2.20.1259.v6355c2b_e38c7"
 - artifactId: "handy-uri-templates-2-api"
   source:
     version: "2.1.8-38.vcea_5d521d5f3"
@@ -225,7 +225,7 @@ plugins:
     version: "429"
 - artifactId: "jackson2-api"
   source:
-    version: "2.22.2-445.vdc613f1d8012"
+    version: "2.22.4-449.v4ee9f4ec4123"
 - artifactId: "javadoc"
   source:
     version: "354.vee1a_660b_4990"
@@ -264,13 +264,13 @@ plugins:
     version: "3.0.0-218.vcd4dd1355de2"
 - artifactId: "junit"
   source:
-    version: "1425.v9c7318dca_96d"
+    version: "1446.veeff2ec8581c"
 - artifactId: "ldap"
   source:
     version: "825.v2fca_37dd5b_cb_"
 - artifactId: "lockable-resources"
   source:
-    version: "1560.va_b_cd589f23eb_"
+    version: "1579.vf54f8418ffb_2"
 - artifactId: "mailer"
   source:
     version: "534.v1b_36f5864073"
@@ -279,10 +279,10 @@ plugins:
     version: "3.3"
 - artifactId: "matrix-project"
   source:
-    version: "917.v22eda_817646e"
+    version: "928.v1effc3f3a_236"
 - artifactId: "maven-plugin"
   source:
-    version: "3.27"
+    version: "3.28"
 - artifactId: "mina-sshd-api-common"
   source:
     version: "2.19.0-192.v2b_a_7b_2c1dc71"
@@ -291,7 +291,7 @@ plugins:
     version: "2.19.0-192.v2b_a_7b_2c1dc71"
 - artifactId: "msbuild"
   source:
-    version: "1.43"
+    version: "1.46"
 - artifactId: "mstestrunner"
   source:
     version: "1.5.0"
@@ -312,7 +312,7 @@ plugins:
     version: "648.vdc8c6431f464"
 - artifactId: "okhttp-api"
   source:
-    version: "5.3.2-200.vedb_720a_cf1f8"
+    version: "5.5.0-242.v1482d48d3ea_3"
 - artifactId: "pam-auth"
   source:
     version: "1.12"
@@ -324,7 +324,7 @@ plugins:
     version: "893.va_383a_9b_a_4c11"
 - artifactId: "pipeline-aws"
   source:
-    version: "751.v34a_8f1c5f312"
+    version: "767.v48d5c10b_1899"
 - artifactId: "pipeline-build-step"
   source:
     version: "601.v6d4c6d1a_9dc7"
@@ -339,7 +339,7 @@ plugins:
     version: "254.v0f63a_a_447dca_"
 - artifactId: "pipeline-graph-view"
   source:
-    version: "1013.v9f83fd83c063"
+    version: "1053.v9df19e6ceed2"
 - artifactId: "pipeline-input-step"
   source:
     version: "560.v56198a_642157"
@@ -375,7 +375,7 @@ plugins:
     version: "199.v9f8e1f741799"
 - artifactId: "plugin-util-api"
   source:
-    version: "7.1341.v039f146993d9"
+    version: "7.1403.vd380b_c42e90c"
 - artifactId: "prism-api"
   source:
     version: "1.30.0-741.v034eb_0b_0a_a_fa_"
@@ -384,13 +384,13 @@ plugins:
     version: "1029.v979cc7835e39"
 - artifactId: "rebuild"
   source:
-    version: "338.va_0a_b_50e29397"
+    version: "344.v805899551b_13"
 - artifactId: "role-strategy"
   source:
-    version: "898.vc050ed2424ca_"
+    version: "928.vc60b_edb_fea_e1"
 - artifactId: "s3"
   source:
-    version: "521.ve80885ef9718"
+    version: "522.vc73d01440c29"
 - artifactId: "saml"
   source:
     version: "4.623.v7875d61cd9f5"
@@ -402,7 +402,7 @@ plugins:
     version: "264.v39ce4f34d572"
 - artifactId: "script-security"
   source:
-    version: "1429.v0810f1b_530f5"
+    version: "1436.v1082791135e4"
 - artifactId: "secure-requester-whitelist"
   source:
     version: "72.v6cce468c5513"
@@ -411,7 +411,7 @@ plugins:
     version: "795.v4b_9705b_e6d47"
 - artifactId: "snakeyaml-api"
   source:
-    version: "2.5-149.v72471e9c6371"
+    version: "2.7-152.vc672728cf536"
 - artifactId: "ssh-agent"
   source:
     version: "433.v9e73d67c3f74"
@@ -447,25 +447,25 @@ plugins:
     version: "70.va_d9f17f859e0"
 - artifactId: "warnings-ng"
   source:
-    version: "13.10266.vefe0a_717b_e11"
+    version: "13.10333.v259db_dd5b_b_02"
 - artifactId: "workflow-aggregator"
   source:
     version: "608.v67378e9d3db_1"
 - artifactId: "workflow-api"
   source:
-    version: "1413.v2ff1a_5e720fa_"
+    version: "1429.v7a_1b_efb_a_f7c5"
 - artifactId: "workflow-basic-steps"
   source:
-    version: "1098.v808b_fd7f8cf4"
+    version: "1129.v60e3c7e6654d"
 - artifactId: "workflow-cps"
   source:
-    version: "4383.v04fa_a_3d67b_d9"
+    version: "4395.v738456a_5da_6b_"
 - artifactId: "workflow-durable-task-step"
   source:
     version: "1479.v56e587f413a_7"
 - artifactId: "workflow-job"
   source:
-    version: "1600.v6f36ed83529d"
+    version: "1622.vc41c189cb_e5f"
 - artifactId: "workflow-multibranch"
   source:
     version: "842.v3a_b_59b_57b_e6e"
@@ -477,5 +477,5 @@ plugins:
     version: "724.v538c2362b_dfb_"
 - artifactId: "workflow-support"
   source:
-    version: "1015.v785e5a_b_b_8b_22"
+    version: "1028.vc22910142650"
 
