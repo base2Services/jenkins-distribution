@@ -102,7 +102,7 @@ plugins:
     version: "1013.v73c323e52b_1f"
 - artifactId: "configuration-as-code"
   source:
-    version: "2143.vc78d4eb_d4174"
+    version: "2144.ve8c697101488"
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
@@ -246,7 +246,7 @@ plugins:
     version: "2.48-180.ve47b_264f849b_"
 - artifactId: "jira"
   source:
-    version: "3.22"
+    version: "3.23-e6d2843d355d"
 - artifactId: "job-dsl"
   source:
     version: "3732.v9a_c49a_61a_313"
@@ -264,13 +264,13 @@ plugins:
     version: "3.0.0-218.vcd4dd1355de2"
 - artifactId: "junit"
   source:
-    version: "1455.v5c1b_eed56292"
+    version: "1456.vdb_4425ca_0d4d"
 - artifactId: "ldap"
   source:
     version: "825.v2fca_37dd5b_cb_"
 - artifactId: "lockable-resources"
   source:
-    version: "1579.vf54f8418ffb_2"
+    version: "1582.v54e3b_a_8eda_3a_"
 - artifactId: "mailer"
   source:
     version: "534.v1b_36f5864073"
@@ -297,7 +297,7 @@ plugins:
     version: "1.5.0"
 - artifactId: "multibranch-build-strategy-extension"
   source:
-    version: "92.v6a_3f6939331d"
+    version: "104.vda_768fd6f005"
 - artifactId: "netty-api"
   source:
     version: "4.2.18.Final-34.v861b_21a_78c0f"
@@ -459,7 +459,7 @@ plugins:
     version: "1129.v60e3c7e6654d"
 - artifactId: "workflow-cps"
   source:
-    version: "4395.v738456a_5da_6b_"
+    version: "4403.v471713a_cea_19"
 - artifactId: "workflow-durable-task-step"
   source:
     version: "1479.v56e587f413a_7"
