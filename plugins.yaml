@@ -102,7 +102,7 @@ plugins:
     version: "1013.v73c323e52b_1f"
 - artifactId: "configuration-as-code"
   source:
-    version: "2144.ve8c697101488"
+    version: "2146.v9c97c4612b_99"
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
@@ -120,7 +120,7 @@ plugins:
     version: "2.569.v5ddb_c9b_a_7264"
 - artifactId: "data-tables-api"
   source:
-    version: "2.3.8-1570.v1cb_1cd2a_0fb_c"
+    version: "2.3.8-1647.vb_492e141cc87"
 - artifactId: "declarative-pipeline-migration-assistant"
   source:
     version: "1.6.8"
@@ -264,7 +264,7 @@ plugins:
     version: "3.0.0-218.vcd4dd1355de2"
 - artifactId: "junit"
   source:
-    version: "1456.vdb_4425ca_0d4d"
+    version: "1458.v38661c0638e2"
 - artifactId: "ldap"
   source:
     version: "825.v2fca_37dd5b_cb_"
