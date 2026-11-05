@@ -102,7 +102,7 @@ plugins:
     version: "1013.v73c323e52b_1f"
 - artifactId: "configuration-as-code"
   source:
-    version: "2146.v9c97c4612b_99"
+    version: "2147.v8a_8d38668c72"
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
