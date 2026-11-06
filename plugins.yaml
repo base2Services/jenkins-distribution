@@ -210,7 +210,7 @@ plugins:
     version: "6.3.0-126.vd066b_d896159"
 - artifactId: "gitlab-oauth"
   source:
-    version: "1.30"
+    version: "1.31"
 - artifactId: "google-oauth-plugin"
   source:
     version: "1.346.v712b_a_e0d1e60"
@@ -285,13 +285,13 @@ plugins:
     version: "3.28"
 - artifactId: "mina-sshd-api-common"
   source:
-    version: "2.19.0-192.v2b_a_7b_2c1dc71"
+    version: "2.20.1-199.v8ce76b_c93542"
 - artifactId: "mina-sshd-api-core"
   source:
-    version: "2.19.0-192.v2b_a_7b_2c1dc71"
+    version: "2.20.1-199.v8ce76b_c93542"
 - artifactId: "mina-sshd-api-scp"
   source:
-    version: "2.19.0-192.v2b_a_7b_2c1dc71"
+    version: "2.20.1-199.v8ce76b_c93542"
 - artifactId: "msbuild"
   source:
     version: "1.46"
