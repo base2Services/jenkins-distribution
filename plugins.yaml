@@ -208,6 +208,9 @@ plugins:
 - artifactId: "gitlab-api"
   source:
     version: "6.3.0-126.vd066b_d896159"
+- artifactId: "gitlab-branch-source"
+  source:
+    version: "749.v63a_c68676751"
 - artifactId: "gitlab-oauth"
   source:
     version: "1.30"
