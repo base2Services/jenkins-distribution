@@ -74,17 +74,17 @@ plugins:
     version: "3.3.1-214.v18eb_56b_34920"
 - artifactId: "checks-api"
   source:
-    version: "422.vc7e8b_51488c6"
+    version: "434.va_a_3dd79d7723"
 - artifactId: "ciinabox-gitops-plugin"
   source:
-    version: "0.7.0"
-    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.7.0/ciinabox-gitops-plugin.hpi"
+    version: "0.10.0"
+    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.10.0/ciinabox-gitops-plugin.hpi"
 - artifactId: "cloudbees-bitbucket-branch-source"
   source:
     version: "937.3.11"
 - artifactId: "cloudbees-folder"
   source:
-    version: "6.1106.v3a_d9a_6d2465e"
+    version: "6.1107.v31f8955765c8"
 - artifactId: "command-launcher"
   source:
     version: "144.vb_6cb_566c6c04"
@@ -102,7 +102,7 @@ plugins:
     version: "1013.v73c323e52b_1f"
 - artifactId: "configuration-as-code"
   source:
-    version: "2140.v00e72b_047734"
+    version: "2147.v8a_8d38668c72"
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
@@ -120,7 +120,7 @@ plugins:
     version: "2.569.v5ddb_c9b_a_7264"
 - artifactId: "data-tables-api"
   source:
-    version: "2.3.8-1570.v1cb_1cd2a_0fb_c"
+    version: "2.3.8-1647.vb_492e141cc87"
 - artifactId: "declarative-pipeline-migration-assistant"
   source:
     version: "1.6.8"
@@ -249,7 +249,7 @@ plugins:
     version: "2.48-180.ve47b_264f849b_"
 - artifactId: "jira"
   source:
-    version: "3.22"
+    version: "3.23-e6d2843d355d"
 - artifactId: "job-dsl"
   source:
     version: "3732.v9a_c49a_61a_313"
@@ -267,13 +267,13 @@ plugins:
     version: "3.0.0-218.vcd4dd1355de2"
 - artifactId: "junit"
   source:
-    version: "1446.veeff2ec8581c"
+    version: "1458.v38661c0638e2"
 - artifactId: "ldap"
   source:
     version: "825.v2fca_37dd5b_cb_"
 - artifactId: "lockable-resources"
   source:
-    version: "1579.vf54f8418ffb_2"
+    version: "1582.v54e3b_a_8eda_3a_"
 - artifactId: "mailer"
   source:
     version: "534.v1b_36f5864073"
@@ -292,6 +292,9 @@ plugins:
 - artifactId: "mina-sshd-api-core"
   source:
     version: "2.19.0-192.v2b_a_7b_2c1dc71"
+- artifactId: "mina-sshd-api-scp"
+  source:
+    version: "2.19.0-192.v2b_a_7b_2c1dc71"
 - artifactId: "msbuild"
   source:
     version: "1.46"
@@ -300,7 +303,7 @@ plugins:
     version: "1.5.0"
 - artifactId: "multibranch-build-strategy-extension"
   source:
-    version: "92.v6a_3f6939331d"
+    version: "104.vda_768fd6f005"
 - artifactId: "netty-api"
   source:
     version: "4.2.18.Final-34.v861b_21a_78c0f"
@@ -450,7 +453,7 @@ plugins:
     version: "70.va_d9f17f859e0"
 - artifactId: "warnings-ng"
   source:
-    version: "13.10333.v259db_dd5b_b_02"
+    version: "13.10345.v6642ea_283a_ef"
 - artifactId: "workflow-aggregator"
   source:
     version: "608.v67378e9d3db_1"
@@ -462,7 +465,7 @@ plugins:
     version: "1129.v60e3c7e6654d"
 - artifactId: "workflow-cps"
   source:
-    version: "4395.v738456a_5da_6b_"
+    version: "4403.v471713a_cea_19"
 - artifactId: "workflow-durable-task-step"
   source:
     version: "1479.v56e587f413a_7"
