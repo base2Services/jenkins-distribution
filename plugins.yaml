@@ -289,6 +289,9 @@ plugins:
 - artifactId: "mina-sshd-api-core"
   source:
     version: "2.19.0-192.v2b_a_7b_2c1dc71"
+- artifactId: "mina-sshd-api-scp"
+  source:
+    version: "2.19.0-192.v2b_a_7b_2c1dc71"
 - artifactId: "msbuild"
   source:
     version: "1.46"
