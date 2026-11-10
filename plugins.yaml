@@ -1,7 +1,7 @@
 plugins:
 - artifactId: "analysis-model-api"
   source:
-    version: "14.18.0-1028.v9c938eeda_ef2"
+    version: "14.21.0-1046.vb_feb_1256ee9f"
 - artifactId: "ant"
   source:
     version: "520.vd082ecfb_16a_9"
@@ -74,7 +74,7 @@ plugins:
     version: "3.3.1-214.v18eb_56b_34920"
 - artifactId: "checks-api"
   source:
-    version: "434.va_a_3dd79d7723"
+    version: "438.v9fcc0f0e2013"
 - artifactId: "ciinabox-gitops-plugin"
   source:
     version: "0.10.0"
@@ -183,7 +183,7 @@ plugins:
     version: "5.11.0"
 - artifactId: "git-client"
   source:
-    version: "6.6.1"
+    version: "6.7.0"
 - artifactId: "git-server"
   source:
     version: "137.ve0060b_432302"
@@ -207,10 +207,10 @@ plugins:
     version: "685.v53b_070455063"
 - artifactId: "gitlab-api"
   source:
-    version: "6.3.0-126.vd066b_d896159"
+    version: "6.3.0-133.v302f2e9feb_85"
 - artifactId: "gitlab-oauth"
   source:
-    version: "1.30"
+    version: "1.31"
 - artifactId: "google-oauth-plugin"
   source:
     version: "1.346.v712b_a_e0d1e60"
@@ -270,7 +270,7 @@ plugins:
     version: "825.v2fca_37dd5b_cb_"
 - artifactId: "lockable-resources"
   source:
-    version: "1582.v54e3b_a_8eda_3a_"
+    version: "1588.v7b_b_614f4202e"
 - artifactId: "mailer"
   source:
     version: "534.v1b_36f5864073"
@@ -285,13 +285,13 @@ plugins:
     version: "3.28"
 - artifactId: "mina-sshd-api-common"
   source:
-    version: "2.19.0-192.v2b_a_7b_2c1dc71"
+    version: "2.20.1-199.v8ce76b_c93542"
 - artifactId: "mina-sshd-api-core"
   source:
-    version: "2.19.0-192.v2b_a_7b_2c1dc71"
+    version: "2.20.1-199.v8ce76b_c93542"
 - artifactId: "mina-sshd-api-scp"
   source:
-    version: "2.19.0-192.v2b_a_7b_2c1dc71"
+    version: "2.20.1-199.v8ce76b_c93542"
 - artifactId: "msbuild"
   source:
     version: "1.46"
@@ -345,7 +345,7 @@ plugins:
     version: "1053.v9df19e6ceed2"
 - artifactId: "pipeline-input-step"
   source:
-    version: "560.v56198a_642157"
+    version: "568.v0c9db_2652741"
 - artifactId: "pipeline-milestone-step"
   source:
     version: "152.v6e22b_8cfc66c"
@@ -468,7 +468,7 @@ plugins:
     version: "1479.v56e587f413a_7"
 - artifactId: "workflow-job"
   source:
-    version: "1622.vc41c189cb_e5f"
+    version: "1624.ve973eb_34e031"
 - artifactId: "workflow-multibranch"
   source:
     version: "842.v3a_b_59b_57b_e6e"
