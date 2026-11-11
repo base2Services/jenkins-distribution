@@ -43,8 +43,8 @@ plugins:
     version: "426.v5627e6a_4c7a_7"
 - artifactId: "azure-devops-branch-source"
   source:
-    version: "0.1.0"
-    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.1.0/azure-devops-branch-source.hpi"
+    version: "0.1.1"
+    url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.1.1/azure-devops-branch-source.hpi"
 - artifactId: "azure-sdk"
   source:
     version: "299.v3996878fe83a_"
