@@ -74,7 +74,7 @@ plugins:
     version: "3.3.1-214.v18eb_56b_34920"
 - artifactId: "checks-api"
   source:
-    version: "438.v9fcc0f0e2013"
+    version: "440.v53a_b_6c39a_b_b_b_"
 - artifactId: "ciinabox-gitops-plugin"
   source:
     version: "0.11.0"
@@ -183,7 +183,7 @@ plugins:
     version: "5.11.0"
 - artifactId: "git-client"
   source:
-    version: "6.7.0"
+    version: "6.7.1"
 - artifactId: "git-server"
   source:
     version: "137.ve0060b_432302"
@@ -220,7 +220,7 @@ plugins:
     version: "1.346.v712b_a_e0d1e60"
 - artifactId: "gradle"
   source:
-    version: "2.20.1259.v6355c2b_e38c7"
+    version: "2.21.1282.v024680ce00a_b_"
 - artifactId: "handy-uri-templates-2-api"
   source:
     version: "2.1.8-38.vcea_5d521d5f3"
@@ -268,7 +268,7 @@ plugins:
     version: "3.0.0-218.vcd4dd1355de2"
 - artifactId: "junit"
   source:
-    version: "1458.v38661c0638e2"
+    version: "1458.1460.vd53b_087eeb_2c"
 - artifactId: "ldap"
   source:
     version: "825.v2fca_37dd5b_cb_"
@@ -334,7 +334,7 @@ plugins:
     version: "767.v48d5c10b_1899"
 - artifactId: "pipeline-build-step"
   source:
-    version: "601.v6d4c6d1a_9dc7"
+    version: "605.v00486e8f4b_3e"
 - artifactId: "pipeline-github"
   source:
     version: "2.8-191.cb_1a_07f10b_a_f"
@@ -484,5 +484,5 @@ plugins:
     version: "724.v538c2362b_dfb_"
 - artifactId: "workflow-support"
   source:
-    version: "1028.vc22910142650"
+    version: "1035.v6a_23b_e298a_5d"
 
