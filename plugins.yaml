@@ -32,6 +32,18 @@ plugins:
 - artifactId: "aws-java-sdk"
   source:
     version: "1.12.780-480.v4a_0819121a_9e"
+- artifactId: "aws-java-sdk2-cloudformation"
+  source:
+    version: "2.56.0-80.v7a_7cdf2f4dc8"
+- artifactId: "aws-java-sdk2-core"
+  source:
+    version: "2.56.0-80.v7a_7cdf2f4dc8"
+- artifactId: "aws-java-sdk2-ecr"
+  source:
+    version: "2.56.0-80.v7a_7cdf2f4dc8"
+- artifactId: "aws-java-sdk2-s3"
+  source:
+    version: "2.56.0-80.v7a_7cdf2f4dc8"
 - artifactId: "aws-secrets-manager-credentials-provider"
   source:
     version: "2.227.v1b_359849c4a_2"
