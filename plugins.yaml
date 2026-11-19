@@ -86,7 +86,7 @@ plugins:
     version: "3.3.1-214.v18eb_56b_34920"
 - artifactId: "checks-api"
   source:
-    version: "440.v53a_b_6c39a_b_b_b_"
+    version: "441.v54e82638ca_71"
 - artifactId: "ciinabox-gitops-plugin"
   source:
     version: "0.12.0"
@@ -210,7 +210,7 @@ plugins:
     version: "1.2.4"
 - artifactId: "github-branch-source"
   source:
-    version: "1986.v801e40614d00"
+    version: "1988.v87ea_66346560"
 - artifactId: "github-checks"
   source:
     version: "716.v4e342cf2a_03c"
@@ -265,7 +265,7 @@ plugins:
     version: "3.23-e6d2843d355d"
 - artifactId: "job-dsl"
   source:
-    version: "3732.v9a_c49a_61a_313"
+    version: "3752.vb_199526b_20c3"
 - artifactId: "jobConfigHistory"
   source:
     version: "1380.v762185b_9a_793"
@@ -277,7 +277,7 @@ plugins:
     version: "0.2.16-95.v3eecb_55fa_b_78"
 - artifactId: "json-path-api"
   source:
-    version: "3.0.0-218.vcd4dd1355de2"
+    version: "3.0.0-236.v4298487c9d01"
 - artifactId: "junit"
   source:
     version: "1458.1460.vd53b_087eeb_2c"
@@ -286,7 +286,7 @@ plugins:
     version: "825.v2fca_37dd5b_cb_"
 - artifactId: "lockable-resources"
   source:
-    version: "1588.v7b_b_614f4202e"
+    version: "1593.v81b_70c9dfccb_"
 - artifactId: "mailer"
   source:
     version: "534.v1b_36f5864073"
@@ -466,7 +466,7 @@ plugins:
     version: "70.va_d9f17f859e0"
 - artifactId: "warnings-ng"
   source:
-    version: "13.10345.v6642ea_283a_ef"
+    version: "13.10365.v85cd7a_c8110b_"
 - artifactId: "workflow-aggregator"
   source:
     version: "608.v67378e9d3db_1"
