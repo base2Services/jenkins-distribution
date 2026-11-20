@@ -286,7 +286,7 @@ plugins:
     version: "825.v2fca_37dd5b_cb_"
 - artifactId: "lockable-resources"
   source:
-    version: "1593.v81b_70c9dfccb_"
+    version: "1601.vb_b_863eec56b_e"
 - artifactId: "mailer"
   source:
     version: "534.v1b_36f5864073"
