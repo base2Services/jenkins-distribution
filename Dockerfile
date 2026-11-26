@@ -29,3 +29,8 @@ COPY jcasc/plugin-merger.py /usr/local/bin/plugin-merger
 
 # so we can run this in code build
 VOLUME /var/lib/docker
+
+# Shown in the Jenkins footer by ciinabox-gitops-plugin (0.13.1+). release-image.yml passes the release
+# tag; push builds pass snapshot_<branch>-<sha>. Last, so changing it doesn't rebuild the layers above.
+ARG CIINABOX_DISTRIBUTION_VERSION=""
+ENV CIINABOX_DISTRIBUTION_VERSION=${CIINABOX_DISTRIBUTION_VERSION}
