@@ -38,6 +38,8 @@ jobs:
         push: true
         platforms: linux/amd64,linux/arm64
         tags: ghcr.io/base2services/jenkins-distribution:snapshot_${{env.GITHUB_REF_SLUG}}
+        build-args: |
+          CIINABOX_DISTRIBUTION_VERSION=snapshot_${{env.GITHUB_REF_SLUG}}-${{env.GITHUB_SHA_SHORT}}
     
     - name: Scan image
       uses: anchore/scan-action@v2
