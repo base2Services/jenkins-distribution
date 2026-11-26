@@ -71,7 +71,7 @@ plugins:
     version: "4.1.0"
 - artifactId: "bootstrap5-api"
   source:
-    version: "5.3.8-1048.va_c299057e35c"
+    version: "5.3.9-1156.va_4c7fef67c56"
 - artifactId: "bouncycastle-api"
   source:
     version: "2.30.1.86.2-310.v4655f6742752"
@@ -93,7 +93,7 @@ plugins:
     url: "https://s3-ap-southeast-2.amazonaws.com/base2.packages.ap-southeast-2.public/ciinabox/plugins/0.13.0/ciinabox-gitops-plugin.hpi"
 - artifactId: "cloudbees-bitbucket-branch-source"
   source:
-    version: "937.3.11"
+    version: "937.4.0"
 - artifactId: "cloudbees-folder"
   source:
     version: "6.1107.v31f8955765c8"
@@ -114,7 +114,7 @@ plugins:
     version: "1013.v73c323e52b_1f"
 - artifactId: "configuration-as-code"
   source:
-    version: "2147.v8a_8d38668c72"
+    version: "2148.v9d0c041b_a_13c"
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
@@ -123,7 +123,7 @@ plugins:
     version: "805.v9d1393350780"
 - artifactId: "credentials"
   source:
-    version: "1514.vb_01eb_014e7d4"
+    version: "1521.v1e4763284417"
 - artifactId: "credentials-binding"
   source:
     version: "728.v902a_273b_8947"
@@ -189,7 +189,7 @@ plugins:
     version: "7.3.1-1013.v0835a_879ec6d"
 - artifactId: "forensics-api"
   source:
-    version: "4.1923.v445c56df9b_2e"
+    version: "4.1977.v0f55b_7ee93a_4"
 - artifactId: "git"
   source:
     version: "5.11.0"
@@ -213,7 +213,7 @@ plugins:
     version: "1988.v87ea_66346560"
 - artifactId: "github-checks"
   source:
-    version: "716.v4e342cf2a_03c"
+    version: "717.v107022b_fe5fb_"
 - artifactId: "github-oauth"
   source:
     version: "685.v53b_070455063"
@@ -232,7 +232,7 @@ plugins:
     version: "1.346.v712b_a_e0d1e60"
 - artifactId: "gradle"
   source:
-    version: "2.21.1282.v024680ce00a_b_"
+    version: "2.22.1283.v53b_41fe4cb_d9"
 - artifactId: "handy-uri-templates-2-api"
   source:
     version: "2.1.8-38.vcea_5d521d5f3"
@@ -286,7 +286,7 @@ plugins:
     version: "825.v2fca_37dd5b_cb_"
 - artifactId: "lockable-resources"
   source:
-    version: "1593.v81b_70c9dfccb_"
+    version: "1611.vd91dca_329d61"
 - artifactId: "mailer"
   source:
     version: "534.v1b_36f5864073"
@@ -295,7 +295,7 @@ plugins:
     version: "3.3"
 - artifactId: "matrix-project"
   source:
-    version: "928.v1effc3f3a_236"
+    version: "954.v656d2cf610c4"
 - artifactId: "maven-plugin"
   source:
     version: "3.28"
@@ -310,7 +310,7 @@ plugins:
     version: "2.20.1-199.v8ce76b_c93542"
 - artifactId: "msbuild"
   source:
-    version: "1.46"
+    version: "1.47"
 - artifactId: "mstestrunner"
   source:
     version: "1.5.0"
@@ -415,13 +415,13 @@ plugins:
     version: "4.623.v7875d61cd9f5"
 - artifactId: "scm-api"
   source:
-    version: "728.vc30dcf7a_0df5"
+    version: "732.v830c71a_cfed3"
 - artifactId: "scm-filter-branch-pr"
   source:
     version: "264.v39ce4f34d572"
 - artifactId: "script-security"
   source:
-    version: "1436.v1082791135e4"
+    version: "1436.1438.v3dc5ef7d16f2"
 - artifactId: "secure-requester-whitelist"
   source:
     version: "72.v6cce468c5513"
@@ -466,7 +466,7 @@ plugins:
     version: "70.va_d9f17f859e0"
 - artifactId: "warnings-ng"
   source:
-    version: "13.10365.v85cd7a_c8110b_"
+    version: "13.10365.10367.v2db_e2de17661"
 - artifactId: "workflow-aggregator"
   source:
     version: "608.v67378e9d3db_1"
@@ -478,7 +478,7 @@ plugins:
     version: "1129.v60e3c7e6654d"
 - artifactId: "workflow-cps"
   source:
-    version: "4403.v471713a_cea_19"
+    version: "4403.4405.va_b_cdb_b_d0b_89f"
 - artifactId: "workflow-durable-task-step"
   source:
     version: "1479.v56e587f413a_7"
