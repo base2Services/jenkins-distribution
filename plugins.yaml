@@ -111,10 +111,10 @@ plugins:
     version: "1.5.0"
 - artifactId: "config-file-provider"
   source:
-    version: "1013.v73c323e52b_1f"
+    version: "1015.v4567853b_8df9"
 - artifactId: "configuration-as-code"
   source:
-    version: "2148.v9d0c041b_a_13c"
+    version: "2151.va_012b_08f3cc4"
 - artifactId: "configuration-as-code-secret-ssm"
   source:
     version: "1.0.1"
@@ -397,7 +397,7 @@ plugins:
     version: "7.1403.vd380b_c42e90c"
 - artifactId: "prism-api"
   source:
-    version: "1.30.0-741.v034eb_0b_0a_a_fa_"
+    version: "1.30.0-818.v187d7075b_db_8"
 - artifactId: "promoted-builds"
   source:
     version: "1029.v979cc7835e39"
@@ -466,7 +466,7 @@ plugins:
     version: "70.va_d9f17f859e0"
 - artifactId: "warnings-ng"
   source:
-    version: "13.10365.10367.v2db_e2de17661"
+    version: "13.10429.v557de62a_a_844"
 - artifactId: "workflow-aggregator"
   source:
     version: "608.v67378e9d3db_1"
